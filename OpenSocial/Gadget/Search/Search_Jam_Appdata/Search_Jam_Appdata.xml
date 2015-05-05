@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="OpenSocial_JSON_Search">
+  <ModulePrefs title="Search_Jam_Appdata">
     <Require feature="osapi" />
     <Link rel="mediumIcon" href="g38.png" />
     <Link rel="icon" href="g20.png" />
   </ModulePrefs>
   <Content type="html">
     <![CDATA[
-Hello, world! 906
+Search_Jam_Appdata
 <script>
 
 
