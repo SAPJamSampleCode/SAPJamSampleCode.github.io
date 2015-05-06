@@ -11,14 +11,12 @@
     <Require feature="dynamic-height"/>
     <Require feature="minimessage"/>
 
-    <!--
-    Locales:                          en=English, fr=French
-    XML:                              <msg name="KEY">DATA</msg>
-    Object:                           Msg.KEY=DATA
-    Relationship:                     '<msg name="KEY">DATA</msg>' = 'Msg.KEY=DATA'
-    Object embedded in HTML:          ${Msg.KEY}
-    -->
-    
+    <!-- Locales:                          en=English, fr=French                            -->
+    <!-- XML:                              <msg name="KEY">DATA</msg>                       -->
+    <!-- Object:                           Msg.KEY=DATA                                     -->
+    <!-- Relationship:                     '<msg name="KEY">DATA</msg>' = 'Msg.KEY=DATA'    -->
+    <!-- Object embedded in HTML:          ${Msg.KEY}                                       -->
+
     <Locale lang="en">
       <msg name="detectedLocaleGreeting">Detected Locale = <b>English</b><br/>
       Greeting = <b>Hello!</b></msg>
