@@ -10,12 +10,10 @@
     <Require feature="dynamic-height"/>
     <Require feature="minimessage"/>
     <Locale lang="en">
-      <msg name="detLocale">Detected Locale = <b>English</b></msg>
-      <msg name="greeting">Greeting = <b>Hello!</b></msg>
+      <msg name="detectedLocaleGreeting">Detected Locale = <b>English</b><br/>Greeting = <b>Hello!</b></msg>
     </Locale>
     <Locale lang="fr">
-      <msg name="detLocale">Detected Locale = <b>French</b></msg>
-      <msg name="greeting">Greeting = <b>Bonjour!</b></msg>
+      <msg name="detectedLocaleGreeting">Detected Locale = <b>French</b><br/>Greeting = <b>Bonjour!</b></msg>
     </Locale>
   </ModulePrefs>
   <Content type="html">
@@ -25,15 +23,7 @@
         <p>Adjust your browser to a different locale (English or French) and reload this gadget.
           The detected locale and message under 'Localized Output' will automatically change.</p>
         <p>Localized Output</p>
-        <p>${Msg.detLocale}</p>
-        <p>${Msg.greeting}</p>
-
-        <script>
-        osapi.people.get({"userId": "@ME"}).execute(
-          function(data) {
-            console.log(data);
-          });
-        </script>
+        <p>${Msg.detectedLocaleGreeting}</p>
       ]]>
   </Content>
 </Module>
