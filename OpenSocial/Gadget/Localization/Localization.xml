@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="Apr21Gadget" 
+  <ModulePrefs title="String Localization" 
                height="250" 
                author="SAP" 
                description="Apr21Gadget">   
@@ -9,14 +9,24 @@
     <Require feature="osapi" />
     <Require feature="dynamic-height"/>
     <Require feature="minimessage"/>
-    <Locale>
-      <msg name="title">Bar</msg>
+    <Locale lang="ALL">
+      <msg name="greeting">Detected Locale:No compatible locale detected, default to English --> Hello</msg>
+    </Locale>
+    <Locale lang="en">
+      <msg name="greeting">Detected Locale:English --> Hello</msg>
+    </Locale>
+    <Locale lang="fr">
+      <msg name="greeting">Detected Locale:French --> Bonjour</msg>
+    </Locale>
+    <Locale lang="ja">
+      <msg name="greeting">Detected Locale:Japanese --> Konnichiwa</msg>
     </Locale>
   </ModulePrefs>
   <Content type="html">
     <![CDATA[      
-        <h1>Apr21Gadget</h1>
-        <h1>${Msg.title}</h1>
+        <h1>String Localization - "Hello" adjusted to locale (English, French, Japanese)</h1>
+        <p>Adjust your browser to different locales and reload this gadget.</p>
+        <p>${msg.greeting}</p>
 
         <script>
         osapi.people.get({"userId": "@ME"}).execute(
