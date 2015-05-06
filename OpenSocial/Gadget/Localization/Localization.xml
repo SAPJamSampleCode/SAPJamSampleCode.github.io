@@ -3,7 +3,7 @@
   <ModulePrefs title="String Localization" 
                height="250" 
                author="SAP" 
-               description="Apr21Gadget">   
+               description="This gadget detects your locale and outputs a message in that locale's language.">   
     <Link rel="mediumIcon" href="g38.png" />
     <Link rel="icon" href="g20.png" />                         
     <Require feature="osapi" />
@@ -24,9 +24,10 @@
   </ModulePrefs>
   <Content type="html">
     <![CDATA[      
-        <h1>String Localization - "Hello" adjusted to locale (English, French, Japanese)</h1>
+        <h1>String Localization</h1>
+        <h2>"Hello" adjusted to locale (English, French, Japanese)</h2>
         <p>Adjust your browser to different locales and reload this gadget.</p>
-        <p>${msg.greeting}</p>
+        <p>${Msg.greeting}</p>
 
         <script>
         osapi.people.get({"userId": "@ME"}).execute(
