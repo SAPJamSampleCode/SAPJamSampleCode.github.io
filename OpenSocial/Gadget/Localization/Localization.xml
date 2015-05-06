@@ -19,10 +19,9 @@
   <Content type="html">
     <![CDATA[      
         <h1>String Localization</h1>
-        <h2>This gadget localizes its output based on a compatible detected locale (English, French).</h2>
+        <h2>This gadget localizes its output based on a detected locale.</h2>
         <p>Adjust your browser to a different locale (English or French) and reload this gadget.
-          The detected locale and message under 'Localized Output' will automatically change.</p>
-        <p>Localized Output</p>
+          The 'detected locale' and 'message' will automatically change.</p>
         <p>${Msg.detectedLocaleGreeting}</p>
       ]]>
   </Content>
