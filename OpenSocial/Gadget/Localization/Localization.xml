@@ -10,6 +10,15 @@
     <Require feature="osapi" />
     <Require feature="dynamic-height"/>
     <Require feature="minimessage"/>
+
+    <!--
+    Locales:                          en=English, fr=French
+    XML:                              <msg name="KEY">DATA</msg>
+    Object:                           Msg.KEY=DATA
+    Relationship:                     '<msg name="KEY">DATA</msg>' = 'Msg.KEY=DATA'
+    Object embedded in HTML:          ${Msg.KEY}
+    -->
+    
     <Locale lang="en">
       <msg name="detectedLocaleGreeting">Detected Locale = <b>English</b><br/>
       Greeting = <b>Hello!</b></msg>
@@ -18,6 +27,7 @@
       <msg name="detectedLocaleGreeting">Detected Locale = <b>French</b><br/>
       Greeting = <b>Bonjour!</b></msg>
     </Locale>
+
   </ModulePrefs>
   <Content type="html">
     <![CDATA[      
