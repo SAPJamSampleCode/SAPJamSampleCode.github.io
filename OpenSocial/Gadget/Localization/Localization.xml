@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Apr21Gadget" 
+               height="250" 
+               author="SAP" 
+               description="Apr21Gadget">   
+    <Link rel="mediumIcon" href="g38.png" />
+    <Link rel="icon" href="g20.png" />                         
+    <Require feature="osapi" />
+    <Require feature="dynamic-height"/>
+    <Require feature="minimessage"/>
+    <Locale>
+      <msg name="title">Bar</msg>
+    </Locale>
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[      
+        <h1>Apr21Gadget</h1>
+        <h1>${Msg.title}</h1>
+
+        <script>
+        osapi.people.get({"userId": "@ME"}).execute(
+          function(data) {
+            console.log(data);
+          });
+        </script>
+      ]]>
+  </Content>
+</Module>
