@@ -13,9 +13,10 @@
 
     <!--
     Locales:                          en=English, fr=French
+    KEY:                              detectedLocaleGreeting
     XML:                              <msg name="KEY">DATA</msg>
     Object:                           Msg.KEY=DATA
-    Relationship:                     '<msg name="KEY">DATA</msg>' = 'Msg.KEY=DATA'
+    Relationship (XML = Object):      '<msg name="KEY">DATA</msg>' = 'Msg.KEY=DATA'
     Object embedded in HTML:          ${Msg.KEY}
     -->
     
