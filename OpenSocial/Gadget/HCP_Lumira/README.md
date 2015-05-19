@@ -1,4 +1,4 @@
 OpenSocial Lumira Gadget
 ======
 
-This OpenSocial URL gadget creates a window with content from an external URL.
+This OpenSocial gadget visualizes data from SAP Lumira in an iframe with a call to an external URL.
