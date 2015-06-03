@@ -2,7 +2,7 @@
 A collection of simple sample code containing examples that demonstrate simple API and integration workflows.
 
 ### OpenSocial/Gadget/HCP_Lumira
-* Source code for the OpenSocial gadget in "Using OpenSocial gadgets with SAP Jam on HCP" in the "SAP Jam Developer Guide".
+* Source code for the OpenSocial gadget in "Using OpenSocial gadgets with SAP Jam on SAP HANA Cloud Platform" in the "SAP Jam Developer Guide".
 * The related documentation is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#hcp/concepts/INTRO-OpenSocial_HCP.html
 
 ### OpenSocial/Gadget/Localization
