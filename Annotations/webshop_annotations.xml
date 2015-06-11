@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference>
+        <edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+    </edmx:Reference>
+    <edmx:Reference>
+        <edmx:Include Alias="Communication" Namespace="com.sap.vocabularies.Communication.v1"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Alias="ESPM" Namespace="com.sap.espm.model" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Annotations Target="ESPM.Product/Price">
+                <Annotation Term="Measures.ISOCurrency" Path="CurrencyCode"/>
+            </Annotations>
+            <Annotations Target="ESPM.Product">
+                <Annotation Term="UI.HeaderInfo">
+                    <Record>
+                        <PropertyValue Property="TypeName" String="Product"/>
+                        <PropertyValue Property="TypeNamePlural" String="Products"/>
+                        <PropertyValue Property="ImageUrl" Path="PictureUrl"/>
+                        <PropertyValue Property="Title">
+                            <Record>
+                                <PropertyValue Property="Value" Path="Name"/>
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="Description">
+                            <Record>
+                                <PropertyValue Property="Value" Path="LongDescription"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.Identification">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="ID"/>
+                            <PropertyValue Property="Value" Path="ProductId"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Name"/>
+                            <PropertyValue Property="Value" Path="Name"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Description"/>
+                            <PropertyValue Property="Value" Path="ShortDescription"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Category"/>
+                            <PropertyValue Property="Value" Path="CategoryName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Price"/>
+                            <PropertyValue Property="Value" Path="Price"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="ID"/>
+                            <PropertyValue Property="Value" Path="ProductId"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Name"/>
+                            <PropertyValue Property="Value" Path="Name"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Description"/>
+                            <PropertyValue Property="Value" Path="ShortDescription"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Category"/>
+                            <PropertyValue Property="Value" Path="CategoryName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Price"/>
+                            <PropertyValue Property="Value" Path="Price"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="SupplierAddress">
+                  <Record>
+                    <PropertyValue Property="Data">
+                      <Collection>
+                        <Record Type="UI.DataField">
+                          <PropertyValue Property="Label" String="Supplier ID"/>
+                          <PropertyValue Property="Value" Path="Supplier/SupplierId"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                          <PropertyValue Property="Label" String="Name"/>
+                          <PropertyValue Property="Value" Path="Supplier/SupplierName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                          <PropertyValue Property="Label" String="Address 1"/>
+                          <PropertyValue Property="Value">
+                            <Apply Function="odata.concat">
+                              <Path>Supplier/HouseNumber</Path>
+                              <String> </String>
+                              <Path>Supplier/Street</Path>
+                            </Apply>
+                          </PropertyValue>
+                        </Record>
+                        <Record Type="UI.DataField">
+                          <PropertyValue Property="Label" String="Address 2"/>
+                          <PropertyValue Property="Value">
+                            <Apply Function="odata.concat">
+                              <Path>Supplier/City</Path>
+                              <String>, </String>
+                              <Path>Supplier/Country</Path>
+                            </Apply>
+                          </PropertyValue>
+                        </Record>
+                        <Record Type="UI.DataField">
+                          <PropertyValue Property="Label" String="Email"/>
+                          <PropertyValue Path="Supplier/EmailAddress" Property="Value"/>
+                        </Record>
+                      </Collection>
+                    </PropertyValue>
+                  </Record>
+                </Annotation>
+                <Annotation Term="UI.Facets">
+                    <Collection>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="Label" String="Supplier"/>
+                            <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#SupplierAddress"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
