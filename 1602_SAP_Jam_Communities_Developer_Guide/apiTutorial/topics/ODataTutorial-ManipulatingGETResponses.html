@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="concept"/>
+<meta name="DC.Title" content="Manipulating GET responses"/>
+<meta name="abstract" content="Open-ended GET requests (GET requests that do not specify a particular resource) return a feed (a series) of entries (resources). The SAP Jam OData API will return a maximum of 20 entries in a feed, but there are mechanisms for retrieving results beyond the first 20 entries, for sorting them according to various property values, or for filtering them to show only the entries that you are interested in. You can also limit or expand the amount of information that is returned. This page explains how to manipulate the returned results using a variety of system query options."/>
+<meta name="description" content="Open-ended GET requests (GET requests that do not specify a particular resource) return a feed (a series) of entries (resources). The SAP Jam OData API will return a maximum of 20 entries in a feed, but there are mechanisms for retrieving results beyond the first 20 entries, for sorting them according to various property values, or for filtering them to show only the entries that you are interested in. You can also limit or expand the amount of information that is returned. This page explains how to manipulate the returned results using a variety of system query options."/>
+<meta name="DC.Relation" scheme="URI" content="../../apiTutorial/topics/ODataTutorial.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="SAPJamODataTutorial-ManipulatingGETResponses"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../../commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="../../SAP_Jam_Communities_Developer_Guide.css"/>
+<title>Manipulating GET responses</title>
+<script type="text/javascript" src="../../run_prettify.js"> </script></head>
+<body id="SAPJamODataTutorial-ManipulatingGETResponses">
+
+
+    <h1 class="title topictitle1">Manipulating GET responses</h1>
+
+    
+    <div class="body conbody"><div class="abstract"><span class="shortdesc">Open-ended GET requests (GET requests that do not specify a particular
+            resource) return a feed (a series) of entries (resources). The SAP Jam OData API will
+            return a maximum of 20 entries in a feed, but there are mechanisms for retrieving
+            results beyond the first 20 entries, for sorting them according to various property
+            values, or for filtering them to show only the entries that you are interested in. You
+            can also limit or expand the amount of information that is returned. This page explains
+            how to manipulate the returned results using a variety of system query
+            options.</span>
+</div>
+
+        <p class="p">Manipulating GET response information from the GET request is accomplished in OData using
+            "system query options" that are appended to the API call URL following a question mark
+            (?), and which are each preceded with a dollar sign ($). This page will explain how
+            to:</p>
+
+        <ul class="ul">
+            <li class="li"><a class="xref" href="ODataTutorial-ManipulatingGETResponses.html#ODataTutorial-ManipulatingGETResponses__sqo-count">Use <samp class="ph codeph">$count</samp> to discover how many entries there are</a></li>
+
+            <li class="li"><a class="xref" href="ODataTutorial-ManipulatingGETResponses.html#ODataTutorial-ManipulatingGETResponses__sqo-top">Use <samp class="ph codeph">$top</samp> to set the number of entries returned</a></li>
+
+            <li class="li"><a class="xref" href="ODataTutorial-ManipulatingGETResponses.html#ODataTutorial-ManipulatingGETResponses__sqo-skip">Use <samp class="ph codeph">$skip</samp> to offset the set of entries returned</a></li>
+
+            <li class="li"><a class="xref" href="ODataTutorial-ManipulatingGETResponses.html#ODataTutorial-ManipulatingGETResponses__sqo-skiptoken">Use <samp class="ph codeph">$skiptoken</samp> to offset the set of entries
+                returned</a></li>
+
+            <li class="li"><a class="xref" href="ODataTutorial-ManipulatingGETResponses.html#ODataTutorial-ManipulatingGETResponses__sqo-filter">Use <samp class="ph codeph">$filter</samp> to limit the entries returned according to their
+                    content</a></li>
+
+            <li class="li"><a class="xref" href="ODataTutorial-ManipulatingGETResponses.html#ODataTutorial-ManipulatingGETResponses__sqo-orderby">Use <samp class="ph codeph">$orderby</samp> to set the criteria that the returned entries are
+                    ordered by</a></li>
+
+            <li class="li"><a class="xref" href="ODataTutorial-ManipulatingGETResponses.html#ODataTutorial-ManipulatingGETResponses__sqo-select">Use <samp class="ph codeph">$select</samp> to limit and select the data that is shown for the
+                    returned entries</a></li>
+
+            <li class="li"><a class="xref" href="ODataTutorial-ManipulatingGETResponses.html#ODataTutorial-ManipulatingGETResponses__sqo-expand">Use <samp class="ph codeph">$expand</samp> to include details on any property for which there
+                    are available navigations</a></li>
+
+        </ul>
+
+        <div class="section" id="SAPJamODataTutorial-ManipulatingGETResponses__sqo-count"><h2 class="title sectiontitle supersection">Use <samp class="ph codeph">$count</samp> to discover how many
+                entries there are</h2>
+            
+            <p class="p">To find the count of the total number of entries that exist for a particular resource
+                type or entity, use the <samp class="ph codeph">$count</samp> system query option, as shown in the
+                following curl command.</p>
+
+            <div class="note note"><span class="notetitle">Note:</span> While most of the operations described in this page are "system query options"
+                that are appended to the API call URL following a question mark (?),
+                    <samp class="ph codeph">$count</samp> is considered to be a "resource path segment", so it is
+                appended to the API call URL with a slash (/).</div>
+
+            <pre class="pre codeblock prettyprint">
+curl -i -H 'Accept: application/xml' -H 'Content-Type: application/xml'
+     -H "Authorization: Bearer &lt;!--[An OAuth2.0 auth_token has been removed from here.]--&gt;"
+     "https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups/$count"</pre>
+
+            <p class="p">This will return only a number (in addition to the curl and HTTP responses, such as
+                the HTTP status code, which will be "200 OK" for a successful response), as is shown
+                below:</p>
+
+            <pre class="pre codeblock prettyprint linenums">
+HTTP/1.1 200 OK
+Date: Wed, 22 Apr 2015 15:38:14 GMT
+Server: Apache
+DataServiceVersion: 2.0
+X-RateLimit-Limit: 800
+X-RateLimit-Remaining: 795
+X-RateLimit-Reset: 1305
+ETag: "9a1158154dfa42caddbd0694a4e9bdc8"
+Cache-Control: must-revalidate, private, max-age=0
+X-Request-Id: fbcdad125220dba54a29a3ba845390cb
+X-Runtime: 0.068850
+X-Rack-Cache: miss
+Status: 200 OK
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/plain; charset=utf-8
+Set-Cookie: cookie-bizx2hana=rd13o00000000000000000000ffff0a744f56o80;secure; path=/
+X-XSS-Protection: 1; mode=block
+
+52</pre>
+
+            <p class="p">The result of this particular query, for this particular user in this particular
+                company, is 52 groups. As you can see in the above response, the HTTP status code is
+                shown on line 1, and the "count" is returned on line 21 of this curl response.</p>
+
+            <div class="note note"><span class="notetitle">SAP Jam Limitation:</span> <samp class="ph codeph">$count</samp> is not
+                available for FeedEntries, Notifications, or GroupMembership API calls.</div>
+
+        </div>
+
+        <div class="section" id="SAPJamODataTutorial-ManipulatingGETResponses__sqo-top"><h2 class="title sectiontitle supersection">Use <samp class="ph codeph">$top</samp> to set the number of entries
+                returned</h2>
+            
+            <p class="p">By default, the SAP Jam OData API returns a maximum of 20 resource entries in
+                response to a collection-valued request. However, you can use <samp class="ph codeph">$top</samp>
+                to set the number of returned entries to any value between 1 and 100. For example,
+                you many want to show a maximum of six results per page in a UI widget, so you might
+                use a call similar to the cur command shown below:</p>
+
+            <pre class="pre codeblock prettyprint">
+curl -i -H 'Accept: application/xml' -H 'Content-Type: application/xml'
+     -H "Authorization: Bearer &lt;!--[An OAuth2.0 auth_token has been removed from here.]--&gt;"
+     "https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups?$top=6"</pre>
+
+            <p class="p">This call would return only the first six results, which you could then page through
+                for subsequent sets of six results.</p>
+
+            <pre class="pre codeblock prettyprint">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;feed xml:base="https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData" xmlns="http://www.w3.org/2005/Atom"
+       xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+       xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"&gt;
+    &lt;title&gt;Groups&lt;/title&gt;
+    &lt;id&gt;https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups?%24top=6&lt;/id&gt;
+    &lt;link rel="self" title="Groups"
+        href="https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups?%24top=6"/&gt;
+    &lt;updated&gt;2015-04-22T16:37:04+00:00&lt;/updated&gt;
+    &lt;entry&gt;
+        &lt;!-- Entry details removed from here --&gt;
+    &lt;/entry&gt;
+    &lt;entry&gt;
+        &lt;!-- Entry details removed from here --&gt;
+    &lt;/entry&gt;
+    &lt;entry&gt;
+        &lt;!-- Entry details removed from here --&gt;
+    &lt;/entry&gt;
+    &lt;entry&gt;
+        &lt;!-- Entry details removed from here --&gt;
+    &lt;/entry&gt;
+    &lt;entry&gt;
+        &lt;!-- Entry details removed from here --&gt;
+    &lt;/entry&gt;
+    &lt;entry&gt;
+        &lt;!-- Entry details removed from here --&gt;
+    &lt;/entry&gt;
+&lt;/feed&gt;</pre>
+
+            <p class="p">For the sake of showing the results in a single screen, the returned information on
+                each entry has been removed (the full response, pretty-printed, was 677 lines
+                long).</p>
+
+            <p class="p">To handle the paging for this particular scenario, see the <samp class="ph codeph">$skip</samp>
+                section below.</p>
+
+            <div class="note note"><span class="notetitle">SAP Jam Limitation:</span> <samp class="ph codeph">$top</samp> is not available
+                for FeedEntries or Notifications API calls.</div>
+
+        </div>
+
+        <div class="section" id="SAPJamODataTutorial-ManipulatingGETResponses__sqo-skip"><h2 class="title sectiontitle supersection">Use <samp class="ph codeph">$skip</samp> to offset the set of
+                entries returned</h2>
+            
+            <p class="p">Use the <samp class="ph codeph">$skip</samp> system query option to perform paging of results. This
+                is done by setting the number of results to "skip" in each subsequent command. To
+                illustrated this, <samp class="ph codeph">$skip</samp> is combined with the <samp class="ph codeph">$top</samp>
+                scenario described in the previous section. This usage is shown in the following
+                curl command:</p>
+
+            <pre class="pre codeblock prettyprint">
+curl -i -H 'Accept: application/xml' -H 'Content-Type: application/xml'
+     -H "Authorization: Bearer &lt;!--[An OAuth2.0 auth_token has been removed from here.]--&gt;"
+     "https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups?$top=6&amp;$skip=6"</pre>
+
+            <p class="p">This request will show the next six results, from group 7 to group 12, inclusive.
+                Requests for subsequent pages of six results would increase the value of skip
+                accordingly (12, 18, 24, and so on).</p>
+
+            <p class="p">No code example of the returned results is shown, as it would appear very much like
+                the example in the <samp class="ph codeph">$top</samp> section above.</p>
+
+            <div class="note note"><span class="notetitle">SAP Jam Limitation:</span> <samp class="ph codeph">$skip</samp> is not
+                available for FeedEntries or Notifications API calls.</div>
+
+        </div>
+
+        <div class="section" id="SAPJamODataTutorial-ManipulatingGETResponses__sqo-skiptoken"><h2 class="title sectiontitle supersection">Use <samp class="ph codeph">$skiptoken</samp> to offset the set of
+                entries returned beginning from the specified entry</h2>
+            
+            <p class="p">As has been stated, the SAP Jam API returns a maximum of the 20 resource entries to
+                any collection-valued API GET request, but when an SAP Jam OData GET response does
+                return that maximum of 20 entries from a larger collection of resources, the
+                response shows a URL with a <samp class="ph codeph">$skiptoken</samp> for calling the next 20
+                results, which can be seen in lines 9-11 in the following response example:</p>
+
+            <pre class="pre codeblock prettyprint linenums">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;feed xml:base="https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData" xmlns="http://www.w3.org/2005/Atom"
+      xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+      xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"&gt;
+    &lt;title&gt;Groups&lt;/title&gt;
+    &lt;id&gt;https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups&lt;/id&gt;
+    &lt;link rel="self" title="Groups" href="https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups"/&gt;
+    &lt;link rel="next"
+      title="Groups?%24skiptoken=6jh0pc7h5052xa7e5g9mzjtwcoqvz0n46g1vpp073we8gx9nokqozzzgc8i4dmdp9hheopawa"
+      href="Groups?%24skiptoken=6jh0pc7h5052xa7e5g9mzjtwcoqvz0n46g1vpp073we8gx9nokqozzzgc8i4dmdp9hheopawa"/&gt;
+    &lt;updated&gt;2015-04-22T20:06:10+00:00&lt;/updated&gt;
+    &lt;entry&gt;
+        &lt;!--[Entry details have been removed from here.]--&gt;
+    &lt;/entry&gt;
+    &lt;!--[Multiple Group entries would appear here.]--&gt;
+&lt;/feed&gt;</pre>
+
+            <p class="p">To call that URL, you would have to append it to the "service root URI", as is a
+                shown in the following example curl command:</p>
+
+            <pre class="pre codeblock prettyprint">
+curl -i -H 'Accept: application/xml' -H 'Content-Type: application/xml'
+     -H "Authorization: Bearer &lt;!--[An OAuth2.0 auth_token has been removed from here.]--&gt;"
+     "https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/
+         Groups?$skiptoken=6jh0pc7h5052xa7e5g9mzjtwcoqvz0n46g1vpp073we8gx9nokqozzzgc8i4dmdp9hheopawa"</pre>
+
+            <p class="p">The above request would return the next 20 results of the initially requested
+                resource type.</p>
+
+            <div class="note note"><span class="notetitle">SAP Jam Limitation:</span> <samp class="ph codeph">$skiptoken</samp> is
+                server-side paging, which cannot be used with the other options in this page that
+                are client-driven requests.</div>
+
+        </div>
+
+        <div class="section" id="SAPJamODataTutorial-ManipulatingGETResponses__sqo-filter"><h2 class="title sectiontitle supersection">Use <samp class="ph codeph">$filter</samp> to limit the entries
+                returned according to their content</h2>
+            
+            <p class="p">The <samp class="ph codeph">$filter</samp> system query option allows you to limit the returned
+                entries to only those whose properties match the values that you want to see, as is
+                illustrated in the following curl command.</p>
+
+            <pre class="pre codeblock prettyprint">
+curl -i -H 'Accept: application/xml' -H 'Content-Type: application/xml'
+     -H "Authorization: Bearer &lt;!--[An OAuth2.0 auth_token has been removed from here.]--&gt;"
+     "https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups?$filter=Name eq 'Customer Support Group'"</pre>
+
+            <p class="p">The above filter would yield something similar to the following response.</p>
+
+            <pre class="pre codeblock prettyprint lang-xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;feed xml:base="https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData" xmlns="http://www.w3.org/2005/Atom"
+        xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+        xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"&gt;
+    &lt;title&gt;Groups&lt;/title&gt;
+    &lt;id&gt;https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups?%24filter=Name+eq+%27Customer+Support+Group%27&lt;/id&gt;
+    &lt;link rel="self" title="Groups"
+        href="https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups?%24filter=Name+eq+%27Customer+Support+Group%27"/&gt;
+    &lt;updated&gt;2015-04-24T23:19:57+00:00&lt;/updated&gt;
+    &lt;entry&gt;
+        &lt;id&gt;https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups('BVLOW25SoRV8ZA6XiUxIAA')&lt;/id&gt;
+        &lt;title type="text"&gt;Groups('BVLOW25SoRV8ZA6XiUxIAA')&lt;/title&gt;
+        &lt;updated&gt;2015-04-24T23:19:57+00:00&lt;/updated&gt;
+        &lt;author&gt;
+            &lt;name/&gt;
+        &lt;/author&gt;
+        &lt;link rel="edit" title="Groups('BVLOW25SoRV8ZA6XiUxIAA')"
+            href="Groups('BVLOW25SoRV8ZA6XiUxIAA')"/&gt;
+        &lt;!--[Navigation Properties have been removed from here.]--&gt;
+        &lt;category term="SAPJam.Group"
+            scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/&gt;
+        &lt;content type="application/xml"&gt;
+            &lt;m:properties&gt;
+                &lt;d:Id m:type="Edm.String"&gt;BVLOW25SoRV8ZA6XiUxIAA&lt;/d:Id&gt;
+                &lt;d:Name m:type="Edm.String"&gt;Customer Support Group&lt;/d:Name&gt;
+                &lt;d:Description m:type="Edm.String"&gt;Keeping our customers happy&lt;/d:Description&gt;
+                &lt;d:IsActive m:type="Edm.Boolean"&gt;true&lt;/d:IsActive&gt;
+                &lt;d:AutoSubscribe m:type="Edm.Boolean"&gt;false&lt;/d:AutoSubscribe&gt;
+                &lt;d:Announcement m:type="Edm.String"/&gt;
+                &lt;d:OverviewAsLanding m:type="Edm.Boolean"&gt;false&lt;/d:OverviewAsLanding&gt;
+                &lt;d:Participation m:type="Edm.String"&gt;full&lt;/d:Participation&gt;
+                &lt;d:InvitePolicy m:type="Edm.String"&gt;followers&lt;/d:InvitePolicy&gt;
+                &lt;d:UploadPolicy m:type="Edm.String"&gt;followers&lt;/d:UploadPolicy&gt;
+                &lt;d:ModerationPolicy m:type="Edm.Boolean"&gt;false&lt;/d:ModerationPolicy&gt;
+                &lt;d:GroupType m:type="Edm.String"&gt;private_external&lt;/d:GroupType&gt;
+                &lt;d:CreatedAt m:type="Edm.DateTimeOffset"&gt;2013-10-03T17:04:51Z&lt;/d:CreatedAt&gt;
+                &lt;d:LastModifiedAt m:type="Edm.DateTimeOffset"
+                    &gt;2015-02-12T23:57:07Z&lt;/d:LastModifiedAt&gt;
+                &lt;d:LastActivityAt m:type="Edm.DateTimeOffset"
+                    &gt;2015-04-24T19:34:57Z&lt;/d:LastActivityAt&gt;
+                &lt;d:MembersCount m:type="Edm.Int32"&gt;3&lt;/d:MembersCount&gt;
+                &lt;d:AutoGroup m:type="Edm.Boolean"&gt;false&lt;/d:AutoGroup&gt;
+                &lt;d:DisableAtNotify m:type="Edm.Boolean"&gt;false&lt;/d:DisableAtNotify&gt;
+                &lt;d:TermsOfUse m:type="Edm.String" m:null="true"/&gt;
+                &lt;d:WebURL m:type="Edm.String"
+                    &gt;https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/groups/BVLOW25SoRV8ZA6XiUxIAA&lt;/d:WebURL&gt;
+                &lt;d:ContentsVisible m:type="Edm.Boolean"&gt;true&lt;/d:ContentsVisible&gt;
+                &lt;d:QuestionsVisible m:type="Edm.Boolean"&gt;true&lt;/d:QuestionsVisible&gt;
+                &lt;d:IdeasVisible m:type="Edm.Boolean"&gt;false&lt;/d:IdeasVisible&gt;
+                &lt;d:DiscussionsVisible m:type="Edm.Boolean"&gt;true&lt;/d:DiscussionsVisible&gt;
+                &lt;d:TasksVisible m:type="Edm.Boolean"&gt;true&lt;/d:TasksVisible&gt;
+                &lt;d:EventsVisible m:type="Edm.Boolean"&gt;true&lt;/d:EventsVisible&gt;
+                &lt;d:LinksVisible m:type="Edm.Boolean"&gt;true&lt;/d:LinksVisible&gt;
+                &lt;d:SubgroupsVisible m:type="Edm.Boolean"&gt;true&lt;/d:SubgroupsVisible&gt;
+                &lt;d:RecommendationsVisible m:type="Edm.Boolean"&gt;true&lt;/d:RecommendationsVisible&gt;
+                &lt;d:HasOverview m:type="Edm.Boolean"&gt;true&lt;/d:HasOverview&gt;
+            &lt;/m:properties&gt;
+        &lt;/content&gt;
+    &lt;/entry&gt;
+    &lt;!--[Multiple Group entries, if there were more matches, would appear here.]--&gt;
+&lt;/feed&gt;
+</pre>
+
+            <div class="note note"><span class="notetitle">SAP Jam Limitation:</span> <p class="lines">Using <samp class="ph codeph">$filter</samp> is currently only supported for the following Entities' properties:<br/>
+(where applicable, valid values are shown in parentheses)</p>
+
+                <ul class="ul">
+                    <li class="li"><strong class="ph b">ContentItem:</strong> ContentItemType ('Page', 'BlogEntry', 'Document',
+                        'Poll', or 'Tool')</li>
+
+                    <li class="li"><strong class="ph b">ContentListItem:</strong> Name</li>
+
+                    <li class="li"><strong class="ph b">ExternalObject:</strong> Exid, ObjectType</li>
+
+                    <li class="li"><strong class="ph b">Folder:</strong> Name</li>
+
+                    <li class="li"><strong class="ph b">ForumItem:</strong> ForumItemType ("Discussion", "Idea", or "Question")</li>
+
+                    <li class="li"><strong class="ph b">GroupExternalObject:</strong> LinkType ("primary", "featured", or
+                        "unrelated")</li>
+
+                    <li class="li"><strong class="ph b">GroupMembership:</strong> MemberType ("pending", "site_admin", "admin", or
+                        "member")</li>
+
+                    <li class="li"><strong class="ph b">Group:</strong> Name, GroupType ("public_internal", "private_internal", or
+                        "private_external")</li>
+
+                    <li class="li"><strong class="ph b">Idea:</strong> Status ("submitted", "in_progress", "accepted", "declined",
+                        "under_consideration", or "completed")</li>
+
+                    <li class="li"><strong class="ph b">Notification:</strong> Category ("info", "invitations", "requests", "social",
+                        or "tasks"), EventType ("AbuseReported", "AcceptAddedAsAssistant",
+                        "AcceptAddedAsMgr", "AcceptAddedAsReport", "AcceptGroupTermsOfUse",
+                        "AddedAsAssistant", "AddedAsMgr", "AddedAsReport", "AutoGroupAdmin",
+                        "AutoGroupMember", "CommentInDiscussion", "CrossCompanyInviteToGroup",
+                        "DiskLimitApproaching", "DiskLimitReached", "EventChange", "EventDeleted",
+                        "ExpertiseEndorsementOthers", "ExpertiseEndorsementBestAnswerAdd",
+                        "ExpertiseEndorsementBestAnswerView", "FeatureInGroup",
+                        "GroupContentPendingApproval", "GroupAccessRequest",
+                        "GroupAccessRequestAccepted", "CompanyDistributionListImport",
+                        "GroupInvitationListImport", "HiddenByTermsOfUse", "InviteToEvent",
+                        "InviteToFollow", "InviteToInactiveGroup", "InviteToGroup", "Like",
+                        "MarkComment", "MentionInFeed", "ReceiveKudo", "RequestToBeGroupAdmin",
+                        "RejectAddedAsAssistant", "RejectAddedAsMgr", "RejectAddedAsReport",
+                        "RejectPendingContent", "RemovedAsAssistant", "RemovedAsMgr",
+                        "RemovedAsReport", "ReplyInFeed", "send_nudge", "SkillNudge",
+                        "SubscribedToFeed", "SuggestTopic", "TaskAssigned", "TaskNudge",
+                        "user_new_features", "AcceptAddedAsFreqColleague",
+                        "AcceptAddedAsOccColleague", "account_uppdated", "AddedAsFreqColleague",
+                        "AddedAsOccColleague", "deal_updated", "GoalMigrated", "HasAssignedAGoal",
+                        "new_ppl_location", "people_visiting_your_location", "people_updated",
+                        "Reject", "RejectAddedAsFreqColleague", "RejectAddedAsOccColleague",
+                        "RemovedAsFreqColleague", "RemovedAsOccColleague", or "Welcome")</li>
+
+                    <li class="li"><strong class="ph b">Question:</strong> AnswersCount</li>
+
+                    <li class="li"><strong class="ph b">TaskAssignment:</strong> Status ("open", "in_progress", or "completed")</li>
+
+                </ul>
+</div>
+
+            <p class="p">The OData <samp class="ph codeph">$filter</samp> operation supports over a dozen operators. For the
+                full list of operators, and examples of their use, please see the OData v.2.0
+                specification's <a class="xref" href="http://www.odata.org/documentation/odata-version-2-0/uri-conventions#FilterSystemQueryOption" target="_blank">"Filter System Query Option ($filter)"</a> documentation.</p>
+
+        </div>
+
+        <div class="section" id="SAPJamODataTutorial-ManipulatingGETResponses__sqo-orderby"><h2 class="title sectiontitle supersection">Use <samp class="ph codeph">$orderby</samp> to set the criteria that
+                the returned entries are ordered by</h2>
+            
+            <p class="p">The <samp class="ph codeph">$orderby</samp> system query option allows you to set the criteria by
+                which your results are sorted, although there are limitations in the SAP Jam API on
+                which entities and properties can be used to set the sort order. An example of the
+                    <samp class="ph codeph">$orderby</samp> usage is shown in the following curl command:</p>
+
+            <pre class="pre codeblock prettyprint">
+curl -i -H 'Accept: application/xml' -H 'Content-Type: application/xml'
+     -H "Authorization: Bearer &lt;!--[An OAuth2.0 auth_token has been removed from here.]--&gt;"
+     "https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/
+         Discussions('0MlgLVpePpCntnEWUU1kW2')/Comments?$orderby=LastModifiedAt asc"</pre>
+
+            <p class="p">Note the use of "asc" in the <samp class="ph codeph">$orderby</samp> request above; this indicates
+                that the results should be returned in "ascending" order. Alternatively, you could
+                use "desc" to have the results returned in "descending" order. The above request
+                would return results similar to the following example response.</p>
+
+            <pre class="pre codeblock prettyprint lang-xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;feed xml:base="https://integration2.sapjam.com/api/v1/OData" xmlns="http://www.w3.org/2005/Atom"
+        xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+        xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"&gt;
+    &lt;title&gt;Discussions('0MlgLVpePpCntnEWUU1kW2')/Comments&lt;/title&gt;
+    &lt;id&gt;https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/
+         Discussions('0MlgLVpePpCntnEWUU1kW2')/Comments?%24orderby=%27LastModifiedAt+asc%27&lt;/id&gt;
+    &lt;link rel="self" title="Discussions('0MlgLVpePpCntnEWUU1kW2')/Comments"
+         href="https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/
+         Discussions('0MlgLVpePpCntnEWUU1kW2')/Comments?%24orderby=%27LastModifiedAt+asc%27"/&gt;
+    &lt;updated&gt;2015-04-24T23:21:30+00:00&lt;/updated&gt;
+    &lt;entry&gt;
+        &lt;id&gt;https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Comments('Pxk86DCKmoamOqOIF7ojjh')&lt;/id&gt;
+        &lt;title type="text"&gt;Comments('Pxk86DCKmoamOqOIF7ojjh')&lt;/title&gt;
+        &lt;updated&gt;2015-04-24T23:21:30+00:00&lt;/updated&gt;
+        &lt;author&gt;
+            &lt;name/&gt;
+        &lt;/author&gt;
+        &lt;link rel="edit" title="Comments('Pxk86DCKmoamOqOIF7ojjh')"
+            href="Comments('Pxk86DCKmoamOqOIF7ojjh')"/&gt;
+        &lt;!--[Navigation Properties have been removed from here.]--&gt;
+        &lt;category term="SAPJam.Comment"
+            scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/&gt;
+        &lt;content type="application/xml"&gt;
+            &lt;m:properties&gt;
+                &lt;d:Id m:type="Edm.String"&gt;Pxk86DCKmoamOqOIF7ojjh&lt;/d:Id&gt;
+                &lt;d:CreatedAt m:type="Edm.DateTimeOffset"&gt;2014-10-27T22:04:55Z&lt;/d:CreatedAt&gt;
+                &lt;d:LastModifiedAt m:type="Edm.DateTimeOffset"
+                    &gt;2014-10-27T22:04:55Z&lt;/d:LastModifiedAt&gt;
+                &lt;d:Text m:type="Edm.String"&gt;some reply 1&lt;/d:Text&gt;
+                &lt;d:TextWithPlaceholders m:type="Edm.String"&gt;some reply 1&lt;/d:TextWithPlaceholders&gt;
+                &lt;d:Liked m:type="Edm.Boolean"&gt;false&lt;/d:Liked&gt;
+                &lt;d:LikesCount m:type="Edm.Int32"&gt;0&lt;/d:LikesCount&gt;
+                &lt;d:CanDelete m:type="Edm.Boolean"&gt;true&lt;/d:CanDelete&gt;
+            &lt;/m:properties&gt;
+        &lt;/content&gt;
+    &lt;/entry&gt;
+    &lt;!--[Multiple Comments entries would appear here, with the most recent at the end of the results ("asc").]--&gt;
+&lt;/feed&gt;</pre>
+
+            <div class="note note"><span class="notetitle">SAP Jam Limitation:</span> Using <samp class="ph codeph">$orderby</samp> is
+                currently only supported for the following Entities' properties: <ul class="ul">
+                    <li class="li"><strong class="ph b">Comment:</strong> CreatedAt, LastModifiedAt</li>
+
+                    <li class="li"><strong class="ph b">Discussion:</strong> LastActivity, CommentsCount</li>
+
+                    <li class="li"><strong class="ph b">Idea:</strong> TotalVotes, LastActivity</li>
+
+                    <li class="li"><strong class="ph b">Question:</strong> AnswersCount</li>
+
+                    <li class="li"><strong class="ph b">Notification:</strong> LastActivity</li>
+
+                </ul>
+</div>
+
+        </div>
+
+        <div class="section" id="SAPJamODataTutorial-ManipulatingGETResponses__sqo-select"><h2 class="title sectiontitle supersection">Use <samp class="ph codeph">$select</samp> to limit the data that is
+                shown for the returned entries</h2>
+            
+            <p class="p">Use the <samp class="ph codeph">$select</samp> option if you want to limit the information that is
+                returned from a GET request. For example, if you are only interested in retrieving
+                the IDs of Groups, you can run the API call shown in the following curl command:</p>
+
+            <pre class="pre codeblock prettyprint">
+curl -i -H 'Accept: application/xml' -H 'Content-Type: application/xml'
+     -H "Authorization: Bearer &lt;!--[An OAuth2.0 auth_token has been removed from here.]--&gt;"
+     "https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups?$select=Id"</pre>
+
+            <p class="p">The returned result would look something like the following:</p>
+
+            <pre class="pre codeblock prettyprint lang-xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;feed xml:base="https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData" xmlns="http://www.w3.org/2005/Atom"
+    xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+    xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"&gt;
+    &lt;title&gt;Groups&lt;/title&gt;
+    &lt;id&gt;https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups?%24select=%27Id%27&lt;/id&gt;
+    &lt;link rel="self" title="Groups"
+        href="https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups?%24select=%27Id%27"/&gt;
+    &lt;link rel="next"
+        title="Groups?%24select=%27Id%27&amp;%24skiptoken=6jh0pc-etc-opawa"
+        href="Groups?%24select=%27Id%27&amp;%24skiptoken=6jh0pc-etc-opawa"/&gt;
+    &lt;updated&gt;2015-04-24T18:02:30+00:00&lt;/updated&gt;
+    &lt;entry&gt;
+        &lt;id&gt;https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups('1JEZuKEYTE8QWIKd2iGhMK')&lt;/id&gt;
+        &lt;title type="text"&gt;Groups('1JEZuKEYTE8QWIKd2iGhMK')&lt;/title&gt;
+        &lt;updated&gt;2015-04-24T18:02:30+00:00&lt;/updated&gt;
+        &lt;author&gt;
+            &lt;name/&gt;
+        &lt;/author&gt;
+        &lt;link rel="edit" title="Groups('1JEZuKEYTE8QWIKd2iGhMK')"
+            href="Groups('1JEZuKEYTE8QWIKd2iGhMK')"/&gt;
+        &lt;category term="SAPJam.Group"
+            scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/&gt;
+        &lt;content type="application/xml"&gt;
+            &lt;m:properties&gt;
+                &lt;d:Id m:type="Edm.String"&gt;1JEZuKEYTE8QWIKd2iGhMK&lt;/d:Id&gt;
+            &lt;/m:properties&gt;
+        &lt;/content&gt;
+    &lt;/entry&gt;
+    &lt;!--[Multiple Group entries would appear here.]--&gt;
+&lt;/feed&gt;</pre>
+
+            <p class="p">As you can see, the usual set of 30 properties that is normally shown for each Group,
+                is reduced to only the property that you "selected".</p>
+
+            <div class="note note"><span class="notetitle">Note:</span> The <samp class="ph codeph">$select</samp> option can be run on GET requests that specify a
+                single resource, not only on unspecified GET requests that return a feed of
+                entries.</div>
+
+        </div>
+
+        <div class="section" id="SAPJamODataTutorial-ManipulatingGETResponses__sqo-expand"><h2 class="title sectiontitle supersection">Use <samp class="ph codeph">$expand</samp> to include details on any
+                property for which there are available navigations</h2>
+            
+            <p class="p">The <samp class="ph codeph">$expand</samp> system query option, as illustrated in the following
+                curl command, allows you to get the information on a feed of groups, with the added
+                (expanded) information on the Member who created each Group.</p>
+
+            <pre class="pre codeblock prettyprint">
+curl -i -H 'Accept: application/xml' -H 'Content-Type: application/xml'
+     -H "Authorization: Bearer &lt;!--[An OAuth2.0 auth_token has been removed from here.]--&gt;"
+     "https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups?$expand=Creator"</pre>
+
+            <p class="p">The output from such a request can be extremely large: with all of the navigation
+                properties included (prior to removing them for this example), the example was
+                nearly 200 lines long for just one "group-with-creator" entry. For the default of 20
+                entries per feed page, this would be a page of nearly 4000 lines.</p>
+
+            <pre class="pre codeblock prettyprint linenums">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;feed xml:base="https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData" xmlns="http://www.w3.org/2005/Atom"
+    xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+    xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"&gt;
+    &lt;title&gt;Groups&lt;/title&gt;
+    &lt;id&gt;https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups?%24expand=%27Creator%27&lt;/id&gt;
+    &lt;link rel="self" title="Groups"
+        href="https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups?%24expand=%27Creator%27"/&gt;
+    &lt;link rel="next"
+        title="Groups?%24expand=%27Creator%27&amp;%24skiptoken=6jh0pc--etc--opawa"
+        href="Groups?%24expand=%27Creator%27&amp;%24skiptoken=6jh0pc--etc--opawa"/&gt;
+    &lt;updated&gt;2015-04-24T19:58:59+00:00&lt;/updated&gt;
+    &lt;entry&gt;
+        &lt;id&gt;https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Groups('1JEZuKEYTE8QWIKd2iGhMK')&lt;/id&gt;
+        &lt;title type="text"&gt;Groups('1JEZuKEYTE8QWIKd2iGhMK')&lt;/title&gt;
+        &lt;updated&gt;2015-04-24T19:58:59+00:00&lt;/updated&gt;
+        &lt;author&gt;
+            &lt;name/&gt;
+        &lt;/author&gt;
+        &lt;link rel="edit" title="Groups('1JEZuKEYTE8QWIKd2iGhMK')"
+            href="Groups('1JEZuKEYTE8QWIKd2iGhMK')"/&gt;
+        &lt;!--[Navigation Properties have been removed from here.]--&gt;
+        &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Creator"
+            type="application/atom+xml;type=entry" title="Creator"
+            href="Groups('1JEZuKEYTE8QWIKd2iGhMK')/Creator"&gt;
+            &lt;m:inline type="application/atom+xml;type=entry"&gt;
+                &lt;entry&gt;
+                    &lt;id&gt;https://<a class="xref" href="ODataOverviewAndGlossary.html#ODataOverviewAndGlossary__jamnumber">&lt;jam#&gt;</a>.sapjam.com/api/v1/OData/Members('3carMxYCZJP2mskM4MR5OP')&lt;/id&gt;
+                    &lt;title type="text"&gt;Members('3carMxYCZJP2mskM4MR5OP')&lt;/title&gt;
+                    &lt;updated&gt;2015-04-24T19:58:59+00:00&lt;/updated&gt;
+                    &lt;author&gt;
+                        &lt;name/&gt;
+                    &lt;/author&gt;
+                    &lt;link rel="edit" title="Members('3carMxYCZJP2mskM4MR5OP')"
+                        href="Members('3carMxYCZJP2mskM4MR5OP')"/&gt;
+                    &lt;!--[Navigation Properties have been removed from here.]--&gt;
+                    &lt;category term="SAPJam.Member"
+                        scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/&gt;
+                    &lt;content type="application/xml"&gt;
+                        &lt;m:properties&gt;
+                            &lt;d:Id m:type="Edm.String"&gt;3carMxYCZJP2mskM4MR5OP&lt;/d:Id&gt;
+                            &lt;d:FirstName m:type="Edm.String"&gt;John&lt;/d:FirstName&gt;
+                            &lt;d:LastName m:type="Edm.String"&gt;Doe&lt;/d:LastName&gt;
+                            &lt;d:Nickname m:type="Edm.String" m:null="true"/&gt;
+                            &lt;d:Title m:type="Edm.String"&gt;Software Developer&lt;/d:Title&gt;
+                            &lt;d:Email m:type="Edm.String"&gt;john.doe@example.com&lt;/d:Email&gt;
+                            &lt;d:FullName m:type="Edm.String"&gt;John Doe&lt;/d:FullName&gt;
+                            &lt;d:Role m:type="Edm.String"&gt;company&lt;/d:Role&gt;
+                            &lt;d:IsFollowing m:type="Edm.Boolean"&gt;false&lt;/d:IsFollowing&gt;
+                        &lt;/m:properties&gt;
+                    &lt;/content&gt;
+                &lt;/entry&gt;
+            &lt;/m:inline&gt;
+        &lt;/link&gt;
+        &lt;!--[Navigation Properties have been removed from here.]--&gt;
+        &lt;category term="SAPJam.Group"
+            scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/&gt;
+        &lt;content type="application/xml"&gt;
+            &lt;m:properties&gt;
+                &lt;!--[Group Properties have been removed from here.]--&gt;
+            &lt;/m:properties&gt;
+        &lt;/content&gt;
+    &lt;/entry&gt;
+    &lt;!--[Multiple Group entries, with expanded Creator entries, would appear here.]--&gt;
+&lt;/feed&gt;</pre>
+
+            <p class="p">Because of the increased risk of stress on the responsiveness of the SAP Jam service
+                from <samp class="ph codeph">$expand</samp> calls, the following limitations are imposed.</p>
+
+            <div class="note note"><span class="notetitle">SAP Jam Limitation:</span> There can be at most 3
+                    <samp class="ph codeph">$expand</samp> operations in one API call. Using
+                    <samp class="ph codeph">$expand</samp> on a collection-valued navigation of a collection is
+                not allowed.</div>
+
+        </div>
+
+    </div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../apiTutorial/topics/ODataTutorial.html" title="This tutorial is designed to help developers familiar with REST to quickly get up to speed using the SAP Jam Communities OData API, and give them a good understanding of SAP Jam Communities's OData implementation.">SAP Jam Communities OData Tutorial</a></div>
+</div>
+</div>
+
+</body>
+</html>

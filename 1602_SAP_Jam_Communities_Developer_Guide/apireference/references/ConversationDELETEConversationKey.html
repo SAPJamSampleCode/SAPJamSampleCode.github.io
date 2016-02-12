@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="reference"/>
+<meta name="DC.Title" content="[DELETE] /Conversations('Id')"/>
+<meta name="abstract" content="Deletes the specified Conversation."/>
+<meta name="description" content="Deletes the specified Conversation."/>
+<meta name="DC.Relation" scheme="URI" content="../../apireference/concepts/ConversationIntro.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="ConversationDELETEConversationKey"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../../commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="../../SAP_Jam_Communities_Developer_Guide.css"/>
+<title>[DELETE] /Conversations('Id')</title>
+<script type="text/javascript" src="../../run_prettify.js"> </script></head>
+<body id="ConversationDELETEConversationKey">
+
+
+    <h1 class="title topictitle1">[DELETE] /Conversations('Id')</h1>
+
+    
+    <div class="body refbody"><div class="abstract">
+         <span class="shortdesc">Deletes the specified Conversation.</span>
+
+    </div>
+
+        
+        
+        <div class="section" id="ConversationDELETEConversationKey__requestElements"><h2 class="title sectiontitle supersection">Request Elements</h2>
+            
+        </div>
+
+        <div class="section" id="ConversationDELETEConversationKey__url"><h2 class="title sectiontitle">URL</h2>
+            
+            <samp class="ph codeph">https://&lt;your_company&gt;.<a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#jamnumber" title="SAP Jam Communities services are located in data centers in various locations around the world. Your organization's SAP Jam Communities service will be at one of these locations, which must appear in the URL of your API calls, and which is indicated in this documentation by &lt;communities#&gt;. Consult your company's SAP Jam Communities expert for the proper content of this part of your SAP Jam Communities API URLs.">&lt;communities#&gt;</a>.sapjam.com/api/v1/OData/Conversations('Id')</samp>
+        </div>
+
+        <div class="section" id="ConversationDELETEConversationKey__httpRequestMethod"><h2 class="title sectiontitle">HTTP Request Method</h2>
+            
+            <p class="p">
+                <samp class="ph codeph">DELETE</samp>
+            </p>
+
+        </div>
+
+        <div class="section" id="ConversationDELETEConversationKey__curlCommands"><h2 class="title sectiontitle">CURL Commands</h2>
+            
+            <p class="p"><strong class="ph b">XML</strong></p>
+
+            <pre class="pre codeblock prettyprint lang-sh">curl -H "Authorization: Bearer &lt;!--[An OAuth2.0 auth_token has been removed from here.]--&gt;"
+     -H "Accept: application/xml"
+     -X DELETE "https://&lt;your_company&gt;.<a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#jamnumber" title="SAP Jam Communities services are located in data centers in various locations around the world. Your organization's SAP Jam Communities service will be at one of these locations, which must appear in the URL of your API calls, and which is indicated in this documentation by &lt;communities#&gt;. Consult your company's SAP Jam Communities expert for the proper content of this part of your SAP Jam Communities API URLs.">&lt;communities#&gt;</a>.sapjam.com/api/v1/OData/Conversations('fg7Iv7gFvm9rAW6m7fxBLn')?access_token=&lt;users_token&gt;"</pre>
+
+            <p class="p"><strong class="ph b">JSON</strong></p>
+
+            <pre class="pre codeblock prettyprint lang-sh">curl -H "Authorization: OAuth &lt;!--[The OAuth1.0a protocol parameters have been removed from here.]--&gt;"
+     -H "Accept: application/json"
+     -X DELETE "https://&lt;your_company&gt;.<a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#jamnumber" title="SAP Jam Communities services are located in data centers in various locations around the world. Your organization's SAP Jam Communities service will be at one of these locations, which must appear in the URL of your API calls, and which is indicated in this documentation by &lt;communities#&gt;. Consult your company's SAP Jam Communities expert for the proper content of this part of your SAP Jam Communities API URLs.">&lt;communities#&gt;</a>.sapjam.com/api/v1/OData/Conversations('fg7Iv7gFvm9rAW6m7fxBLn')?access_token=&lt;users_token&gt;"</pre>
+
+        </div>
+
+        <div class="section"><h2 class="title sectiontitle">HTTP Input Headers</h2>
+            
+            <p class="p">User access tokens must be passed in the API call. This can be done using OAuth1.0a
+                or OAuth2.0. For OAuth1.0a we recommend using either the HMAC-SHA1 or RSA-SHA1
+                signature methods, but not PLAINTEXT. Also, OAuth1.0a authentication can be passed
+                in three different ways, but passing it in the header is the preferred method, and
+                it is the method shown here.</p>
+
+            <p class="p">Please refer to the <a class="xref" href="./../../authApi/topics/Auth-Intro.html" title="Client applications using SAP Jam OData or REST APIs have two options for providing authorization and authentication for their users: an OAuth1.0a 3-Legged workflow, or SAML assertions from a trusted identity provider. The OAuth1.0a workflow is best for client applications without access to a SAML identity provider (IDP), although it requires some interaction with the end user. The SAML assertions from a trusted IDP configured in the SAP Jam Admin console by your company administrator. Additionally, there is the possibility of single-use tokens, although this approach is better suited to granting immediate, short-term access to single pages.">Authorization API</a> section for more information.</p>
+
+            
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table apitable" frame="border" border="1" rules="all">
+                    
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr class="row">
+                            <th class="entry" valign="top" width="25%" id="d7584e118">Header Field</th>
+
+                            <th class="entry" valign="top" width="25%" id="d7584e121">Use</th>
+
+                            <th class="entry" valign="top" width="50%" id="d7584e124">Description</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%"><strong class="ph b">Accept:</strong> &lt;file_format&gt; <p class="p lines">Generic
+                                    Example:</p>
+
+                                <p class="p lines"><samp class="ph codeph">Accept:
+                                    &lt;file_format&gt;</samp></p>
+</td>
+
+                            <td class="entry" valign="top" width="25%" headers="d7584e118 d7584e121 ">Optional. Default is for the response to be in XML
+                                format.</td>
+
+                            <td class="entry" valign="top" width="50%" headers="d7584e124 ">This header sets the file format of the response. <p class="p lines">XML Example:</p>
+
+                                <p class="p lines"><samp class="ph codeph">Accept: application/xml</samp></p>
+
+                                <p class="p lines">JSON Example:</p>
+
+                                <p class="p lines"><samp class="ph codeph">Accept:
+                                application/json</samp></p>
+</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+        </div>
+
+        
+        <div class="section" id="ConversationDELETEConversationKey__urlParameters"><h2 class="title sectiontitle">URL Parameters</h2>
+            
+            
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table apitable" frame="border" border="1" rules="all">
+                    
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr class="row">
+                            <th class="entry" valign="top" width="20%" id="d7584e188">URL Segment</th>
+
+                            <th class="entry" valign="top" width="30%" id="d7584e191">Required</th>
+
+                            <th class="entry" valign="top" width="50%" id="d7584e194">Description</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        <tr class="row">
+                            <td class="entry" valign="top" width="20%" headers="d7584e188 ">
+                                <strong class="ph b">Id</strong>
+                            </td>
+
+                            <td class="entry mandatory" valign="top" width="30%" headers="d7584e191 ">Mandatory</td>
+
+                            <td class="entry" valign="top" width="50%" headers="d7584e194 ">The <a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#uuid" title="The SAP Jam Communities OData API uses 22-character unique identifiers for the various objects in SAP Jam Communities.">unique ID</a> of the Conversation that you want to delete.</td>
+
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="20%" headers="d7584e188 ">
+                                <strong class="ph b">access_token</strong>
+                            </td>
+
+                            <td class="entry mandatory" valign="top" width="30%" headers="d7584e191 ">Mandatory for POST, PATCH, and DELETE calls; optional for GET calls.</td>
+
+                            <td class="entry" valign="top" width="50%" headers="d7584e194 ">The current logged-in user's SAP Jam Communities access token.
+                                For development purposes, use the <samp class="ph codeph">access-token</samp>
+                                generated as described in the <a class="xref" href="../../apiTutorial/topics/ODataTutorial-Authorization.html" title="The SAP Jam Communities API calls require an access token for any POST, PATCH, or DELETE calls in order to create, update, or delete resources. For GET calls to retrieve a resource, use of the access token is optional, although permissions are more restricted without it. This page describes how to get an access token for your API use.">Communities API Authorization</a> page.</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+        </div>
+
+        <div class="section" id="ConversationDELETEConversationKey__responseElements"><h2 class="title sectiontitle supersection">Response Elements</h2>
+            
+        </div>
+
+        <div class="section" id="ConversationDELETEConversationKey__odataHttpStatusCodes"><h2 class="title sectiontitle">HTTP Status Codes</h2>
+            
+            
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="ConversationDELETEConversationKey__odataErrorsTable" class="table apitable" frame="border" border="1" rules="all">
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr class="row">
+                            <th class="entry" valign="top" width="25%" id="d7584e275">HTTP Success Code</th>
+
+                            <th class="entry" valign="top" width="75%" id="d7584e278">Description</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d7584e275 "><strong class="ph b">204 No Content</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d7584e278 ">The requested resource deletion was successful; no payload is
+                                returned.</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+            
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table apitable" frame="border" border="1" rules="all">
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr class="row">
+                            <th class="entry" valign="top" width="25%" id="d7584e310">HTTP Error Codes</th>
+
+                            <th class="entry" valign="top" width="75%" id="d7584e313">Description</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        <tr id="ConversationDELETEConversationKey__d345e114" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d7584e310 "><strong class="ph b">400 Bad Request</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d7584e313 ">The server could not understand the request due to malformed
+                                syntax.</td>
+
+                        </tr>
+
+                        <tr id="ConversationDELETEConversationKey__d345e124" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d7584e310 "><strong class="ph b">403 Forbidden</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d7584e313 ">Access to the resource you are trying to connect to is forbidden.
+                                This may be due to either a user authentication failure or to the
+                                user having insufficient privileges to perform the action.</td>
+
+                        </tr>
+
+                        <tr id="ConversationDELETEConversationKey__d345e134" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d7584e310 "><strong class="ph b">404 Not Found</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d7584e313 ">The server cannot find the specified resource. This is typically
+                                due to an unrecognized resource ID (such as userId, groupId, or
+                                contentId).</td>
+
+                        </tr>
+
+                        <tr id="ConversationDELETEConversationKey__d345e144" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d7584e310 "><strong class="ph b">405 Method Not Allowed</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d7584e313 ">The method specified in the Request Line is not allowed for the
+                                resource identified by the Request URI.</td>
+
+                        </tr>
+
+                        <tr id="ConversationDELETEConversationKey__d345e154" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d7584e310 "><strong class="ph b">406 Not Acceptable</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d7584e313 ">The resource identified by the request is only capable of
+                                generating response entities which have content characteristics not
+                                acceptable according to the accept headers sent in the request. This
+                                is the expected response if the HTTP headers request a ContentType
+                                that cannot be handled by the API or the indicated endpoint of the
+                                API.</td>
+
+                        </tr>
+
+                        <tr id="ConversationDELETEConversationKey__d345e165" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d7584e310 "><strong class="ph b">409 Conflict</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d7584e313 ">There is an internal access conflict to the specified
+                                resource.</td>
+
+                        </tr>
+
+                        <tr id="ConversationDELETEConversationKey__d345e175" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d7584e310 "><strong class="ph b">429 Too Many Requests</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d7584e313 ">The user has sent too many requests in a given period of time.
+                                This error message is typically encountered if API rate limits, set
+                                to protect against DoS attacks and to preserve server
+                                responsiveness, have been exceeded. See <a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#rate_limits" title="The SAP Jam Communities service imposes API call rate limits per user per time span to ensure server responsiveness. These requests are measured in units. There is a burst limit of 200 units per minute, every minute, and there is an hourly limit of 800 units per hour. Note that these rate limits are subject to change without notice, but they are set to balance server responsiveness with substantial use of API calls.">Rate Limits</a> to view the established limits.</td>
+
+                        </tr>
+
+                        <tr id="ConversationDELETEConversationKey__d345e188" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d7584e310 "><strong class="ph b">500 Internal Server Error</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d7584e313 ">The server encountered an unexpected condition, which prevented
+                                it from fulfilling the request.</td>
+
+                        </tr>
+
+                        <tr id="ConversationDELETEConversationKey__d345e198" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d7584e310 "><strong class="ph b">501 Not Implemented</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d7584e313 ">The server does not support the functionality required to fulfill
+                                the request.</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+        </div>
+
+    </div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../apireference/concepts/ConversationIntro.html" title="This section documents SAP Jam Communities SAP Jam Communities API calls that involve Conversations.">Conversation API calls</a></div>
+</div>
+</div>
+
+</body>
+</html>

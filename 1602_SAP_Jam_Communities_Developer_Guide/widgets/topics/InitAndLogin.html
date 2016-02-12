@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="concept"/>
+<meta name="DC.Title" content="Widget access, initialization, and login"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="InitAndLogin"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../../commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="../../SAP_Jam_Communities_Developer_Guide.css"/>
+<title>Widget access, initialization, and login</title>
+<script type="text/javascript" src="../../run_prettify.js"> </script></head>
+<body id="InitAndLogin">
+
+
+    <h1 class="title topictitle1">Widget access, initialization, and login</h1>
+
+    <div class="body conbody">
+        <p class="p">The following operations must be set in every web page in which you want to display <span class="ph">SAP Jam Communities</span> content by using the
+                <span class="ph">SAP Jam Communities</span> UI widget
+            library.</p>
+
+        <div class="section"><h2 class="title sectiontitle">Include the <span class="ph">SAP Jam Communities</span> UI
+                widget library</h2>
+            
+            <p class="p">To use the <span class="ph">SAP Jam Communities</span> UI
+                widget library in one of your organization's web pages, include the script in the
+                head section of that web page as shown in the following example:</p>
+
+            <pre class="pre codeblock prettyprint">&lt;script type="text/javascript"
+    src="https://cameras-community-demo.sapjam.com/widget/javascript/community.ui.widget.js"&gt;
+&lt;/script&gt;</pre>
+
+        </div>
+
+        <div class="section"><h2 class="title sectiontitle">Initialize the <span class="ph">SAP Jam Communities</span>
+                UI widget library</h2>
+            
+            <p class="p">To initialize the <span class="ph">SAP Jam Communities</span>
+                UI widget library, you must call <samp class="ph codeph">Excelsior.init()</samp>, in which you
+                specify the following:</p>
+
+            <ul class="ul">
+                <li class="li"><samp class="ph codeph">networkSlug</samp>: (Required) which specifies which community to
+                    integrate.</li>
+
+                <li class="li"><samp class="ph codeph">server</samp>: (Required) which specifies the <span class="ph">SAP Jam Communities</span> data center
+                    URL.</li>
+
+                <li class="li"><samp class="ph codeph">appName</samp>: (Optional) which specifies the name of the widget;
+                    this can be any string that you want.</li>
+
+                <li class="li"><samp class="ph codeph">checkLogin</samp>: (Required) which specifies a callback function that
+                    checks whether a user is logged in to your organization's <span class="ph">SAP Jam Communities</span> client
+                    application. <strong class="ph b">Note</strong>: As the <span class="ph">SAP Jam Communities</span> integrator for
+                    your organization, you must develop this function.</li>
+
+                <li class="li"><samp class="ph codeph">doLogin</samp>: (Required) which specifies a callback function that
+                    presents a login screen to the user if they have not yet logged in to your
+                    organization's <span class="ph">SAP Jam Communities</span>
+                    client application. <strong class="ph b">Note</strong>: As the <span class="ph">SAP Jam Communities</span> integrator for
+                    your organization, you must develop this function.</li>
+
+                <li class="li"><samp class="ph codeph">communicationMode</samp>: (Required) which specifies which user
+                    authentication mode is used; currently, two options are supported: <ul class="ul">
+                        <li class="li"><samp class="ph codeph">UseSession</samp>: uses the user's current session of the
+                            client application in which <span class="ph">SAP Jam Communities</span> is
+                            integrated</li>
+
+                        <li class="li"><samp class="ph codeph">UseToken</samp>: uses the passed in user's auth token</li>
+
+                    </ul>
+</li>
+
+            </ul>
+
+            <pre class="pre codeblock prettyprint">Excelsior.init({
+    networkSlug:'nike',
+    server: 'https://cameras-community-demo.sapjam.com',
+    appName:'Js widget'
+    checkLogin: &lt;the customer defined checkLogin function&gt;,
+    doLogin: &lt;the customer defined doLogin function&gt;,
+    communicationMode: '&lt;UseSession|UseToken&gt;';
+});</pre>
+
+        </div>
+
+        <div class="section"><h2 class="title sectiontitle">The <samp class="ph codeph">checkLogin</samp> function</h2>
+            
+            <p class="p">As mentioned in the <samp class="ph codeph">init()</samp> section above, you must develop a "check
+                for login" function. This function must verify that the user is logged in to the <span class="ph">SAP Jam Communities</span> client application
+                and return a true or false value indicating whether the user is logged in,
+                or—if the <samp class="ph codeph">communicationMode:UseToken</samp> option is
+                selected—the user's Auth token and user ID must be returned. A rough outline
+                of this function is shown below:</p>
+
+            <pre class="pre codeblock prettyprint">// checkLogin function example
+checkLogin = function() {
+    // code to check that the user is logged in
+    ...
+    // If the <samp class="ph codeph">communicationMode:UseToken</samp> option is selected in the <samp class="ph codeph">init()</samp> function,
+    // you must return the user's Auth token and user ID.
+        return {
+            Token:'xxxxxxd329394939434', 
+            UserId:'xxx'
+        };
+    // If the <samp class="ph codeph">communicationMode:UseSession</samp> option is selected in the <samp class="ph codeph">init()</samp> function,
+    // you must return true or false to indicate whether the user has logged in to
+    // the <span class="ph">SAP Jam Communities</span> client application.
+    return '&lt;true|false&gt;';
+}</pre>
+
+        </div>
+
+        <div class="section"><h2 class="title sectiontitle">The <samp class="ph codeph">doLogin</samp> function</h2>
+            
+            <p class="p">As mentioned in the <samp class="ph codeph">init()</samp> section above, you must develop a
+                function that will present the user with a logon option to your organization's <span class="ph">SAP Jam Communities</span> client application
+                if the <samp class="ph codeph">checkLogin</samp> function detects that the user is not logged in.
+                A rough outline of this function is shown below:</p>
+
+            <pre class="pre codeblock prettyprint">// doLogin function example
+doLogin =  function(fn){
+    // your login code, such as a navigation to your e-commerce application's logon page
+    ... 
+    fn();
+}</pre>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

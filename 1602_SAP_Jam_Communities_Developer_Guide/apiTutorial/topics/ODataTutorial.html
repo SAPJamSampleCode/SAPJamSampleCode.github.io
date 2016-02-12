@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="concept"/>
+<meta name="DC.Title" content="SAP Jam Communities OData Tutorial"/>
+<meta name="abstract" content="This tutorial is designed to help developers familiar with REST to quickly get up to speed using the SAP Jam Communities OData API, and give them a good understanding of SAP Jam Communities's OData implementation."/>
+<meta name="description" content="This tutorial is designed to help developers familiar with REST to quickly get up to speed using the SAP Jam Communities OData API, and give them a good understanding of SAP Jam Communities's OData implementation."/>
+<meta name="DC.Relation" scheme="URI" content="../../apiTutorial/topics/ODataOverviewAndGlossary.html"/>
+<meta name="DC.Relation" scheme="URI" content="../../apiTutorial/topics/ODataTutorial-Authorization.html"/>
+<meta name="DC.Relation" scheme="URI" content="../../apiTutorial/topics/ODataTutorial-ReadingMetadata.html"/>
+<meta name="DC.Relation" scheme="URI" content="../../apiTutorial/topics/ODataTutorial-ManipulatingGETResponses.html"/>
+<meta name="DC.Relation" scheme="URI" content="../../apiTutorial/topics/ODataTutorial-UploadingAndDownloadingFiles.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="SAPJamODataTutorial"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../../commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="../../SAP_Jam_Communities_Developer_Guide.css"/>
+<title>SAP Jam Communities OData Tutorial</title>
+<script type="text/javascript" src="../../run_prettify.js"> </script></head>
+<body id="SAPJamODataTutorial">
+
+
+    <h1 class="title topictitle1"><span class="ph">SAP Jam Communities</span> OData
+        Tutorial</h1>
+
+    
+    <div class="body conbody"><div class="abstract"><span class="shortdesc">This tutorial is designed to help developers familiar with REST to quickly
+            get up to speed using the <span class="ph">SAP Jam Communities</span> OData API, and give them a good understanding of <span class="ph">SAP Jam Communities</span>'s OData
+            implementation.</span>
+</div>
+
+        <p class="p">The subjects in this tutorial are:</p>
+
+    </div>
+
+<div class="related-links">
+<ul class="ullinks">
+<li class="link ulchildlink"><strong><a href="../../apiTutorial/topics/ODataOverviewAndGlossary.html">OData overview and glossary</a></strong><br/>
+</li>
+<li class="link ulchildlink"><strong><a href="../../apiTutorial/topics/ODataTutorial-Authorization.html">Communities API Authorization</a></strong><br/>
+The SAP Jam Communities API calls require an access token for any POST,             PATCH, or DELETE calls in order to create, update, or delete resources. For GET calls to             retrieve a resource, use of the access token is optional, although permissions are more             restricted without it. This page describes how to get an access token for your API             use.</li>
+<li class="link ulchildlink"><strong><a href="../../apiTutorial/topics/ODataTutorial-ReadingMetadata.html">Reading the OData $metadata file</a></strong><br/>
+The OData $metadata file is a CSDL file that is made available to clients             to help them discover the structure and organization of all the resources, known links             between resources, and service operations of that service.</li>
+<li class="link ulchildlink"><strong><a href="../../apiTutorial/topics/ODataTutorial-ManipulatingGETResponses.html">Manipulating GET responses</a></strong><br/>
+Open-ended GET requests (GET requests that do not specify a particular             resource) return a feed (a series) of entries (resources). The SAP Jam OData API will             return a maximum of 20 entries in a feed, but there are mechanisms for retrieving             results beyond the first 20 entries, for sorting them according to various property             values, or for filtering them to show only the entries that you are interested in. You             can also limit or expand the amount of information that is returned. This page explains             how to manipulate the returned results using a variety of system query             options.</li>
+<li class="link ulchildlink"><strong><a href="../../apiTutorial/topics/ODataTutorial-UploadingAndDownloadingFiles.html">Uploading and downloading files</a></strong><br/>
+The SAP Jam OData API calls that relate to files (BLOBs) include the                 <samp class="ph codeph">ContentItem</samp>, <samp class="ph codeph">Image</samp>, <samp class="ph codeph">ThumbnailImage</samp>, and                 <samp class="ph codeph">FeedEntryImage</samp> calls. For any POST, GET, or PATCH call, you can affect only             the information about the file, or you can create, retrieve, or update the actual file. This page             describes how the API calls must be set to create, retrieve, or update the         files.</li>
+</ul>
+</div>
+
+</body>
+</html>

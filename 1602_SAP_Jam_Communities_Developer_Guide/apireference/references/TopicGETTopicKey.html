@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="reference"/>
+<meta name="DC.Title" content="[GET] /Topics('Id')"/>
+<meta name="abstract" content="Retrieves the information on the specified Topic."/>
+<meta name="description" content="Retrieves the information on the specified Topic."/>
+<meta name="DC.Relation" scheme="URI" content="../../apireference/concepts/TopicIntro.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="TopicGETTopicKey"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../../commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="../../SAP_Jam_Communities_Developer_Guide.css"/>
+<title>[GET] /Topics('Id')</title>
+<script type="text/javascript" src="../../run_prettify.js"> </script></head>
+<body id="TopicGETTopicKey">
+
+
+    <h1 class="title topictitle1">[GET] /Topics('Id')</h1>
+
+    
+    <div class="body refbody"><div class="abstract">
+         <span class="shortdesc">Retrieves the information on the specified Topic.</span>
+
+    </div>
+
+        
+        
+        <div class="section" id="TopicGETTopicKey__requestElements"><h2 class="title sectiontitle supersection">Request Elements</h2>
+            
+        </div>
+
+        <div class="section" id="TopicGETTopicKey__url"><h2 class="title sectiontitle">URL</h2>
+            
+            <samp class="ph codeph">https://&lt;your_company&gt;.<a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#jamnumber" title="SAP Jam Communities services are located in data centers in various locations around the world. Your organization's SAP Jam Communities service will be at one of these locations, which must appear in the URL of your API calls, and which is indicated in this documentation by &lt;communities#&gt;. Consult your company's SAP Jam Communities expert for the proper content of this part of your SAP Jam Communities API URLs.">&lt;communities#&gt;</a>.sapjam.com/api/v1/OData/Topics('kReqjIMREyRgkQgi65KCQl')</samp>
+        </div>
+
+        <div class="section" id="TopicGETTopicKey__httpRequestMethod"><h2 class="title sectiontitle">HTTP Request Method</h2>
+            
+            <p class="p">
+                <samp class="ph codeph">GET</samp>
+            </p>
+
+        </div>
+
+        <div class="section" id="TopicGETTopicKey__curlCommands"><h2 class="title sectiontitle">CURL Commands</h2>
+            
+            <p class="p"><strong class="ph b">XML</strong></p>
+
+            <pre class="pre codeblock prettyprint lang-sh">curl -H "Authorization: OAuth &lt;!--[The OAuth1.0a protocol parameters have been removed from here.]--&gt;"
+     -H "Accept: application/xml" -H "Content-Type: application/xml"
+     "https://&lt;your_company&gt;.<a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#jamnumber" title="SAP Jam Communities services are located in data centers in various locations around the world. Your organization's SAP Jam Communities service will be at one of these locations, which must appear in the URL of your API calls, and which is indicated in this documentation by &lt;communities#&gt;. Consult your company's SAP Jam Communities expert for the proper content of this part of your SAP Jam Communities API URLs.">&lt;communities#&gt;</a>.sapjam.com/api/v1/OData/Topics('kReqjIMREyRgkQgi65KCQl')"</pre>
+
+            <p class="p"><strong class="ph b">JSON</strong></p>
+
+            <pre class="pre codeblock prettyprint lang-sh">curl -H "Authorization: Bearer &lt;!--[An OAuth2.0 auth_token has been removed from here.]--&gt;"
+     -H "Accept: application/json" -H "Content-Type: application/json"
+     "https://&lt;your_company&gt;.<a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#jamnumber" title="SAP Jam Communities services are located in data centers in various locations around the world. Your organization's SAP Jam Communities service will be at one of these locations, which must appear in the URL of your API calls, and which is indicated in this documentation by &lt;communities#&gt;. Consult your company's SAP Jam Communities expert for the proper content of this part of your SAP Jam Communities API URLs.">&lt;communities#&gt;</a>.sapjam.com/api/v1/OData/Topics('kReqjIMREyRgkQgi65KCQl')"</pre>
+
+        </div>
+
+        <div class="section"><h2 class="title sectiontitle">HTTP Input Headers</h2>
+            
+            <p class="p">User access tokens must be passed in the API call. This can be done using OAuth1.0a
+                or OAuth2.0. For OAuth1.0a we recommend using either the HMAC-SHA1 or RSA-SHA1
+                signature methods, but not PLAINTEXT. Also, OAuth1.0a authentication can be passed
+                in three different ways, but passing it in the header is the preferred method, and
+                it is the method shown here.</p>
+
+            <p class="p">Please refer to the <a class="xref" href="./../../authApi/topics/Auth-Intro.html" title="Client applications using SAP Jam OData or REST APIs have two options for providing authorization and authentication for their users: an OAuth1.0a 3-Legged workflow, or SAML assertions from a trusted identity provider. The OAuth1.0a workflow is best for client applications without access to a SAML identity provider (IDP), although it requires some interaction with the end user. The SAML assertions from a trusted IDP configured in the SAP Jam Admin console by your company administrator. Additionally, there is the possibility of single-use tokens, although this approach is better suited to granting immediate, short-term access to single pages.">Authorization API</a> section for more information.</p>
+
+            
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table apitable" frame="border" border="1" rules="all">
+                    
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr class="row">
+                            <th class="entry" valign="top" width="25%" id="d17234e118">Header Field</th>
+
+                            <th class="entry" valign="top" width="25%" id="d17234e121">Use</th>
+
+                            <th class="entry" valign="top" width="50%" id="d17234e124">Description</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%"><strong class="ph b">Accept:</strong> &lt;file_format&gt; <p class="p lines">Generic
+                                    Example:</p>
+
+                                <p class="p lines"><samp class="ph codeph">Accept:
+                                    &lt;file_format&gt;</samp></p>
+</td>
+
+                            <td class="entry" valign="top" width="25%" headers="d17234e118 d17234e121 ">Optional. Default is for the response to be in XML
+                                format.</td>
+
+                            <td class="entry" valign="top" width="50%" headers="d17234e124 ">This header sets the file format of the response. <p class="p lines">XML Example:</p>
+
+                                <p class="p lines"><samp class="ph codeph">Accept: application/xml</samp></p>
+
+                                <p class="p lines">JSON Example:</p>
+
+                                <p class="p lines"><samp class="ph codeph">Accept:
+                                application/json</samp></p>
+</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+        </div>
+
+        
+        <div class="section" id="TopicGETTopicKey__urlParameters"><h2 class="title sectiontitle">URL Parameters</h2>
+            
+            
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table apitable" frame="border" border="1" rules="all">
+                    
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr class="row">
+                            <th class="entry" valign="top" width="12.5%" id="d17234e188">URL Segment</th>
+
+                            <th class="entry" valign="top" width="12.5%" id="d17234e191">Required</th>
+
+                            <th class="entry" valign="top" width="75%" id="d17234e194">Description</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        <tr class="row">
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e188 ">
+                                <strong class="ph b">Id</strong>
+                            </td>
+
+                            <td class="entry mandatory" valign="top" width="12.5%" headers="d17234e191 ">Mandatory</td>
+
+                            <td class="entry" valign="top" width="75%" headers="d17234e194 ">The <a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#uuid" title="The SAP Jam Communities OData API uses 22-character unique identifiers for the various objects in SAP Jam Communities.">unique ID</a> of the Topic for which you want to retrieve information.</td>
+
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e188 ">
+                                <strong class="ph b">access_token</strong>
+                            </td>
+
+                            <td class="entry mandatory" valign="top" width="12.5%" headers="d17234e191 ">Mandatory for POST, PATCH, and DELETE calls; optional for GET calls.</td>
+
+                            <td class="entry" valign="top" width="75%" headers="d17234e194 ">The current logged-in user's SAP Jam Communities access token.
+                                For development purposes, use the <samp class="ph codeph">access-token</samp>
+                                generated as described in the <a class="xref" href="../../apiTutorial/topics/ODataTutorial-Authorization.html" title="The SAP Jam Communities API calls require an access token for any POST, PATCH, or DELETE calls in order to create, update, or delete resources. For GET calls to retrieve a resource, use of the access token is optional, although permissions are more restricted without it. This page describes how to get an access token for your API use.">Communities API Authorization</a> page.</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+        </div>
+
+        <div class="section" id="TopicGETTopicKey__responseElements"><h2 class="title sectiontitle supersection">Response Elements</h2>
+            
+        </div>
+
+        
+        <div class="section"><h2 class="title sectiontitle">Topic GET and POST Response Payload Properties</h2>
+            
+            <div class="note note"><span class="notetitle">Note:</span> The property "type" only appears in XML responses.</div>
+
+            
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table apitable" frame="border" border="1" rules="all">
+                    
+                    
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr class="row">
+                            <th class="entry" valign="top" width="25%" id="d17234e280">Property</th>
+
+                            <th class="entry" valign="top" width="12.5%" id="d17234e283">Type</th>
+
+                            <th class="entry" valign="top" width="62.5%" id="d17234e286">Description</th>
+
+                            
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">Id</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.String</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">The <a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#uuid" title="The SAP Jam Communities OData API uses 22-character unique identifiers for the various objects in SAP Jam Communities.">unique ID</a> of the Topic. <a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#generated" title="Many properties, such as timestamps, counts, and many boolean values, are generated by the SAP Jam Communities service, typically in response to user actions or selected system configuration options. Generated properties will be ignored if set in a POST or PATCH operation."><strong class="ph b">Generated</strong></a>.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">Title</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.String</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">The title of the Topic.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">Caption</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.String</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">The caption of the Topic.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">TopicType</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.Int32</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">The type of the Topic.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">TopicSort</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.String</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">The sort information for the Topic.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">IsFeatured</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.Boolean</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">True if the Topic is featured.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">IsActive</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.Boolean</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">True if the Topic is currently active.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">IsBeingEdited</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.Boolean</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">True if the Topic is currently being edited.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">HasAds</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.Boolean</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">True if the Topic includes advertisements.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">PostsCount</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.Int32</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">A count of the total number of Posts to the Topic.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">FollowersCount</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.Int32</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">A count of the total number of users who are following the
+                                Topic.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">UpdatedAt</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.DateTime</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">The date and time at which the Topic was last updated.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">ConvsSinceLastVisit</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.Int32</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">A count of the number of Conversations that have been started
+                                since the current user last visited the Topic page.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">AnsweredQuestions</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.String</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">A count of the number of Questions asked of the Topic that have
+                                received answers.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">ReviewRating</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.Int32</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">The average rating value of the Reviews of the Topic.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">ReviewCount</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.Int32</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">A count of the total number of Reviews of the Topic.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">QuestionCount</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.Int32</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">A count of the total number of Questions asked about the
+                                Topic.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">BlogCount</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.Int32</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">A count of the total number of Blogs written about the
+                                Topic.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">DiscussionCount</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.Int32</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">A count of the total number of Discussions added to the
+                                Topic.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">ReviewDetail</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.String</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">A summary of the counts for each score level of the Reviews of
+                                the Topic.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">RecommendedDetail</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.String</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">A summary of the counts of those who would recommend the Topic as
+                                well as those who would not.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">WidgetOrder</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.String</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">The order in which the widgets appear in the Topic.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">FollowedByLoggedInUser</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.String</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">True if the Topic is being followed by a users with an account
+                                (typically an employee of the company).</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">BannerUrl</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.String</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">The URL to access the Topic banner.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">TileUrl</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.String</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">The URL to access the background tiled image.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">DraftTwinId</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.String</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">The <a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#uuid" title="The SAP Jam Communities OData API uses 22-character unique identifiers for the various objects in SAP Jam Communities.">unique ID</a> of the copy of the Topic created for
+                                editing.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">MainTwinId</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.String</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">The <a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#uuid" title="The SAP Jam Communities OData API uses 22-character unique identifiers for the various objects in SAP Jam Communities.">unique ID</a> of the first copy of the Topic created for
+                                editing, if an additional copy is created concurrently.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">PrettyTitle</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 "><a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#edm" title="Data in the SAP Jam Communities OData API is represented in accordance with the Entity Data Model (EDM). The Entity Data Model specifies a set of data types (for example, Edm.Int32, Edm.String, Edm.Boolean, and Edm.DateTimeOffset) be used in the set of properties used to describe a resource (an Entry). A collection of Entries is termed to a Feed. An OData API supports the create, retrieve, update, and delete (CRUD) operations familiar to REST API users via HTTP 1.1 URIs, using HTTP 1.1 POST, GET, PATCH or PUT, and DELETE operations.">Edm</a>.String</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 ">The simplified title of the Topic created for clarity in
+                                navigation.</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">Permissions</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 ">ComplexType</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 "><ul class="ul">
+                                <li class="li"><strong class="ph b">CanRead</strong> [Boolean] (Not nullable)</li>
+
+                                <li class="li"><strong class="ph b">CanUpdate</strong> [Boolean] (Not nullable)</li>
+
+                                <li class="li"><strong class="ph b">CanDelete</strong> [Boolean] (Not nullable)</li>
+
+                                <li class="li"><strong class="ph b">CanListConversations</strong> [Boolean] (Not nullable)</li>
+
+                                <li class="li"><strong class="ph b">CanLike</strong> [Boolean] (Not nullable)</li>
+
+                                <li class="li"><strong class="ph b">CanFollow</strong> [Boolean] (Not nullable)</li>
+
+                                <li class="li"><strong class="ph b">CanCreateDiscussion</strong> [Boolean] (Not nullable)</li>
+
+                                <li class="li"><strong class="ph b">CanCreateQuestion</strong> [Boolean] (Not nullable)</li>
+
+                                <li class="li"><strong class="ph b">CanCreateBlog</strong> [Boolean] (Not nullable)</li>
+
+                                <li class="li"><strong class="ph b">CanCreateReview</strong> [Boolean] (Not nullable)</li>
+
+                                <li class="li"><strong class="ph b">CanSetLayout</strong> [Boolean] (Not nullable)</li>
+
+                                <li class="li"><strong class="ph b">CanCreateCourse</strong> [Boolean] (Not nullable)</li>
+
+                            </ul>
+</td>
+
+                            
+                        </tr>
+
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e280 ">
+                                <strong class="ph b">TopicAlias</strong>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e283 ">ComplexType</td>
+
+                            <td class="entry" valign="top" width="62.5%" headers="d17234e286 "><ul class="ul">
+                                <li class="li"><strong class="ph b">Network</strong> [String] (Not nullable)</li>
+
+                                <li class="li"><strong class="ph b">Topic</strong> [String] (Not nullable)</li>
+
+                                <li class="li"><strong class="ph b">TopicTitle</strong> [String] (Not nullable)</li>
+
+                            </ul>
+</td>
+
+                            
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+        </div>
+
+        
+        <div class="section" id="TopicGETTopicKey__xmlResponseExample"><h2 class="title sectiontitle">XML Response Example</h2>
+            
+            
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table apitable" frame="border" border="1" rules="all">
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr class="row">
+                            <th class="entry" valign="top" width="87.5%" id="d17234e1045">URL</th>
+
+                            <th class="entry" valign="top" width="12.5%" id="d17234e1048">Method</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        <tr class="row">
+                            <td class="entry" valign="top" width="87.5%" headers="d17234e1045 ">
+                                <samp class="ph codeph">https://&lt;your_company&gt;.<a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#jamnumber" title="SAP Jam Communities services are located in data centers in various locations around the world. Your organization's SAP Jam Communities service will be at one of these locations, which must appear in the URL of your API calls, and which is indicated in this documentation by &lt;communities#&gt;. Consult your company's SAP Jam Communities expert for the proper content of this part of your SAP Jam Communities API URLs.">&lt;communities#&gt;</a>.sapjam.com/api/v1/OData/Topics('kReqjIMREyRgkQgi65KCQl')</samp>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e1048 ">
+                                <samp class="ph codeph">GET</samp>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+            
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table apitable" frame="border" border="1" rules="all">
+                    
+                    <tbody class="tbody">
+                        <tr class="row">
+                            <td class="entry" valign="top" width="100%">
+                                <pre class="pre codeblock prettyprint lang-xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;entry xmlns="http://www.w3.org/2005/Atom"
+  xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+  xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"&gt;
+  &lt;id&gt;https://&lt;your_company&gt;.<a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#jamnumber" title="SAP Jam Communities services are located in data centers in various locations around the world. Your organization's SAP Jam Communities service will be at one of these locations, which must appear in the URL of your API calls, and which is indicated in this documentation by &lt;communities#&gt;. Consult your company's SAP Jam Communities expert for the proper content of this part of your SAP Jam Communities API URLs.">&lt;communities#&gt;</a>.sapjam.com/api/v1/OData/Topics('kReqjIMREyRgkQgi65KCQl')&lt;/id&gt;
+  &lt;title type="text"&gt;Topics('kReqjIMREyRgkQgi65KCQl')&lt;/title&gt;
+  &lt;author&gt;
+    &lt;name/&gt;
+  &lt;/author&gt;
+  &lt;link rel="edit" title="Topics('kReqjIMREyRgkQgi65KCQl')" href="Topics('kReqjIMREyRgkQgi65KCQl')"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Conversations"
+    type="application/atom+xml;type=feed" title="Conversations"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/Conversations"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Discussions"
+    type="application/atom+xml;type=feed" title="Discussions"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/Discussions"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Qnas"
+    type="application/atom+xml;type=feed" title="Qnas" href="Topics('kReqjIMREyRgkQgi65KCQl')/Qnas"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Blogs"
+    type="application/atom+xml;type=feed" title="Blogs"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/Blogs"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Contents"
+    type="application/atom+xml;type=feed" title="Contents"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/Contents"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Courses"
+    type="application/atom+xml;type=feed" title="Courses"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/Courses"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Reviews"
+    type="application/atom+xml;type=feed" title="Reviews"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/Reviews"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/WidgetConversations"
+    type="application/atom+xml;type=feed" title="WidgetConversations"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/WidgetConversations"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/FeaturedQuestions"
+    type="application/atom+xml;type=feed" title="FeaturedQuestions"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/FeaturedQuestions"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/FeaturedPosts"
+    type="application/atom+xml;type=feed" title="FeaturedPosts"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/FeaturedPosts"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Follows"
+    type="application/atom+xml;type=feed" title="Follows"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/Follows"/&gt;
+  &lt;link
+    rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/LikedQuestionAggregations"
+    type="application/atom+xml;type=feed" title="LikedQuestionAggregations"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/LikedQuestionAggregations"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/SimilarTopics"
+    type="application/atom+xml;type=feed" title="SimilarTopics"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/SimilarTopics"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/PageLayouts"
+    type="application/atom+xml;type=feed" title="PageLayouts"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/PageLayouts"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/MemberMetrics"
+    type="application/atom+xml;type=feed" title="MemberMetrics"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/MemberMetrics"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DefaultAdminGroup"
+    type="application/atom+xml;type=entry" title="DefaultAdminGroup"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/DefaultAdminGroup"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DefaultModeratorGroup"
+    type="application/atom+xml;type=entry" title="DefaultModeratorGroup"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/DefaultModeratorGroup"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/LandingLayout"
+    type="application/atom+xml;type=entry" title="LandingLayout"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/LandingLayout"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/ConversationLayout"
+    type="application/atom+xml;type=entry" title="ConversationLayout"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/ConversationLayout"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/LastPost"
+    type="application/atom+xml;type=entry" title="LastPost"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/LastPost"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Network"
+    type="application/atom+xml;type=entry" title="Network"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/Network"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Product"
+    type="application/atom+xml;type=entry" title="Product"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/Product"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/SimilarProducts"
+    type="application/atom+xml;type=feed" title="SimilarProducts"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/SimilarProducts"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/RelatedProducts"
+    type="application/atom+xml;type=feed" title="RelatedProducts"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/RelatedProducts"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/ProductReviews"
+    type="application/atom+xml;type=feed" title="ProductReviews"
+    href="Topics('kReqjIMREyRgkQgi65KCQl')/ProductReviews"/&gt;
+  &lt;category term="Excelsior.Topic"
+    scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/&gt;
+  &lt;content type="application/xml"&gt;
+    &lt;m:properties&gt;
+      &lt;d:Id m:type="Edm.String"&gt;kReqjIMREyRgkQgi65KCQl&lt;/d:Id&gt;
+      &lt;d:Title m:type="Edm.String"&gt;TestTopic1&lt;/d:Title&gt;
+      &lt;d:Caption m:type="Edm.String"&gt;This is Test Topic 1.&lt;/d:Caption&gt;
+      &lt;d:TopicType m:type="Edm.Int32"&gt;engagement&lt;/d:TopicType&gt;
+      &lt;d:TopicSort m:type="Edm.String" m:null="true"/&gt;
+      &lt;d:IsFeatured m:type="Edm.Boolean"&gt;false&lt;/d:IsFeatured&gt;
+      &lt;d:IsActive m:type="Edm.Boolean"&gt;true&lt;/d:IsActive&gt;
+      &lt;d:IsBeingEdited m:type="Edm.Boolean"&gt;false&lt;/d:IsBeingEdited&gt;
+      &lt;d:HasAds m:type="Edm.Boolean" m:null="true"/&gt;
+      &lt;d:PostsCount m:type="Edm.Int32"&gt;15&lt;/d:PostsCount&gt;
+      &lt;d:FollowersCount m:type="Edm.Int32"&gt;1&lt;/d:FollowersCount&gt;
+      &lt;d:UpdatedAt m:type="Edm.DateTimeOffset"&gt;2016-02-10T22:25:39Z&lt;/d:UpdatedAt&gt;
+      &lt;d:ConvsSinceLastVisit m:type="Edm.Int32"&gt;4&lt;/d:ConvsSinceLastVisit&gt;
+      &lt;d:AnsweredQuestions m:type="Edm.Int32"&gt;1&lt;/d:AnsweredQuestions&gt;
+      &lt;d:ReviewRating m:type=""&gt;0&lt;/d:ReviewRating&gt;
+      &lt;d:ReviewCount m:type="Edm.Int32"&gt;0&lt;/d:ReviewCount&gt;
+      &lt;d:QuestionCount m:type="Edm.Int32"&gt;1&lt;/d:QuestionCount&gt;
+      &lt;d:BlogCount m:type="Edm.Int32"&gt;0&lt;/d:BlogCount&gt;
+      &lt;d:DiscussionCount m:type="Edm.Int32"&gt;3&lt;/d:DiscussionCount&gt;
+      &lt;d:ReviewDetail m:type="Edm.String"
+        &gt;{"five":0,"four":0,"three":0,"two":0,"one":0,"total":0}&lt;/d:ReviewDetail&gt;
+      &lt;d:RecommendedDetail m:type="Edm.String"&gt;{"true":0,"false":0}&lt;/d:RecommendedDetail&gt;
+      &lt;d:WidgetOrder m:type="Edm.String"&gt;[2, 1]&lt;/d:WidgetOrder&gt;
+      &lt;d:FollowedByLoggedInUser m:type="Edm.Boolean"&gt;false&lt;/d:FollowedByLoggedInUser&gt;
+      &lt;d:BannerUrl m:type="Edm.String" m:null="true"/&gt;
+      &lt;d:TileUrl m:type="Edm.String" m:null="true"/&gt;
+      &lt;d:DraftTwinId m:type="Edm.String"&gt;RiYnoprycq9vxnfPT6LXJP&lt;/d:DraftTwinId&gt;
+      &lt;d:MainTwinId m:type="Edm.String" m:null="true"/&gt;
+      &lt;d:PrettyTitle m:type="Edm.String"&gt;testtopic1&lt;/d:PrettyTitle&gt;
+      &lt;d:Permissions m:type="Excelsior.TopicPermissions"&gt;
+        &lt;d:CanRead m:type="Edm.Boolean"&gt;true&lt;/d:CanRead&gt;
+        &lt;d:CanUpdate m:type="Edm.Boolean"&gt;false&lt;/d:CanUpdate&gt;
+        &lt;d:CanDelete m:type="Edm.Boolean"&gt;false&lt;/d:CanDelete&gt;
+        &lt;d:CanListConversations m:type="Edm.Boolean"&gt;true&lt;/d:CanListConversations&gt;
+        &lt;d:CanLike m:type="Edm.Boolean"&gt;false&lt;/d:CanLike&gt;
+        &lt;d:CanFollow m:type="Edm.Boolean"&gt;false&lt;/d:CanFollow&gt;
+        &lt;d:CanCreateDiscussion m:type="Edm.Boolean"&gt;false&lt;/d:CanCreateDiscussion&gt;
+        &lt;d:CanCreateQuestion m:type="Edm.Boolean"&gt;false&lt;/d:CanCreateQuestion&gt;
+        &lt;d:CanCreateBlog m:type="Edm.Boolean"&gt;false&lt;/d:CanCreateBlog&gt;
+        &lt;d:CanCreateReview m:type="Edm.Boolean"&gt;false&lt;/d:CanCreateReview&gt;
+        &lt;d:CanSetLayout m:type="Edm.Boolean"&gt;false&lt;/d:CanSetLayout&gt;
+        &lt;d:CanCreateCourse m:type="Edm.Boolean"&gt;true&lt;/d:CanCreateCourse&gt;
+      &lt;/d:Permissions&gt;
+      &lt;d:TopicAlias m:type="Excelsior.TopicAlias" m:null="true"/&gt;
+    &lt;/m:properties&gt;
+  &lt;/content&gt;
+&lt;/entry&gt;</pre>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+        </div>
+
+        
+        <div class="section" id="TopicGETTopicKey__jsonResponseExample"><h2 class="title sectiontitle">JSON Response Example</h2>
+            
+            
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table apitable" frame="border" border="1" rules="all">
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr class="row">
+                            <th class="entry" valign="top" width="87.5%" id="d17234e1125">URL</th>
+
+                            <th class="entry" valign="top" width="12.5%" id="d17234e1128">Method</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        <tr class="row">
+                            <td class="entry" valign="top" width="87.5%" headers="d17234e1125 ">
+                                <samp class="ph codeph">https://&lt;your_company&gt;.<a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#jamnumber" title="SAP Jam Communities services are located in data centers in various locations around the world. Your organization's SAP Jam Communities service will be at one of these locations, which must appear in the URL of your API calls, and which is indicated in this documentation by &lt;communities#&gt;. Consult your company's SAP Jam Communities expert for the proper content of this part of your SAP Jam Communities API URLs.">&lt;communities#&gt;</a>.sapjam.com/api/v1/OData/Topics('kReqjIMREyRgkQgi65KCQl')?$format=json</samp>
+                            </td>
+
+                            <td class="entry" valign="top" width="12.5%" headers="d17234e1128 ">
+                                <samp class="ph codeph">GET</samp>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+            
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table apitable" frame="border" border="1" rules="all">
+                    
+                    <tbody class="tbody">
+                        <tr class="row">
+                            <td class="entry" valign="top" width="100%">
+                                <pre class="pre codeblock prettyprint lang-js">
+{"d": {"results": {
+    "__metadata": {
+        "uri": "Topics('kReqjIMREyRgkQgi65KCQl')",
+        "type": "Excelsior.Topic"
+    },
+    "Id": "kReqjIMREyRgkQgi65KCQl",
+    "Title": "TestTopic1",
+    "Caption": "This is Test Topic 1.",
+    "TopicType": "engagement",
+    "TopicSort": null,
+    "IsFeatured": false,
+    "IsActive": true,
+    "IsBeingEdited": false,
+    "HasAds": null,
+    "PostsCount": 15,
+    "FollowersCount": 1,
+    "UpdatedAt": "/Date(1455143139000)/",
+    "ConvsSinceLastVisit": 4,
+    "AnsweredQuestions": 1,
+    "ReviewRating": 0,
+    "ReviewCount": 0,
+    "QuestionCount": 1,
+    "BlogCount": 0,
+    "DiscussionCount": 3,
+    "ReviewDetail": "{\"five\":0,\"four\":0,\"three\":0,\"two\":0,\"one\":0,\"total\":0}",
+    "RecommendedDetail": "{\"true\":0,\"false\":0}",
+    "WidgetOrder": [
+        2,
+        1
+    ],
+    "FollowedByLoggedInUser": false,
+    "BannerUrl": null,
+    "TileUrl": null,
+    "DraftTwinId": "RiYnoprycq9vxnfPT6LXJP",
+    "MainTwinId": null,
+    "PrettyTitle": "testtopic1",
+    "Permissions": {
+        "CanRead": true,
+        "CanUpdate": false,
+        "CanDelete": false,
+        "CanListConversations": true,
+        "CanLike": false,
+        "CanFollow": false,
+        "CanCreateDiscussion": false,
+        "CanCreateQuestion": false,
+        "CanCreateBlog": false,
+        "CanCreateReview": false,
+        "CanSetLayout": false,
+        "CanCreateCourse": true
+    },
+    "TopicAlias": null,
+    "Conversations": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/Conversations"}},
+    "Discussions": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/Discussions"}},
+    "Qnas": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/Qnas"}},
+    "Blogs": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/Blogs"}},
+    "Contents": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/Contents"}},
+    "Courses": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/Courses"}},
+    "Reviews": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/Reviews"}},
+    "WidgetConversations": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/WidgetConversations"}},
+    "FeaturedQuestions": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/FeaturedQuestions"}},
+    "FeaturedPosts": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/FeaturedPosts"}},
+    "Follows": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/Follows"}},
+    "LikedQuestionAggregations": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/LikedQuestionAggregations"}},
+    "SimilarTopics": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/SimilarTopics"}},
+    "PageLayouts": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/PageLayouts"}},
+    "MemberMetrics": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/MemberMetrics"}},
+    "DefaultAdminGroup": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/DefaultAdminGroup"}},
+    "DefaultModeratorGroup": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/DefaultModeratorGroup"}},
+    "LandingLayout": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/LandingLayout"}},
+    "ConversationLayout": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/ConversationLayout"}},
+    "LastPost": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/LastPost"}},
+    "Network": {
+        "__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/Network"},
+        "__metadata": {
+            "uri": "Networks('documentation')",
+            "type": "Excelsior.Network"
+        }
+    },
+    "Product": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/Product"}},
+    "SimilarProducts": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/SimilarProducts"}},
+    "RelatedProducts": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/RelatedProducts"}},
+    "ProductReviews": {"__deferred": {"uri": "Topics('kReqjIMREyRgkQgi65KCQl')/ProductReviews"}}
+}}}</pre>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+        </div>
+
+        <div class="section" id="TopicGETTopicKey__odataHttpStatusCodes"><h2 class="title sectiontitle">HTTP Status Codes</h2>
+            
+            
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="TopicGETTopicKey__odataErrorsTable" class="table apitable" frame="border" border="1" rules="all">
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr class="row">
+                            <th class="entry" valign="top" width="25%" id="d17234e1198">HTTP Success Code</th>
+
+                            <th class="entry" valign="top" width="75%" id="d17234e1201">Description</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        
+                        <tr class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e1198 "><strong class="ph b">200 OK</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d17234e1201 ">The requested resource retrieval was successful, and a full
+                                payload of the requested resource is returned.</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+            
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table apitable" frame="border" border="1" rules="all">
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr class="row">
+                            <th class="entry" valign="top" width="25%" id="d17234e1233">HTTP Error Codes</th>
+
+                            <th class="entry" valign="top" width="75%" id="d17234e1236">Description</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        <tr id="TopicGETTopicKey__d345e114" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e1233 "><strong class="ph b">400 Bad Request</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d17234e1236 ">The server could not understand the request due to malformed
+                                syntax.</td>
+
+                        </tr>
+
+                        <tr id="TopicGETTopicKey__d345e124" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e1233 "><strong class="ph b">403 Forbidden</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d17234e1236 ">Access to the resource you are trying to connect to is forbidden.
+                                This may be due to either a user authentication failure or to the
+                                user having insufficient privileges to perform the action.</td>
+
+                        </tr>
+
+                        <tr id="TopicGETTopicKey__d345e134" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e1233 "><strong class="ph b">404 Not Found</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d17234e1236 ">The server cannot find the specified resource. This is typically
+                                due to an unrecognized resource ID (such as userId, groupId, or
+                                contentId).</td>
+
+                        </tr>
+
+                        <tr id="TopicGETTopicKey__d345e144" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e1233 "><strong class="ph b">405 Method Not Allowed</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d17234e1236 ">The method specified in the Request Line is not allowed for the
+                                resource identified by the Request URI.</td>
+
+                        </tr>
+
+                        <tr id="TopicGETTopicKey__d345e154" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e1233 "><strong class="ph b">406 Not Acceptable</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d17234e1236 ">The resource identified by the request is only capable of
+                                generating response entities which have content characteristics not
+                                acceptable according to the accept headers sent in the request. This
+                                is the expected response if the HTTP headers request a ContentType
+                                that cannot be handled by the API or the indicated endpoint of the
+                                API.</td>
+
+                        </tr>
+
+                        <tr id="TopicGETTopicKey__d345e165" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e1233 "><strong class="ph b">409 Conflict</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d17234e1236 ">There is an internal access conflict to the specified
+                                resource.</td>
+
+                        </tr>
+
+                        <tr id="TopicGETTopicKey__d345e175" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e1233 "><strong class="ph b">429 Too Many Requests</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d17234e1236 ">The user has sent too many requests in a given period of time.
+                                This error message is typically encountered if API rate limits, set
+                                to protect against DoS attacks and to preserve server
+                                responsiveness, have been exceeded. See <a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#rate_limits" title="The SAP Jam Communities service imposes API call rate limits per user per time span to ensure server responsiveness. These requests are measured in units. There is a burst limit of 200 units per minute, every minute, and there is an hourly limit of 800 units per hour. Note that these rate limits are subject to change without notice, but they are set to balance server responsiveness with substantial use of API calls.">Rate Limits</a> to view the established limits.</td>
+
+                        </tr>
+
+                        <tr id="TopicGETTopicKey__d345e188" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e1233 "><strong class="ph b">500 Internal Server Error</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d17234e1236 ">The server encountered an unexpected condition, which prevented
+                                it from fulfilling the request.</td>
+
+                        </tr>
+
+                        <tr id="TopicGETTopicKey__d345e198" class="row">
+                            <td class="entry" valign="top" width="25%" headers="d17234e1233 "><strong class="ph b">501 Not Implemented</strong></td>
+
+                            <td class="entry" valign="top" width="75%" headers="d17234e1236 ">The server does not support the functionality required to fulfill
+                                the request.</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+</div>
+
+        </div>
+
+    </div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../apireference/concepts/TopicIntro.html" title="This section documents SAP Jam Communities SAP Jam Communities API calls that involve Topics. Topics are typically &#34;products&#34; on an e-commerce site, but they could also be &#34;courses&#34; in a Learning Management System site. Topics are the main, specific object of interest and discussion.">Topic API calls</a></div>
+</div>
+</div>
+
+</body>
+</html>

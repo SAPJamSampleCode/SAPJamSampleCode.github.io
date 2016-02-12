@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="concept"/>
+<meta name="DC.Title" content="Topic API calls"/>
+<meta name="abstract" content="This section documents SAP Jam Communities SAP Jam Communities API calls that involve Topics. Topics are typically &#34;products&#34; on an e-commerce site, but they could also be &#34;courses&#34; in a Learning Management System site. Topics are the main, specific object of interest and discussion."/>
+<meta name="description" content="This section documents SAP Jam Communities SAP Jam Communities API calls that involve Topics. Topics are typically &#34;products&#34; on an e-commerce site, but they could also be &#34;courses&#34; in a Learning Management System site. Topics are the main, specific object of interest and discussion."/>
+<meta name="DC.Relation" scheme="URI" content="../../apireference/concepts/ODataAPIReference.html"/>
+<meta name="DC.Relation" scheme="URI" content="../../apireference/references/TopicGETTopicKey.html"/>
+<meta name="DC.Relation" scheme="URI" content="../../apireference/references/TopicDELETETopicKey.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="TopicIntro"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../../commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="../../SAP_Jam_Communities_Developer_Guide.css"/>
+<title>Topic API calls</title>
+<script type="text/javascript" src="../../run_prettify.js"> </script></head>
+<body id="TopicIntro">
+
+
+    <h1 class="title topictitle1">Topic API calls</h1>
+
+    
+    <div class="body conbody"><div class="abstract">
+        <div class="shortdesc">This section documents <span class="ph">SAP Jam Communities</span> SAP Jam Communities API calls that involve Topics. Topics are
+            typically "products" on an e-commerce site, but they could also be "courses" in a
+            Learning Management System site. Topics are the main, specific object of interest and
+            discussion.</div>
+
+        <p class="p"><img class="image" src="../img/Topic.png"/></p>
+
+    </div>
+
+        <div class="section"><h2 class="title sectiontitle">The Topic entity</h2>
+            
+            <p class="p"><strong class="ph b">Purpose:</strong> The Topic entity provides information on the topics (products) on and
+                e-commerce site.</p>
+
+            <p class="p"><strong class="ph b">Properties:</strong> The Topic properties are:</p>
+
+            <ul class="ul">
+                <li class="li"><strong class="ph b">Id:</strong> [String] The <a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#uuid" title="The SAP Jam Communities OData API uses 22-character unique identifiers for the various objects in SAP Jam Communities.">unique
+                        ID</a> of the Topic.</li>
+
+                <li class="li"><strong class="ph b">Title:</strong> [String] The title of the Topic.</li>
+
+                <li class="li"><strong class="ph b">Caption:</strong> [String] The caption of the Topic.</li>
+
+                <li class="li"><strong class="ph b">TopicType:</strong> [Int32] The type of the Topic.</li>
+
+                <li class="li"><strong class="ph b">TopicSort:</strong> [String] The sort information for the Topic.</li>
+
+                <li class="li"><strong class="ph b">IsFeatured:</strong> [Boolean] True if the Topic is featured.</li>
+
+                <li class="li"><strong class="ph b">IsActive:</strong> [Boolean] True if the Topic is currently active.</li>
+
+                <li class="li"><strong class="ph b">IsBeingEdited:</strong> [Boolean] True if the Topic is currently being
+                    edited.</li>
+
+                <li class="li"><strong class="ph b">HasAds:</strong> [Boolean] True if the Topic includes advertisements.</li>
+
+                <li class="li"><strong class="ph b">PostsCount:</strong> [Int32] A count of the total number of Posts to the
+                    Topic.</li>
+
+                <li class="li"><strong class="ph b">FollowersCount:</strong> [Int32] A count of the total number of users who are
+                    following the Topic.</li>
+
+                <li class="li"><strong class="ph b">UpdatedAt:</strong> [DateTime] The date and time at which the Topic was last
+                    updated.</li>
+
+                <li class="li"><strong class="ph b">ConvsSinceLastVisit:</strong> [Int32] A count of the number of Conversations that
+                    have been started since the current user last visited the Topic page.</li>
+
+                <li class="li"><strong class="ph b">AnsweredQuestions:</strong> [Int32] A count of the number of Questions asked of
+                    the Topic that have received answers.</li>
+
+                <li class="li"><strong class="ph b">ReviewRating:</strong> [Int32] The average rating value of the Reviews of the
+                    Topic.</li>
+
+                <li class="li"><strong class="ph b">ReviewCount:</strong> [Int32] A count of the total number of Reviews of the
+                    Topic.</li>
+
+                <li class="li"><strong class="ph b">QuestionCount:</strong> [Int32] A count of the total number of Questions asked
+                    about the Topic.</li>
+
+                <li class="li"><strong class="ph b">BlogCount:</strong> [Int32] A count of the total number of Blogs written about the
+                    Topic.</li>
+
+                <li class="li"><strong class="ph b">DiscussionCount:</strong> [Int32] A count of the total number of Discussions added
+                    to the Topic.</li>
+
+                <li class="li"><strong class="ph b">ReviewDetail:</strong> [String] A summary of the counts for each score level of
+                    the Reviews of the Topic.</li>
+
+                <li class="li"><strong class="ph b">RecommendedDetail:</strong> [String] A summary of the counts of those who would
+                    recommend the Topic as well as those who would not.</li>
+
+                <li class="li"><strong class="ph b">WidgetOrder:</strong> [String] The order in which the widgets appear in the
+                    Topic.</li>
+
+                <li class="li"><strong class="ph b">FollowedByLoggedInUser:</strong> [Boolean] True if the Topic is being followed by
+                    a users with an account (typically an employee of the company).</li>
+
+                <li class="li"><strong class="ph b">BannerUrl:</strong> [String] The URL to access the Topic banner.</li>
+
+                <li class="li"><strong class="ph b">TileUrl:</strong> [String] The URL to access the background tiled image.</li>
+
+                <li class="li"><strong class="ph b">DraftTwinId:</strong> [String] The <a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#uuid" title="The SAP Jam Communities OData API uses 22-character unique identifiers for the various objects in SAP Jam Communities.">unique
+                        ID</a> of the copy of the Topic created for editing.</li>
+
+                <li class="li"><strong class="ph b">MainTwinId:</strong> [String] The <a class="xref" href="../../apiTutorial/topics/ODataOverviewAndGlossary.html#uuid" title="The SAP Jam Communities OData API uses 22-character unique identifiers for the various objects in SAP Jam Communities.">unique
+                        ID</a> of the first copy of the Topic created for editing, if an
+                    additional copy is created concurrently.</li>
+
+                <li class="li"><strong class="ph b">PrettyTitle:</strong> [String] The simplified title of the Topic created for
+                    clarity in navigation.</li>
+
+                <li class="li"><strong class="ph b">Permissions:</strong> [ComplexType] TopicPermissions data on the permissions set
+                    for this Topic.</li>
+
+                <li class="li"><strong class="ph b">TopicAlias:</strong> [ComplexType] TopicAlias data on the aliases used for this
+                    Topic.</li>
+
+            </ul>
+
+            <p class="p"><strong class="ph b">Navigations:</strong> The Topic entity provides navigations to:</p>
+
+            <ul class="ul">
+                <li class="li"><strong class="ph b">Blogs:</strong> [Conversation] to provide access to information on the Blogs add
+                    to the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">Contents:</strong> [Conversation] to provide access to information on the Contents
+                    of the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">ConversationLayout:</strong> [PageLayout] to provide access to information on the
+                    PageLayout used for Conversations in the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">Conversations:</strong> [Conversation] to provide access to information on the
+                    Conversations added to the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">Courses:</strong> [Conversation] to provide access to information on the Courses
+                    related to the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">DefaultAdminGroup:</strong> [PermissionGroup] to provide access to information on
+                    the permissions set for administrators of the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">DefaultModeratorGroup:</strong> [PermissionGroup] to provide access to information
+                    on the permissions set for moderators the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">Discussions:</strong> [Conversation] to provide access to information on the
+                    Discussions that have been added to the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">FeaturedPosts:</strong> [Post] to provide access to information on the Posts that
+                    have been featured in the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">FeaturedQuestions:</strong> [Conversation] to provide access to information on the
+                    Questions that have been featured in the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">Follows:</strong> [Follow] to provide access to information on the Follows that
+                    have been set for the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">LandingLayout:</strong> [PageLayout] to provide access to information on the
+                    TaskAssignments associated with the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">LastPost:</strong> [Post] to provide access to information on the most recent Post
+                    that has been added to the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">LikeQuestionAggregations:</strong> [Aggregation] to provide access to information
+                    on the number of Likes that have been set on Questions in the specified
+                    Topic.</li>
+
+                <li class="li"><strong class="ph b">MemberMetrics:</strong> [MemberMetric] to provide access to information on the
+                    Members who have posted or otherwise interacted with the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">Network:</strong> [Network] to provide access to information on the Network within
+                    which the specified Topic is located.</li>
+
+                <li class="li"><strong class="ph b">PageLayouts:</strong> [PageLayout] to provide access to information on the
+                    PageLayouts used in the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">Product:</strong> [Product] to provide access to the Product information used in
+                    the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">ProductReviews:</strong> [Review] to provide access to information on the Reviews
+                    of the Product that is the focus of the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">Qnas:</strong> [Conversation] to provide access to information on Qnas (Questions
+                    and Answers) Conversations in the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">RelatedProducts:</strong> [Product] to provide access to information on Products
+                    that are related to the Product that is the focus of the specified Topic is
+                    located.</li>
+
+                <li class="li"><strong class="ph b">Reviews:</strong> [Conversation] to provide access to information on the Reviews
+                    set in the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">SimilarProducts:</strong> [Product] to provide access to information on Products
+                    that are similar to the Product that is the focus of the specified Topic is
+                    located.</li>
+
+                <li class="li"><strong class="ph b">SimilarTopics:</strong> [Topic] to provide access to information on Topics that
+                    are similar to the specified Topic.</li>
+
+                <li class="li"><strong class="ph b">WidgetConversations:</strong> [Conversation] to provide access to information on
+                    the Conversations posted via widgets to the specified Topic.</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+<div class="related-links">
+<ul class="ullinks">
+<li class="link ulchildlink"><strong><a href="../../apireference/references/TopicGETTopicKey.html">[GET] /Topics('Id')</a></strong><br/>
+Retrieves the information on the specified Topic.</li>
+<li class="link ulchildlink"><strong><a href="../../apireference/references/TopicDELETETopicKey.html">[DELETE] /Topics('Id')</a></strong><br/>
+Deletes the specified Topic.</li>
+</ul>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../apireference/concepts/ODataAPIReference.html" title="SAP Jam Communities offers OData API calls that allow you to integrate SAP Jam Communities features into your business critical applications, and data from your business critical applications into SAP Jam Communities. This particular page provides a graphical overview of the SAP Jam Communities OData API entity hierarchy and interactions, as well as a list of the API endpoints. Subsections introduce more detailed information on each entity or set of related entities, and pages below those subsections provide the details on each API call or endpoint.">SAP Jam Communities OData API Reference</a></div>
+</div>
+</div>
+
+</body>
+</html>

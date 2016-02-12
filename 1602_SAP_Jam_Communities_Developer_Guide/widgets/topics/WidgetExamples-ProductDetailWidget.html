@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="concept"/>
+<meta name="DC.Title" content="The product detail widget"/>
+<meta name="DC.Relation" scheme="URI" content="../../widgets/topics/WidgetExamples-ReviewsInTabView.html"/>
+<meta name="DC.Relation" scheme="URI" content="../../widgets/topics/WidgetExamples-QuestionsInTabView.html"/>
+<meta name="DC.Relation" scheme="URI" content="../../widgets/topics/WidgetExamples-BlogPostsInTabView.html"/>
+<meta name="DC.Relation" scheme="URI" content="../../widgets/topics/WidgetExamples-DiscussionsInTabView.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="WidgetExamples-ProductDetailWidget"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../../commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="../../SAP_Jam_Communities_Developer_Guide.css"/>
+<title>The product detail widget</title>
+<script type="text/javascript" src="../../run_prettify.js"> </script></head>
+<body id="WidgetExamples-ProductDetailWidget">
+
+
+    <h1 class="title topictitle1">The product detail widget</h1>
+
+    <div class="body conbody">
+        <p class="p">The product detail widget can display either the most recent review of a specific product
+            or the most recent question about the product.</p>
+
+        <div class="section"><h2 class="title sectiontitle">The simple review option</h2>
+            
+            <p class="p">The product detail widget, shown in the following screen capture, displays the most
+                recent review for a specific product, as well as the product's aggregated rating
+                score.</p>
+
+            <div class="p"><div class="fig fignone"><span class="figcap">Figure 1. The product detail widget (SimpleReview option)</span>
+                    
+                    
+                    <br/><div class="imageleft"><img class="image imageleft" width="652" height="264" src="../img/WidgetExamples-ProductDetailWidget01.png" alt="The product detail widget (SimpleReview option)"/></div><br/>
+                </div>
+</div>
+
+            <p class="p">To display the product detail widget's simple review option for a specific product,
+                you must first specify the product code of the product that you want to display, as
+                is shown in the following code example.</p>
+
+            <pre class="pre codeblock prettyprint">
+Excelsior.ready(function() {
+    Excelsior.setProductCode('1934793');   // specified product
+}</pre>
+
+            <p class="p">You must also specify the parent div ID in which you want the product detail widget's
+                simple review option displayed, and you must specify the name of the widget type to
+                be displayed.</p>
+
+            <pre class="pre codeblock prettyprint">
+Excelsior.ready(function() {
+    Excelsior.render({
+        id: 'con3',    // parent div ID 
+        name:'SimpleReview'
+        });
+}</pre>
+
+        </div>
+
+        <div class="section"><h2 class="title sectiontitle">The simple question option</h2>
+            
+            <div class="p"><div class="fig fignone"><span class="figcap">Figure 2. The product detail widget (SimpleQuestion option)</span>
+                    
+                    
+                    <br/><div class="imageleft"><img class="image imageleft" width="636" height="217" src="../img/WidgetExamples-ProductDetailWidget02.png" alt="The product detail widget (SimpleQuestion option)"/></div><br/>
+                </div>
+</div>
+
+            <p class="p">To display the product detail widget's simple question option for a specific product,
+                you must first specify the product code of the product that you want to display, as
+                is shown in the following code example.</p>
+
+            <pre class="pre codeblock prettyprint">
+Excelsior.ready(function() {
+    Excelsior.setProductCode('1934793');   // specified product
+}</pre>
+
+            <p class="p">You must also specify the parent div ID in which you want the product detail widget's
+                simple question option displayed, and you must specify the name of the widget type
+                to be displayed.</p>
+
+            <pre class="pre codeblock prettyprint">
+Excelsior.ready(function() {
+    Excelsior.render({
+        id: 'con3',    // parent div ID 
+        name:'SimpleQuestion'
+        });
+}</pre>
+
+        </div>
+
+    </div>
+
+<div class="related-links">
+<ul class="ullinks">
+<li class="link ulchildlink"><strong><a href="../../widgets/topics/WidgetExamples-ReviewsInTabView.html">Review tab view</a></strong><br/>
+</li>
+<li class="link ulchildlink"><strong><a href="../../widgets/topics/WidgetExamples-QuestionsInTabView.html">Questions tab view</a></strong><br/>
+</li>
+<li class="link ulchildlink"><strong><a href="../../widgets/topics/WidgetExamples-BlogPostsInTabView.html">Blog posts tab view</a></strong><br/>
+</li>
+<li class="link ulchildlink"><strong><a href="../../widgets/topics/WidgetExamples-DiscussionsInTabView.html">Discussions tab view</a></strong><br/>
+</li>
+</ul>
+</div>
+
+</body>
+</html>
