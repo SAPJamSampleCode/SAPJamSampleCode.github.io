@@ -1,1 +1,56 @@
-[{"name":"Products","external_type":"https://cloudmodelespmhana.hana.ondemand.com/espm-cloud-web/espm.svc/$metadata#Products","filter_feed":true,"feed_history":true,"annotation":"https://sapjamsamplecode.github.io/Annotations/webshop_annotations.xml","search":{"show":true,"key":"LongDescription","hint":"Description"},"sort_fields":"\u0026Category","featurable":true,"can_be_primary_group_object":true,"can_be_primary_subgroup_object":true,"default_locale":"en","supported_locale":"en","filters":[{"name":"Computer Components","filter":"Category eq 'Flat screens' or Category eq 'Graphic cards' or Category eq 'Headsets' or Category eq 'Keyboards' or Category eq 'Mice' or Category eq 'Mousepads' or Category eq 'PDAs/Organizers' or Category eq 'Speakers' or Category eq 'Telecommunication'","enabled":true},{"name":"Computer Systems","filter":"Category eq 'Computer system accessories' or Category eq 'Notebooks' or Category eq 'PCs' or Category eq 'Servers'","enabled":true},{"name":"Printers and Scanners","filter":"Category eq 'Ink jet printers' or Category eq 'Laser printers' or Category eq 'Multifunction printers' or Category eq 'Scanners'","enabled":true},{"name":"Software","filter":"Category eq 'Software'","enabled":true},{"name":"TV / Video / HiFi","filter":"Category eq 'Beamers' or Category eq 'MP3-Players' or Category eq 'Portable Players' or Category eq 'TV flat screens'","enabled":true}]}]
+[
+  {
+    "name": "Customer Reviews",
+    "external_type": "https://espmrefapps.hana.ondemand.com/espm-cloud-web/espm.svc/$metadata#CustomerReviews",
+    "filter_feed": true,
+    "feed_history": true,
+    "annotation": "https://espmrefapps.hana.ondemand.com/espm-cloud-web/webshop/reviews_annotations.xml",
+    "search": {
+      "show": true,
+      "key": "LongDescription",
+      "hint": "Description"
+    },
+    "sort_fields": "&Category",
+    "featurable": true,
+    "can_be_primary_group_object": true,
+    "can_be_primary_subgroup_object": true,
+    "default_locale": "en",
+    "supported_locale": "en",
+    "filters": [
+      {
+        "name": "Bottom Rated Customer Reviews",
+        "filter": "Rating le 2",
+        "enabled": true
+      },
+      {
+        "name": "Top Rated Customer Reviews",
+        "filter": "Rating gt 3",
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "name": "Products",
+    "external_type": "https://espmreferenceapps.neo.ondemand.com/espm-cloud-web/espm.svc/$metadata#Products",
+    "filter_feed": true,
+    "feed_history": true,
+    "annotation": "https://espmreferenceapps.neo.ondemand.com/espm-cloud-web/reviews/reviews_annotations.xml",
+    "search": {
+      "show": false,
+      "key": null,
+      "hint": null
+    },
+    "sort_fields": null,
+    "featurable": true,
+    "mention": {
+      "can_mention": true,
+      "primary_mention_key": null,
+      "secondary_mention_key": null
+    },
+    "can_be_primary_group_object": true,
+    "can_be_primary_subgroup_object": true,
+    "default_locale": "en",
+    "supported_locale": "en",
+    "filters": []
+  }
+]
