@@ -1,40 +1,10 @@
 [
   {
-    "name": "Customer Reviews",
-    "external_type": "https://espmrefapps.hana.ondemand.com/espm-cloud-web/espm.svc/$metadata#CustomerReviews",
+    "name": "Products",
+    "external_type": "https://espmrefapps.hana.ondemand.com/espm-cloud-web/espm.svc/$metadata#Products",
     "filter_feed": true,
     "feed_history": true,
     "annotation": "https://espmrefapps.hana.ondemand.com/espm-cloud-web/webshop/reviews_annotations.xml",
-    "search": {
-      "show": true,
-      "key": "LongDescription",
-      "hint": "Description"
-    },
-    "sort_fields": "&Category",
-    "featurable": true,
-    "can_be_primary_group_object": true,
-    "can_be_primary_subgroup_object": true,
-    "default_locale": "en",
-    "supported_locale": "en",
-    "filters": [
-      {
-        "name": "Bottom Rated Customer Reviews",
-        "filter": "Rating le 2",
-        "enabled": true
-      },
-      {
-        "name": "Top Rated Customer Reviews",
-        "filter": "Rating gt 3",
-        "enabled": true
-      }
-    ]
-  },
-  {
-    "name": "Products",
-    "external_type": "https://espmreferenceapps.neo.ondemand.com/espm-cloud-web/espm.svc/$metadata#Products",
-    "filter_feed": true,
-    "feed_history": true,
-    "annotation": "https://espmreferenceapps.neo.ondemand.com/espm-cloud-web/reviews/reviews_annotations.xml",
     "search": {
       "show": false,
       "key": null,
@@ -52,5 +22,40 @@
     "default_locale": "en",
     "supported_locale": "en",
     "filters": []
+  },
+  {
+    "name": "Customer Reviews",
+    "external_type": "https://espmrefapps.hana.ondemand.com/espm-cloud-web/espm.svc/$metadata#CustomerReviews",
+    "filter_feed": true,
+    "feed_history": true,
+    "annotation": "https://espmrefapps.hana.ondemand.com/espm-cloud-web/webshop/reviews_annotations.xml",
+    "search": {
+      "show": false,
+      "key": null,
+      "hint": null
+    },
+    "sort_fields": null,
+    "featurable": true,
+    "mention": {
+      "can_mention": null,
+      "primary_mention_key": null,
+      "secondary_mention_key": null
+    },
+    "can_be_primary_group_object": true,
+    "can_be_primary_subgroup_object": true,
+    "default_locale": "en",
+    "supported_locale": "en",
+    "filters": [
+      {
+        "name": "bottom rated customer reviews",
+        "filter": "Rating le 2",
+        "enabled": true
+      },
+      {
+        "name": "Top rated customer reviews",
+        "filter": "Rating gt 3",
+        "enabled": true
+      }
+    ]
   }
 ]
