@@ -1,0 +1,604 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us" dir="ltr">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Advanced Multi-User Sync</title>
+      <link rel="icon" href="themes/sap-default/img/favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" href="themes/sap-default/img/favicon.ico">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="abstract" content="In this tutorial we will create a SAP Jam Collaboration OpenSocial gadget to display the context of a statusbar gadget instance.">
+      
+      <meta name="description" content="In this tutorial we will create a SAP Jam Collaboration OpenSocial gadget to display the context of a statusbar gadget instance.">
+      <script type="text/javascript">var d4p = {"relativePath":'',"dev":false,"debug":false,"draft":false,"nextTopicHref":"e72259513d8c4d94a5d2caa4d25c02c6.html","previousTopicHref":"26f52c3f88f246a2bdd06ee2787af2b1.html"}</script>
+      <link rel="stylesheet" type="text/css" media="screen, projection" href="themes/sap-default/css/style.css">
+      <script type="text/javascript">
+      
+        d4p.cssGridPath = d4p.dev ? 'html5-themes/modules/960-Responsive-Grid/css/' : 'themes/dita-d4p-classic/css/';
+        var ADAPT_CONFIG = {
+          // Where is your CSS?
+          path: d4p.relativePath + d4p.cssGridPath,
+
+          // false = Only run once, when page first loads.
+          // true = Change on window resize and page tilt.
+          dynamic: true,
+
+          // Optional callback... myCallback(i, width)
+          callback: doc_resize,
+
+          // First range entry is the minimum.
+          // Last range entry is the maximum.
+          // Separate ranges by "to" keyword.
+          range: [
+             // small (size-0)
+            '0px    to 760px  =',
+             // medium (size-1, size-2)
+            '760px  to 980px  = ',
+            '980px  to 1270px = ',
+             // large (size-3, size-5)
+            '1270px to 1600px = ',
+            '1600px to 1940px = ',
+             // extra large (size-6)
+            '1940px to 2540px = ',
+            '2540px           = '
+          ]
+        };
+
+        function doc_resize(i, width)
+        {
+          d4p.setBodyClassfunction(i, width);
+        }
+
+
+        
+      </script>
+      <script type="text/javascript" src="themes/sap-default/js/script.js"></script>
+      
+      		<!--[if lt IE 9]>
+      			<script>
+      			  var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+      			    "figure,footer,header,hgroup,mark,menu,meter,nav,output," +
+      			    "progress,section,time,video").split(',');
+      			  for (var i = 0; i < e.length; i++) {
+      			    document.createElement(e[i]);
+      			  }
+      			</script>
+      		<![endif]-->
+      
+      <script>
+      function addLoadEvent(func) {
+      var oldonload = window.onload;
+      if (typeof window.onload != 'function') {
+      window.onload = func;
+      } else {
+      window.onload = function() {
+      if (oldonload) {
+      oldonload();
+      }
+      func();
+      }
+      }
+      }
+      
+      addLoadEvent(function() { prettyPrint();
+      if ($('#local-navigation').length) {
+      $('#local-navigation').navigation();
+      }
+      
+      
+      });
+      
+      </script>
+      <script type="text/javascript" src="js/prettify.js"> </script>
+      <script id="search-processing" type="text/javascript" src="js/search-processing.js"> </script>
+      </head>
+   <body class="en-us sap-default centered navigation-default">
+      <div id="d4h5-main-container" class="container_12" role="application">
+         <ul id="page-links" class="hidden">
+            <li><a id="skip-to-content" href="#d4h5-main-content"></a></li>
+            <li><a id="skip-to-localnav" href="#local-navigation"></a></li>
+            <li><a id="skip-to-footer" href="#footer"></a></li>
+         </ul>
+         <header role="banner" aria-labelledby="publication-title">
+            
+            <img src="themes/sap-default/img/sap.png" class="logo hide-for-small"><h1 id="publication-title" class="hide-for-small">SAP Jam Collaboration Developer Guide</h1>
+            <section class="search-box">
+               <form onsubmit="redirect(frmSearch);return false" name="frmSearch" class="searchForm" role="search"><label for="txtSearchTerms" class="screen-reader">Search</label><input type="search" id="txtSearchTerms" name="q"></form><span class="search-button sap-icon" onclick="redirect(frmSearch);return false"></span></section>
+            
+         </header>
+         
+         <div id="d4h5-section-container" class="grid_12">
+            <nav class="mobile-nav">
+               <ul>
+                  <li class="toggle-topbar menu-icon no-child "><span class="sap-icon"><a href="#local-navigation"></a></span></li>
+               </ul>
+               <section class="nav-pub-title">SAP Jam Collaboration Developer Guide</section>
+            </nav>
+            <nav id="local-navigation" role="navigation" aria-label="Main navigation" class="grid_4 alpha omega">
+               <div id="nav-content">
+                  <ul>
+                     <li class="toc_link no-child "><a href="index.html"></a></li>
+                     <li class=" no-child "><a href="d24f831cc987442187fc82f05148327e.html">Introduction</a></li>
+                     <li class=" collapsible  collapsed"><a href="35d8732602c44bc9816a7e5a28f3f788.html">SAP HANA Cloud Platform</a><ul>
+                           <li class=" no-child "><a href="2e9e408296bc48db9a175106c6964fbc.html">Register for HCP and Jam developer access</a></li>
+                           <li class=" collapsible  collapsed"><a href="b0d33e22661a44699b163baafb17c9d7.html">How to use the SAP Jam Developer Edition</a><ul>
+                                 <li class=" no-child "><a href="ef3d5cc812cb417b984327b3b71f8725.html">Login</a></li>
+                                 <li class=" no-child "><a href="71e9a4b05c8a45bcb84f00cd6da2cede.html">Administration</a></li>
+                                 <li class=" no-child "><a href="71be0cf7646442eaa491587e8101d63d.html">Set up new users</a></li>
+                                 <li class=" collapsible  collapsed"><a href="d4089b77938b4f5b8d7323699cbb513c.html">Create a Group</a><ul>
+                                       <li class=" no-child "><a href="3e084ca9c4df4bf685075e7cb7faf90d.html">Invite users</a></li>
+                                       <li class=" collapsible  collapsed"><a href="1f8d409c062c459ea642c95253399327.html">Add content</a><ul>
+                                             <li class=" no-child "><a href="923e99aec2ab47998b1e8076962da358.html">Create a poll</a></li>
+                                             <li class=" no-child "><a href="b245a8456a4a420b997dfbd876505a65.html">Add ideas</a></li>
+                                          </ul>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class=" no-child "><a href="5bb8975d41d14941b9cfa3674df414bc.html">Test your changes</a></li>
+                              </ul>
+                           </li>
+                           <li class=" collapsible  collapsed"><a href="8ea82f9ac7134af18d526c086bdfc42a.html">Jam and HANA Cloud Platform integrations</a><ul>
+                                 <li class=" no-child "><a href="5231063512c44175a934b4001869c06c.html">Integrate External Applications</a></li>
+                                 <li class=" collapsible  collapsed"><a href="1c2351040fe04d59b54d079256b20dbe.html">Integrate OpenSocial Gadgets</a><ul>
+                                       <li class=" collapsible  collapsed"><a href="0c19c3af549242e786f6d2f14c5963df.html">Build the Lumira OpenSocial Gadget</a><ul>
+                                             <li class=" no-child "><a href="cb11b349048f40cb913fe52050c314d0.html">Download the Gadget Sample Code</a></li>
+                                             <li class=" no-child "><a href="7235a87c220a43d480709a6855b92350.html">Create an HTML5 Application</a></li>
+                                             <li class=" no-child "><a href="bcf4fbbaa44c4e1b91426c3218c604ce.html">Add OpenSocial Gadget files</a></li>
+                                             <li class=" no-child "><a href="97a898879aef420b9ef1f2b7cb9fe6e7.html">Create Application Descriptor file</a></li>
+                                             <li class=" no-child "><a href="d5702be55a48454c9403f60864ced63b.html">Publish the HTML5 Application</a></li>
+                                             <li class=" no-child "><a href="d21fdf96e4af4ff38c8333be56348b92.html">Use your gadget in Jam</a></li>
+                                          </ul>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class=" no-child "><a href="5666158135d749218f6a0cdf82bcf5b1.html">Integrate Embeddable Widgets</a></li>
+                                 <li class=" no-child "><a href="033db47cbaa6404cbb8c2e53a220964d.html">Integrations with the SAP Jam API</a></li>
+                                 <li class="topichead  collapsible "><span>Integrate Webhooks</span><ul>
+                                       <li class=" no-child "><a href="a711035f7d824819a38764b530e0b5a9.html">Webhooks - Alias Users</a></li>
+                                       <li class=" no-child "><a href="9ad5bea5f6884699a4f1a07be9b07e2c.html">Webhooks - Alias Users - WAR file</a></li>
+                                       <li class=" no-child "><a href="2e53b94ae1af43ca97c343a2bba684eb.html">Webhooks - Groups</a></li>
+                                       <li class=" no-child "><a href="c35773a76b7846e0aa9f432919374b63.html">Webhooks - Groups - WAR file</a></li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class=" collapsible  collapsed"><a href="c8d4629eb47e4f66838b9636ef5a8f56.html">External Applications</a><ul>
+                           <li class=" no-child "><a href="031a5d595d55477aa85227524d53c500.html">Prepare the external application or platform</a></li>
+                           <li class=" no-child "><a href="df6cb79bf0cd454a85ab66981c8758af.html">Add a trusted certificate authority</a></li>
+                           <li class=" no-child "><a href="6c1db64b8c614485bc7ba7b1e2a1dc81.html">Configure SAP Jam as a SAML Local IDP</a></li>
+                           <li class=" no-child "><a href="ccc18a0e1d5c4723a8c763d1ddcf083f.html">Add an OAuth client</a></li>
+                           <li class=" no-child "><a href="7e29f351ad14404593a33f9c7801239e.html">Add a SAML trusted IDP</a></li>
+                           <li class=" no-child "><a href="043e67d517594c3a86021b65e35968c6.html">Register the external application in SAP Jam</a></li>
+                           <li class=" collapsible  collapsed"><a href="dd85029a63004b0f94773b25980e3261.html">Develop an annotations file</a><ul>
+                                 <li class=" no-child "><a href="241967640d074854a3857074b9992b60.html">OData Assumptions</a></li>
+                                 <li class=" no-child "><a href="1f771fb722b646889dbfcf22d3e11a55.html">External Application Error Messages</a></li>
+                              </ul>
+                           </li>
+                           <li class=" no-child "><a href="9d97bc8d19c74090a7dc2d548ef3fa5c.html">Register the business records in SAP Jam</a></li>
+                           <li class=" no-child "><a href="bda516f6c3ba41ec8bca39ff1984aac6.html">Configure a business record filter</a></li>
+                           <li class=" no-child "><a href="b7ffa18a0c2f4f35ab50725f0201d38d.html">Configure a business record sort order</a></li>
+                           <li class=" no-child "><a href="2b4687c4d356492ba97080d5b432bf09.html">Configure access to business records in Jam</a></li>
+                           <li class=" no-child "><a href="5edb08ff6afe4b669c93a27f50ca2c29.html">Use the Jam API with external applications</a></li>
+                        </ul>
+                     </li>
+                     <li class=" collapsible  active"><a href="df70ff966aa641aea2424b261ba7c34f.html">OpenSocial Gadgets</a><ul>
+                           <li class=" no-child "><a href="3c577e7b688d473fada6fc28e7900b86.html">Gadget Contexts</a></li>
+                           <li class=" no-child "><a href="ea90f82a84394bbaafdf1fa84993d967.html">Gadget Content Types</a></li>
+                           <li class=" no-child "><a href="0526a42d4e0d418186055384e46721f6.html">Register your Gadget with SAP Jam</a></li>
+                           <li class=" no-child "><a href="7cd75e6ff1d64fa3b3fa8cbf6e57cef8.html">OpenSocial Gadget XML Structure</a></li>
+                           <li class=" collapsible  active"><a href="4764043666b64dd8ac77b664d4efb057.html">SAP Jam OpenSocial Tutorials</a><ul>
+                                 <li class=" collapsible  collapsed"><a href="9d304bf736cd4514bba2b42393a09ec6.html">Basic: Hello World Gadget Tutorial</a><ul>
+                                       <li class=" no-child "><a href="5ebc507b18d043df98780df6636ccc1e.html">1 - Hello World</a></li>
+                                       <li class=" no-child "><a href="fd594f84b365452a9063c4f6a00ffb74.html">2 - UI Setup</a></li>
+                                       <li class=" no-child "><a href="691a655d437140aa8b92e3a9468ce34d.html">3 - Initialize</a></li>
+                                       <li class=" no-child "><a href="2ce07dc48d114cee905d9be7dabcdfbb.html">4 - Adding topics</a></li>
+                                       <li class=" no-child "><a href="022cc4f4674b47478e3088f3185f45a5.html">5 - Voting</a></li>
+                                       <li class=" no-child "><a href="84acb70ef1b24eaaa8f11c201892f899.html">6 - Adding count</a></li>
+                                       <li class=" no-child "><a href="8f68f8e2f6d44976899e9367fba32ab5.html">7 - Adding duplicates popup message</a></li>
+                                       <li class=" no-child "><a href="a1523f55afc54f28bcb2b20c1ae9342d.html">Complete Tutorial Code Example</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class=" collapsible  collapsed"><a href="4a4c2a58faee48fc81a06f974329ceb8.html">Intermediate: API Gadget Tutorials</a><ul>
+                                       <li class=" collapsible  collapsed"><a href="3e4c8c278a8245648ae183a84dc95db2.html">Context Gadgets</a><ul>
+                                             <li class=" no-child "><a href="84d61c6d10324a8d8a0758aeeea1e9ef.html">Content Instance Context</a></li>
+                                             <li class=" no-child "><a href="cb207c519bb445b793ef87bb1c4e9524.html">Group Gadget Instance Context</a></li>
+                                             <li class=" no-child "><a href="3aa69dc9e7914c05947e571dce8f1c87.html">Profile Gadget Instance Context</a></li>
+                                             <li class=" no-child "><a href="bb879e23402c46f1881220394728843d.html">Statusbar Gadget Instance Context</a></li>
+                                          </ul>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class=" collapsible  active"><a href="06d7dd1cfa2d40c48fbfda8666417900.html">Advanced: Gadget Application Tutorials</a><ul>
+                                       <li class=" no-child "><a href="64a114fd3ce24343925763e6e3f6b33b.html">To Do Gadget</a></li>
+                                       <li class=" no-child "><a href="26f52c3f88f246a2bdd06ee2787af2b1.html">Simple Multi-User Sync Gadget</a></li>
+                                       <li class=" no-child  active"><a class="selected" href="f80efc655d2f4f6989c0a7fb7b1d2bad.html">Advanced Multi-User Sync</a></li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li class=" collapsible  collapsed"><a href="e72259513d8c4d94a5d2caa4d25c02c6.html">Extend SAP Jam with OpenSocial Gadgets</a><ul>
+                                 <li class=" no-child "><a href="bf846daa778445a0a1ddd5698ce2a147.html">Add Gadget Data to Jam Search</a></li>
+                                 <li class=" no-child "><a href="447fafa76c6d478fb38052a590455038.html">OpenSocial Gadget String Localization</a></li>
+                                 <li class=" no-child "><a href="f19ed50491f1400dab4dce76db078284.html">OpenSocial Gadget Responsive Design</a></li>
+                                 <li class=" no-child "><a href="b5feb3d4d19d4f0fa5519d52e33f81ea.html">Register OpenSocial Gadgets with OAuth</a></li>
+                                 <li class=" collapsible  collapsed"><a href="53a65daf9b3848afa0beae037256f343.html">OAuth 2.0 SAML for OpenSocial Gadgets</a><ul>
+                                       <li class=" collapsible  collapsed"><a href="035cd5e4e94c434cbef79119982eb1ca.html">Example: Gadget using SAP Jam API</a><ul>
+                                             <li class=" no-child "><a href="17843150117d45dca585c8d83dd45870.html">1. Download SAML Sample Code</a></li>
+                                             <li class=" no-child "><a href="f8d50f0abb48476a99c28faacf1a3cd3.html">2. Configure a Jam SAML Trusted IDP</a></li>
+                                             <li class=" no-child "><a href="9f86d35bb9594635bd505063bbe76830.html">3. Configure a Jam OAuth Client</a></li>
+                                             <li class=" no-child "><a href="0845a7aa3a4848a1bbd0e35e25e6d2ef.html">4. Configure Jam for your Gadget</a></li>
+                                             <li class=" no-child "><a href="0c6c2e9144f340a39a67ec2f01a5111e.html">5. Configure the OpenSocial Gadget</a></li>
+                                             <li class=" no-child "><a href="4a205c9e607c4fa28aaa7c2352292c82.html">6. Test your Gadget</a></li>
+                                          </ul>
+                                       </li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li class=" collapsible  collapsed"><a href="a1ef8de936304f398ac94496d1446f83.html">SAP Jam OpenSocial JavaScript API reference</a><ul>
+                                 <li class=" no-child "><a href="4fc67a0b56fb4370acc7666988cc8d7a.html">Jam OpenSocial API Supported Features</a></li>
+                                 <li class=" no-child "><a href="7bdf5be5455b47579d93a58b150917d3.html">Jam OpenSocial coding options compared</a></li>
+                                 <li class=" collapsible  collapsed"><a href="d5f42de4f5ab4deeb72b2bb24ca0c766.html">OpenSocial Gadgets API reference</a><ul>
+                                       <li class=" no-child "><a href="fca1266a6b8f46babe52c1bcf891b74b.html">gadgets.io</a></li>
+                                       <li class=" no-child "><a href="56ade6e9b3014c338b8d0293e4ab2c38.html">gadgets.json</a></li>
+                                       <li class=" no-child "><a href="55e619bb995049499cab86203c803e97.html">gadgets.util</a></li>
+                                       <li class=" no-child "><a href="3156b78f91e7465a9885f0183a15b409.html">gadgets.views</a></li>
+                                       <li class=" no-child "><a href="83db2958beeb4c8a930e7d8bebd10aaa.html">gadgets.MiniMessage</a></li>
+                                       <li class=" no-child "><a href="20ab704e18104cbca2c766357241cf8e.html">gadgets.Tabset</a></li>
+                                       <li class=" no-child "><a href="11b9368ede1b47c78c6ea426d8a283dd.html">gadgets.Tab</a></li>
+                                       <li class=" no-child "><a href="d0a9f019668c4f41b3c9e7a80a7ba398.html">gadgets.flash</a></li>
+                                       <li class=" no-child "><a href="b177714737e045bbba2eb163e252d66b.html">gadgets.window</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class=" collapsible  collapsed"><a href="603d00cbebaf44e6a2853309627ebf58.html">OpenSocial API (osapi) reference</a><ul>
+                                       <li class=" no-child "><a href="0c003829539d425d9e9a4d0d7d9e0505.html">osapi.people</a></li>
+                                       <li class=" no-child "><a href="8efe8e8b3ee84385a041c0d34ff3376d.html">osapi.appdata</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class=" collapsible  collapsed"><a href="e9ca07aeab4c4de9916f2da8853ecb6e.html">Wave API reference</a><ul>
+                                       <li class=" no-child "><a href="8f7594b099bd44e4867e92fbed6ea1a7.html">wave.Participants</a></li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class=" collapsible  collapsed"><a href="30b13926562346e799e608730c9ce80d.html">Embeddable Widgets</a><ul>
+                           <li class=" collapsible  collapsed"><a href="d2542256eb41486089bd213e11d95e49.html">SAP Jam Collaboration div-embedded widgets</a><ul>
+                                 <li class=" no-child "><a href="57cd8c8023e440e3b4ee91b05ef35960.html">Widget authentication</a></li>
+                                 <li class=" no-child "><a href="cd548069df244d3f8dfec27c0936820c.html">Use the Feed Widget Builder</a></li>
+                                 <li class=" no-child "><a href="aecbed97018344f6983a4206a87b4e37.html">Use the Recommendations Widget Builder</a></li>
+                                 <li class=" no-child "><a href="88f2a5c0e9754190911231b461104a9c.html">Use the Share Widget Builder</a></li>
+                                 <li class=" no-child "><a href="5c1fee02f8ea49ba913527f17262cf8f.html">Add div-embedded widgets to HTML pages</a></li>
+                              </ul>
+                           </li>
+                           <li class=" collapsible  collapsed"><a href="9bf61ad93c594ceb9a22f35dd16f5ff4.html">SAP Jam Collaboration UI5 Widgets</a><ul>
+                                 <li class=" no-child "><a href="b33520df32e64958b0a73986384fd41d.html">Embed the UI5 Group Widget</a></li>
+                                 <li class=" no-child "><a href="8d47458719e941f2ab506c8f7e25ec5d.html">Embed the UI5 Forum Widget</a></li>
+                                 <li class=" no-child "><a href="0b6bcab40792471fbfd48f5152be205a.html">Embed the UI5 Feed Widget</a></li>
+                                 <li class=" no-child "><a href="38d6a6270fa043e8920b03e68caee705.html">About UI5 Widgets proxy requirements</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class=" collapsible  collapsed"><a href="7f32c2d25e9c4848b3e9b7a87ef09592.html">SAP Jam API Introduction</a><ul>
+                           <li class=" collapsible  collapsed"><a href="fff6b13f364044b6b558eae4a6221f13.html">SAP Jam OData API Tutorial</a><ul>
+                                 <li class=" collapsible  collapsed"><a href="7f5fa07e54e743c7b6f899e7fbe19598.html">Using the OData API Reference</a><ul>
+                                       <li class=" no-child "><a href="ea995aa6284e4fa89389bf99f5521f4b.html">SAP Jam API Authorization</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class=" no-child "><a href="6cb6171b5ba9493e89ed751257486ddd.html">Introduction to OData</a></li>
+                                 <li class=" collapsible  collapsed"><a href="cc2bb683ad4a445b95e296be924ea3f0.html">The Groups and related API</a><ul>
+                                       <li class=" no-child "><a href="3861eb6d5a884f05a5343e4b1f706773.html">Basic group creation</a></li>
+                                       <li class=" no-child "><a href="9bb1625cab0642eb956d8f18ef581a5e.html">Group creation setting all options</a></li>
+                                       <li class=" no-child "><a href="a7ed4a9637344b82a3ef3103d57359f4.html">Copy an existing group</a></li>
+                                       <li class=" no-child "><a href="5b62642c765748d6a5a57a25c06e659a.html">Retrieve a group's information</a></li>
+                                       <li class=" collapsible  collapsed"><a href="f6334f210c10432fad980279a54ce8c8.html">About group templates</a><ul>
+                                             <li class=" no-child "><a href="88998817b66c468b8d3b1eb219a19159.html">Save a group as a CustomGroupTemplate</a></li>
+                                             <li class=" no-child "><a href="36ede2fc962e4177ab0c98e37351d3de.html">Update a CustomGroupTemplate</a></li>
+                                             <li class=" no-child "><a href="edaa188db2a741d99ccbfe59a9cd13a0.html">Retrieve a feed of available GroupTemplates</a></li>
+                                             <li class=" no-child "><a href="4c362637977442e38a20ebe0a32cacac.html">Create a group from a GroupTemplate</a></li>
+                                          </ul>
+                                       </li>
+                                       <li class=" no-child "><a href="1e245553f09c4d9f965108c57e46e014.html">Search for a group</a></li>
+                                       <li class=" no-child "><a href="e01f3dcbd8f14d47a28970b129a9083e.html">Update a group</a></li>
+                                       <li class=" no-child "><a href="eb08b31823664f60b390734729f35664.html">Delete a group</a></li>
+                                       <li class=" no-child "><a href="0aa92a343a074f068759fd5039a57743.html">Retrieve a feed of existing groups</a></li>
+                                       <li class=" no-child "><a href="344446133d564bd9b0ad64bab977e5ab.html">Groups API lesson summary</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class=" no-child "><a href="34e1dd3043c448cfa587f4a94b72eb34.html">OData Query Parameters</a></li>
+                                 <li class=" collapsible  collapsed"><a href="d7346316fc604af0a58155fe27cfe5e2.html">The Members and related API</a><ul>
+                                       <li class=" no-child "><a href="e26bb2ef3d574ac9a614c12ca0ecfdff.html">Retrieve the current user's Member information</a></li>
+                                       <li class=" no-child "><a href="723137a64f2e4b7bac274fa0d0c36703.html">Retrieve a specific user's Member information</a></li>
+                                       <li class=" no-child "><a href="e2f47481042a40bc9b755495f16a54cd.html">Set the current user as following another</a></li>
+                                       <li class=" no-child "><a href="0488a7bb4b49419db6f22188eefe304e.html">Retrieve a feed of the Members the specified Member is following</a></li>
+                                       <li class=" no-child "><a href="09880de0777a4b17af3d5e404bd3460e.html">Retrieve a feed of Members who are followers of the specified Member</a></li>
+                                       <li class=" no-child "><a href="eb8cc9732b024e6cb00c70ef3e48bc71.html">Retrieve a count of Members who are followers of the specified Member</a></li>
+                                       <li class=" no-child "><a href="e1ee496d73164228a8395c2127f9335e.html">Unset the current user as following another</a></li>
+                                       <li class=" no-child "><a href="2ecd66a4731949abb0e106da239e5f81.html">Get a Member's complete profile information</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class=" no-child "><a href="edd952c2f9d3432582ab53675d92dba0.html">Uploading and downloading files</a></li>
+                                 <li class=" no-child "><a href="0adef44f714247fb9439fe9ea9fc8dd9.html">Using @mention in the API</a></li>
+                                 <li class=" no-child "><a href="2f9c35bd07ec4116aa989c7ba281fcac.html">The Search API</a></li>
+                                 <li class=" no-child "><a href="dacad2174f654e62a75754d71fee9da2.html">Understanding OData metadata</a></li>
+                                 <li class=" no-child "><a href="93a8c6e9486e42e78f82223b22e08ef8.html">Batching API calls together</a></li>
+                                 <li class=" no-child "><a href="b33bb485372345f0a970e366e6eb11c3.html">Supported HTML tags</a></li>
+                              </ul>
+                           </li>
+                           <li class=" collapsible  collapsed"><a href="ac2b4a50dc6d4324a69c19f645e353ef.html">Authentication and Authorization API</a><ul>
+                                 <li class=" collapsible  collapsed"><a href="f44a8e961b8246a1aa6f0a2945fc807e.html">OAuth 1.0a Authorization Tutorial</a><ul>
+                                       <li class=" collapsible  collapsed"><a href="72d69c3560a24fdf9ce3ef8c361c2c08.html">1. Register your Auth Client</a><ul>
+                                             <li class=" no-child "><a href="e26807fe82a940b19735f8ed378757b7.html">1.1 Signature Methods</a></li>
+                                          </ul>
+                                       </li>
+                                       <li class=" no-child "><a href="c2c3ec53a3394b1f8a3d88ab437ff84c.html">2. Get a Request Token from Jam</a></li>
+                                       <li class=" no-child "><a href="f507413911e84076b36e6c03dc64d532.html">3. Redirect the User to SAP Jam</a></li>
+                                       <li class=" no-child "><a href="11da477992ab48618fd47548f8bdf4a4.html">4. User authorizes the client application</a></li>
+                                       <li class=" no-child "><a href="071253f1de384581b7d67069380f7e3a.html">5. Request Token to Access Token</a></li>
+                                       <li class=" no-child "><a href="3e0afb8ac9494fbfb2f488ceef70ca28.html">6. Make Public Jam API Calls</a></li>
+                                       <li class=" no-child "><a href="88f8dd19767642549759187276c9cba7.html">Validate an Authorized Access Token</a></li>
+                                       <li class=" no-child "><a href="33b32ac98b5b4509aab45c2c67ed1a7a.html">Revoke an Authorized Access Token</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class=" collapsible  collapsed"><a href="871783c1d86c4d9eafa47971cb7f9b3a.html">OAuth 1.0a Authorization API Reference</a><ul>
+                                       <li class=" no-child "><a href="d89d05047eb04755ab29312b65497832.html">[POST] /oauth/request_token</a></li>
+                                       <li class=" no-child "><a href="1ef715a906cb494080f53ef9a819458d.html">[POST] /oauth/access_token</a></li>
+                                       <li class=" no-child "><a href="2e68c02e917041fca942bbc9cea8ce44.html">[GET] /oauth/test_request</a></li>
+                                       <li class=" no-child "><a href="933ad6e3c8d24b8da537d961151a8033.html">[POST] /oauth/revoke_token</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class=" collapsible  collapsed"><a href="6abc18ec667f4531984e3899d4c2fd2c.html">SAML Authorization Tutorial</a><ul>
+                                       <li class=" no-child "><a href="497154966f274cada5e07c869905b5ee.html">OAuth2 Access Token from SAML</a></li>
+                                       <li class=" no-child "><a href="c6813927839541a19e4703c3a2564f1b.html">OAuth2 and SAML Bearer Assertions</a></li>
+                                       <li class=" no-child "><a href="fd49d6ed74ab4e54825a843dc20dd63f.html">SAML Format Requirements</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class=" collapsible  collapsed"><a href="c6f62a72515f4ad1b254507b82f9e318.html">SAML Authorization API Reference</a><ul>
+                                       <li class=" no-child "><a href="6b6183a23cb94fbc963f5076c2fd489c.html">[POST] /api/v1/auth/token</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class=" collapsible  collapsed"><a href="7a58d9688edd4432ac22b0c9ea001a80.html">Single-use tokens</a><ul>
+                                       <li class=" no-child "><a href="17737c73f9244db6bcf983505a99247e.html">[POST] /v1/single_use_tokens</a></li>
+                                       <li class=" no-child "><a href="edebafa4315243af926e6f7945a31ae9.html">Test the single_use_token</a></li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li class=" collapsible  collapsed"><a href="2ed946bf745a4cafb848747a8dfe2181.html">SAP Jam ReST API</a><ul>
+                                 <li class=" collapsible  collapsed"><a href="2b45e6a2e4124adbbb958f9dd0351958.html">ReST Member List Sync API Calls</a><ul>
+                                       <li class=" no-child "><a href="1ffb11a287204a0c9c90eac71c6e0d16.html">[POST] /auth/token</a></li>
+                                       <li class=" no-child "><a href="141c0552eea04639880827bcbef6cdbf.html">[PUT] /member_list/update</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class=" collapsible  collapsed"><a href="b3be6971ba3044c8ae2853b1ecbaddc8.html">ReST Social Reports API Calls</a><ul>
+                                       <li class=" no-child "><a href="1b02d3f3083443c7adcfcff0fd1cc7e9.html">[POST] /reports</a></li>
+                                       <li class=" no-child "><a href="fb9f7109e9fb4f48910a1cf42ee0ab11.html">[GET] /reports</a></li>
+                                       <li class=" no-child "><a href="44c56a6c0093442496e6647d1c720ab4.html">[GET] /reports/{Id}</a></li>
+                                       <li class=" no-child "><a href="6b078a5a7f9f4c2eaac149bdb7825f86.html">[GET] /reports/{Id}/is_available</a></li>
+                                       <li class=" no-child "><a href="91df110743f1415587a480d67f49a876.html">[GET] /reports/{Id}/content</a></li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+            <nav id="breadcrumb-container" class="breadcrumb-container"><span id="breadcrumbs"><a class="sap-icon bcNavLink" href="index.html"></a>&gt;<a class="bcNavLink" href="df70ff966aa641aea2424b261ba7c34f.html" title="">OpenSocial Gadgets</a>&gt;<a class="bcNavLink" href="4764043666b64dd8ac77b664d4efb057.html" title="This section provides tutorials for developing SAP Jam Collaboration OpenSocial gadgets.">SAP Jam OpenSocial Tutorials</a>&gt;<a class="bcNavLink" href="06d7dd1cfa2d40c48fbfda8666417900.html" title="This section provides tutorials that demonstrate how to use OpenSocial and Apache Wave APIs to create feature rich SAP Jam Collaboration OpenSocial gadget applications.">Advanced: Gadget Application Tutorials</a>&gt;<span class="bcNavText">Advanced Multi-User Sync</span></span><span class="next-previous"><a href="26f52c3f88f246a2bdd06ee2787af2b1.html" class="previous sap-icon" rel="internal" title="Simple Multi-User Sync Gadget"></a><a href="e72259513d8c4d94a5d2caa4d25c02c6.html" class="next sap-icon" rel="internal" title="Extend SAP Jam with OpenSocial Gadgets"></a></span></nav>
+            <div id="d4h5-main-content" class="grid_8 alpha omega">
+               <section>
+                  <div id="content-toolbar" class="toolbar hide-for-small"></div>
+                  <div class="page concept  - topic-topic concept-concept " id="loiof80efc655d2f4f6989c0a7fb7b1d2bad">
+                     
+                     <h1 class="title topictitle1">Advanced Multi-User Sync</h1>
+                     
+                     <div class="body conbody">
+                        <div class="abstract"><span class="shortdesc">In this tutorial we will create a <span class="ph">SAP Jam Collaboration</span> OpenSocial
+                              			gadget to display the context of a statusbar gadget instance.</span>
+                           
+                        </div>
+                        
+                        <p class="p">You will need to perform the following steps before beginning this tutorial:</p>
+                        
+                        <ol class="ol">
+                           <li class="li">Download the source code from <a class="extlink" href="http://help.sap.com/disclaimer?site=https://github.com/SAP/SAPJamSampleCode" target="_blank" alt="https://github.com/SAP/SAPJamSampleCode" title="https://github.com/SAP/SAPJamSampleCode">https://github.com/SAP/SAPJamSampleCode<img src="themes/sap-default/img/3rd_link.png" class="link-external" alt="Information published on non-SAP site" title="Information published on non-SAP site" border="0"></a></li>
+                           
+                           <li class="li">Extract the zip file and navigate to the gadget folder (
+                              				../OpenSocial/Gadget/context/commentstreamgadgetadvanced )
+                           </li>
+                           
+                           <li class="li">Download the minified jQuery 1.x library from <a class="extlink" href="http://help.sap.com/disclaimer?site=http://jquery.com/download/" target="_blank" alt="http://jquery.com/download/" title="http://jquery.com/download/">http://jquery.com/download/<img src="themes/sap-default/img/3rd_link.png" class="link-external" alt="Information published on non-SAP site" title="Information published on non-SAP site" border="0"></a></li>
+                           
+                           <li class="li">Copy the minified jQuery 1.x library into the gadget's jQuery folder (
+                              				../OpenSocial/Gadget/context/commentstreamgadgetadvanced/vendor/jquery )
+                           </li>
+                           
+                           <li class="li">Download the boostrap library from <a class="extlink" href="http://help.sap.com/disclaimer?site=http://getbootstrap.com/getting-started/#download" target="_blank" alt="http://getbootstrap.com/getting-started/#download" title="http://getbootstrap.com/getting-started/#download">http://getbootstrap.com/getting-started/#download<img src="themes/sap-default/img/3rd_link.png" class="link-external" alt="Information published on non-SAP site" title="Information published on non-SAP site" border="0"></a></li>
+                           
+                           <li class="li">Extract the zip file and navigate to the css folder ( ../bootstrap-3.x-dist/css
+                              				)
+                           </li>
+                           
+                           <li class="li">Copy the minified Bootstrap 3.x css file ( bootstrap.min.css ) into the gadget's
+                              				Bootstrap folder (
+                              				../OpenSocial/Gadget/context/commentstreamgadgetadvanced/vendor/bootstrap )
+                           </li>
+                           
+                        </ol>
+                        
+                        <p class="p">Once you have completed these steps, open <strong class="ph b">SAPJAM_context.html</strong>, adjust the jQuery
+                           			src filename to match the filename of the minified jQuery 1.x library in your gadget
+                           			folder and save.
+                        </p>
+                        <pre class="pre codeblock prettyprint">&lt;html&gt;
+  &lt;head&gt;
+    &lt;!--
+    * STEP 1
+    * - Adjust the jQuery src filename to match the jQuery 1.x version in your gadget folder
+    --&gt; 
+    &lt;script type="text/javascript" <span class="ph highlight">src="jquery-2.2.3.min.js"&gt;</span>&lt;/script&gt;
+    &lt;script type="text/javascript" src="SAPJAM_context.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+                        <p class="p">The gadget is now ready to use! Before we test the gadget, let's explore more about how
+                           			the context of the Content Instance is found using
+                           			<strong class="ph b">gadgets.sapjam.context.get</strong>.
+                        </p>
+                        
+                        <p class="p">Open <strong class="ph b">SAPJAM_context.js</strong> and read all of the in-line comments in the code to learn
+                           			how <strong class="ph b">gadgets.sapjam.context.get</strong> works within this gadget.
+                        </p>
+                        <pre class="pre codeblock prettyprint">function make_SAPJAM_context_Call(){
+	gadgets.sapjam.context.get(function(data) {
+		console.log(JSON.stringify(data, null, 4));
+
+		/* Begin HTML page */
+		var osapiOutput = "";
+		osapiOutput += "gadgets.sapjam.context.get --&gt; ";
+
+		/* Adds all the properties of "gadgets.sapjam.context.get" with HTML formatting to a string (osapiOutput). */
+		osapiOutput += "context = " + data.context;
+		osapiOutput += ", id = " + data.id;
+		osapiOutput += ", name = " + data.name;
+		osapiOutput += ", readOnly = " + data.readOnly;
+
+		/* End HTML page */
+		osapiOutput += ". Open your browser console to view the raw JSON object.";
+
+		/* Appends the string (osapiOutput) to the body of the HTML page. */
+		$("body").append(osapiOutput);
+
+		/* Demonstrates every gadgets.sapjam.statusbar interaction */
+		setTimeout(showStatusBar, 1000);
+		setTimeout(clearBadgeText, 4000);
+		setTimeout(hideStatusBar, 7000);
+		setTimeout(clearBadgeText, 10000);
+		setTimeout(clickToExpand, 13000);
+		setTimeout(clearHighlight, 15000);
+	});
+}
+
+function showStatusBar(){
+	/* Highlights the gadget in blue and makes it blink 3 times */
+	gadgets.sapjam.statusbar.highlight();
+
+	/* Expands the gadget and shows the contents of the body element within it */
+	gadgets.sapjam.statusbar.show();
+
+	/* Adds a red badge with text to the gadget */
+	gadgets.sapjam.statusbar.setBadgeText("Statusbar Expanded");
+}
+
+function clearBadgeText(){
+	gadgets.sapjam.statusbar.clearBadgeText();
+	gadgets.sapjam.statusbar.clearHighlight();
+}
+
+function hideStatusBar(){
+	gadgets.sapjam.statusbar.hide();
+	gadgets.sapjam.statusbar.highlight();
+	gadgets.sapjam.statusbar.setBadgeText("Statusbar collapsed");
+}
+
+function clickToExpand(){
+	gadgets.sapjam.statusbar.highlight();
+	gadgets.sapjam.statusbar.setBadgeText("Click here");
+}
+
+function clearHighlight(){
+	gadgets.sapjam.statusbar.clearHighlight();
+}
+
+// Initializes gadget
+function init() {
+	make_SAPJAM_context_Call();
+}
+
+// Initializes gadget after receiving a notification that the page is loaded and the DOM is ready.
+gadgets.util.registerOnLoadHandler(init);</pre>
+                        <p class="p">Now that we understand how the gadget works, let's run it.</p>
+                        
+                        <p class="p"><strong class="ph b">RUN THIS GADGET!</strong></p>
+                        
+                        <p class="p">Upload the source files of this gadget to your publicly accessible server, register the
+                           			URL of <strong class="ph b">SAPJAM_context.xml</strong> with <span class="ph">SAP Jam</span> as a
+                           				<strong class="ph b">Status Bar</strong> gadget and click <strong class="ph b">Home</strong>. The gadget will appear in the
+                           			statusbar at the bottom of the browser window.
+                        </p>
+                        
+                        <p class="p"><strong class="ph b">Note:</strong>
+                           			<strong class="ph b">Status Bar</strong> gadgets never activate on <strong class="ph b">Gadget Configuration</strong> pages.
+                        </p>
+                        
+                        <p class="p">If you do not have a publicly accessible server to host from, you can also create and
+                           			host this gadget as a HTML5 Application on a free trial account on our SAP Hana Cloud
+                           			Platform at:
+                        </p>
+                        
+                        <p class="p"><a class="xref" href="https://account.hanatrial.ondemand.com/" target="_blank" alt="https://account.hanatrial.ondemand.com/" title="https://account.hanatrial.ondemand.com/">https://account.hanatrial.ondemand.com/</a></p>
+                        
+                        <p class="p">Congratulations! This gadget should be up and running!</p>
+                        
+                        <p class="p"><strong class="ph b">Troubleshooting</strong></p>
+                        
+                        <p class="p">If you are having any problems registering this gadget with <span class="ph">SAP Jam</span>, see:
+                        </p>
+                        
+                        <div class="p">
+                           			
+                           <ul class="ul" id="loiof80efc655d2f4f6989c0a7fb7b1d2bad__ul_es2_k5d_gr">
+                              <li class="li"><a class="xref" href="0526a42d4e0d418186055384e46721f6.html" title="This page documents the steps required to register your OpenSocial gadget with SAP Jam Collaboration.">Register your gadget with SAP Jam Collaboration</a></li>
+                              
+                           </ul>
+                           
+                           		
+                        </div>
+                        
+                        <p class="p"><strong class="ph b">Reference</strong></p>
+                        
+                        <p class="p">To find out more about OpenSocial gadgets, see:</p>
+                        
+                        <ul class="ul" id="loiof80efc655d2f4f6989c0a7fb7b1d2bad__ul_ltm_qh2_gr">
+                           <li class="li"><a class="xref" href="7cd75e6ff1d64fa3b3fa8cbf6e57cef8.html" title="This page describes the XML markup and structure of OpenSocial gadgets.">OpenSocial Gadget XML Structure</a></li>
+                           
+                           <li class="li"><a class="xref" href="a1ef8de936304f398ac94496d1446f83.html" title="The majority of the work that must be done to create an SAP Jam Collaboration OpenSocial gadget is to develop the JavaScript business logic. Several JavaScript API libraries exist for developing OpenSocial Gadgets. This section begins with a short tutorial on developing the JavaScript for your gadget, and it provides documentation of the API calls or endpoints that are supported by the SAP Jam Collaboration implementation of the OpenSocial API.">SAP Jam OpenSocial JavaScript API reference</a></li>
+                           
+                           <li class="li"><a class="extlink" href="http://help.sap.com/disclaimer?site=https://developers.google.com/gadgets/docs/ui" target="_blank" alt="https://developers.google.com/gadgets/docs/ui" title="https://developers.google.com/gadgets/docs/ui">https://developers.google.com/gadgets/docs/ui <img class="inline  " src="loiocb0b1c819a9a481bb3c616353ada864a_HiRes.png"><img src="themes/sap-default/img/3rd_link.png" class="link-external" alt="Information published on non-SAP site" title="Information published on non-SAP site" border="0"></a>.
+                           </li>
+                           
+                        </ul>
+                        
+                     </div>
+                     
+                  </div>
+                  
+               </section>
+               <div class="clear"></div>
+               
+            </div>
+            <div class="clearfix"></div>
+         </div>
+      </div>
+      <div class="clearfix"></div>
+      <div id="footer-container" class="grid_12">
+         <footer>
+            	
+            <div id="custom-footerSpacer"></div>
+            	<a class="copyright" href="copyright.html">Copyright</a><span class="separator"> | </span><a class="disclaimer" href="disclaimer.html">Important Disclaimers and Legal Information</a>
+            
+         </footer>
+         
+         
+      </div>
+   </body>
+</html>
