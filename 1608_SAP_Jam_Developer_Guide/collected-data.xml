@@ -4,7 +4,7 @@
                           xmlns:mapdriven="http://dita4publishers.org/mapdriven">
    <enum:enumerables>
       <topicref xmlns="http://dita4publishers.org/enumerables" class="- map/topicref "
-                sourceId="id-12312--topicref-8-1622-78"
+                sourceId="id-12312--topicref-8-1631-78"
                 xml:lang="en-us"
                 xtrc="topicref:1"
                 docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -27,7 +27,7 @@
          <title>SAP Jam integrations</title>
       </topicref>
       <topicref xmlns="http://dita4publishers.org/enumerables" class="- map/topicref "
-                sourceId="id-12312--topicref-16-1422-5511"
+                sourceId="id-12312--topicref-16-1431-5511"
                 xml:lang="en-us"
                 xtrc="topicref:2"
                 docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -47,7 +47,7 @@
 				functionality to your web pages and web applications</title>
          <title>Use the SAP Jam API to integrate SAP Jam
 				content into your business applications and your business records into SAP Jam</title>
-         <topicref class="- map/topicref " sourceId="id-12312--topicref-23-1605-248"
+         <topicref class="- map/topicref " sourceId="id-12312--topicref-23-1614-248"
                    xml:lang="en-us"
                    xtrc="topicref:3"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -128,13 +128,13 @@
             </fig>
             <title>The SAP HANA Cloud Platform Cockpit Services page</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-12312--topicref-32-1524-1513"
+         <topicref class="- map/topicref " sourceId="id-12312--topicref-32-1533-1513"
                    xml:lang="en-us"
                    xtrc="topicref:4"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                    type="concept"
                    topicID="loiob0d33e22661a44699b163baafb17c9d7">
-            <topicref class="- map/topicref " sourceId="id-12312--topicref-40-1588-154"
+            <topicref class="- map/topicref " sourceId="id-12312--topicref-40-1597-154"
                       xml:lang="en-us"
                       xtrc="topicref:5"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -167,7 +167,7 @@
                </fig>
                <title>Your SAP Jam personal feed page</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-12312--topicref-48-1580-157"
+            <topicref class="- map/topicref " sourceId="id-12312--topicref-48-1589-157"
                       xml:lang="en-us"
                       xtrc="topicref:6"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -190,7 +190,7 @@
                </fig>
                <title>The SAP Jam Admin console</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-12312--topicref-56-1572-136"
+            <topicref class="- map/topicref " sourceId="id-12312--topicref-56-1581-136"
                       xml:lang="en-us"
                       xtrc="topicref:7"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -245,7 +245,7 @@
                </fig>
                <title>Remove a user by setting their 'status' to 'Alumni'</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-12312--topicref-64-1532-708"
+            <topicref class="- map/topicref " sourceId="id-12312--topicref-64-1541-708"
                       xml:lang="en-us"
                       xtrc="topicref:8"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -299,7 +299,7 @@
                   <title>The created Group page</title>
                </fig>
                <title>The created Group page</title>
-               <topicref class="- map/topicref " sourceId="id-12312--topicref-71-1556-161"
+               <topicref class="- map/topicref " sourceId="id-12312--topicref-71-1565-161"
                          xml:lang="en-us"
                          xtrc="topicref:9"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -332,7 +332,7 @@
                   </fig>
                   <title>The invitation as it appears in the user's notifications</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-31049--topicref-79-1532-399"
+               <topicref class="- map/topicref " sourceId="id-31049--topicref-79-1541-399"
                          xml:lang="en-us"
                          xtrc="topicref:10"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -364,7 +364,7 @@
                   </fig>
                   <title>The added document is also displayed in the group's 'Feed'
 						section</title>
-                  <topicref class="- map/topicref " sourceId="id-31049--topicref-86-1540-135"
+                  <topicref class="- map/topicref " sourceId="id-31049--topicref-86-1549-135"
                             xml:lang="en-us"
                             xtrc="topicref:11"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -391,7 +391,7 @@
                      <title>Set the question, the multiple choice options, and any other
 						options</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-31049--topicref-94-1532-131"
+                  <topicref class="- map/topicref " sourceId="id-31049--topicref-94-1541-131"
                             xml:lang="en-us"
                             xtrc="topicref:12"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -418,7 +418,7 @@
                   </topicref>
                </topicref>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-31049--topicref-104-1524-167"
+            <topicref class="- map/topicref " sourceId="id-31049--topicref-104-1533-167"
                       xml:lang="en-us"
                       xtrc="topicref:13"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -450,13 +450,13 @@
                <title>A group with content, decision-making tools, and comments</title>
             </topicref>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-31049--topicref-113-1422-2698"
+         <topicref class="- map/topicref " sourceId="id-31049--topicref-113-1431-2698"
                    xml:lang="en-us"
                    xtrc="topicref:14"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                    type="concept"
                    topicID="loio8ea82f9ac7134af18d526c086bdfc42a">
-            <topicref class="- map/topicref " sourceId="id-31049--topicref-121-1506-184"
+            <topicref class="- map/topicref " sourceId="id-31049--topicref-121-1515-184"
                       xml:lang="en-us"
                       xtrc="topicref:15"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -469,7 +469,7 @@
 				an ESPM Web Shop Record</title>
                <title>Reconfigure the ESPM Reviews Group Widgets</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-31049--topicref-130-1439-1780"
+            <topicref class="- map/topicref " sourceId="id-31049--topicref-130-1448-1780"
                       xml:lang="en-us"
                       xtrc="topicref:16"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -478,13 +478,13 @@
                <title>Start the SAP Jam Service</title>
                <title>Run the prebuilt OpenSocial Lumira gadget</title>
                <title>Build and run the Lumira OpenSocial gadget on a server</title>
-               <topicref class="- map/topicref " sourceId="id-31049--topicref-139-1439-1187"
+               <topicref class="- map/topicref " sourceId="id-31049--topicref-139-1448-1187"
                          xml:lang="en-us"
                          xtrc="topicref:17"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio0c19c3af549242e786f6d2f14c5963df">
-                  <topicref class="- map/topicref " sourceId="id-31049--topicref-146-1480-191"
+                  <topicref class="- map/topicref " sourceId="id-31049--topicref-146-1489-191"
                             xml:lang="en-us"
                             xtrc="topicref:18"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -492,7 +492,7 @@
                             topicID="loiocb11b349048f40cb913fe52050c314d0">
                      <title>Download the Gadget Sample Code</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-31049--topicref-154-1472-169"
+                  <topicref class="- map/topicref " sourceId="id-31049--topicref-154-1481-169"
                             xml:lang="en-us"
                             xtrc="topicref:19"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -500,7 +500,7 @@
                             topicID="loio7235a87c220a43d480709a6855b92350">
                      <title>Create an HTML5 Application</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-31306--topicref-162-1464-182"
+                  <topicref class="- map/topicref " sourceId="id-31306--topicref-162-1473-182"
                             xml:lang="en-us"
                             xtrc="topicref:20"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -508,7 +508,7 @@
                             topicID="loiobcf4fbbaa44c4e1b91426c3218c604ce">
                      <title>Add OpenSocial Gadget files</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-31306--topicref-170-1456-144"
+                  <topicref class="- map/topicref " sourceId="id-31306--topicref-170-1465-144"
                             xml:lang="en-us"
                             xtrc="topicref:21"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -516,7 +516,7 @@
                             topicID="loio97a898879aef420b9ef1f2b7cb9fe6e7">
                      <title>Create Application Descriptor file</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-31306--topicref-178-1448-126"
+                  <topicref class="- map/topicref " sourceId="id-31306--topicref-178-1457-126"
                             xml:lang="en-us"
                             xtrc="topicref:22"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -524,7 +524,7 @@
                             topicID="loiod5702be55a48454c9403f60864ced63b">
                      <title>Publish the HTML5 Application</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-31306--topicref-186-1439-131"
+                  <topicref class="- map/topicref " sourceId="id-31306--topicref-186-1448-131"
                             xml:lang="en-us"
                             xtrc="topicref:23"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -534,7 +534,7 @@
                   </topicref>
                </topicref>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-31306--topicref-197-1430-232"
+            <topicref class="- map/topicref " sourceId="id-31306--topicref-197-1439-232"
                       xml:lang="en-us"
                       xtrc="topicref:24"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -545,7 +545,7 @@
                <title>SAP Jam UI5
 				group widget</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-31306--topicref-206-1422-246"
+            <topicref class="- map/topicref " sourceId="id-31306--topicref-206-1431-246"
                       xml:lang="en-us"
                       xtrc="topicref:25"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -578,7 +578,7 @@
          </topicref>
       </topicref>
       <topicref xmlns="http://dita4publishers.org/enumerables" class="- map/topicref "
-                sourceId="id-31306--topicref-216-1308-1513"
+                sourceId="id-31306--topicref-216-1317-1513"
                 xml:lang="en-us"
                 xtrc="topicref:26"
                 docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -593,7 +593,7 @@
             <title>Work required to develop a new business records integration</title>
          </fig>
          <title>Work required to develop a new business records integration</title>
-         <topicref class="- map/topicref " sourceId="id-31306--topicref-223-1407-81"
+         <topicref class="- map/topicref " sourceId="id-31306--topicref-223-1416-81"
                    xml:lang="en-us"
                    xtrc="topicref:27"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -603,7 +603,7 @@
             <title>Configure an SAP NetWeaver Gateway integration</title>
             <title>Configure a Third-Party OData API integration</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-31306--topicref-230-1400-72"
+         <topicref class="- map/topicref " sourceId="id-31306--topicref-230-1409-72"
                    xml:lang="en-us"
                    xtrc="topicref:28"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -618,7 +618,7 @@
             </fig>
             <title>The add Trusted Certificate Authorities form</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-31306--topicref-237-1390-405"
+         <topicref class="- map/topicref " sourceId="id-31306--topicref-237-1399-405"
                    xml:lang="en-us"
                    xtrc="topicref:29"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -641,7 +641,7 @@
             </fig>
             <title>SAML Local Identity Provider page, filled</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-31563--topicref-247-1383-56"
+         <topicref class="- map/topicref " sourceId="id-31563--topicref-247-1392-56"
                    xml:lang="en-us"
                    xtrc="topicref:30"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -672,7 +672,7 @@
             </fig>
             <title>View an OAuth Client page</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-31563--topicref-254-1375-59"
+         <topicref class="- map/topicref " sourceId="id-31563--topicref-254-1384-59"
                    xml:lang="en-us"
                    xtrc="topicref:31"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -695,7 +695,7 @@
             </fig>
             <title>Register a new SAML Trusted Identity Provider form</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-31563--topicref-262-1368-95"
+         <topicref class="- map/topicref " sourceId="id-31563--topicref-262-1377-95"
                    xml:lang="en-us"
                    xtrc="topicref:32"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -762,7 +762,7 @@
             </fig>
             <title>External Application, last options</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-31563--topicref-269-1345-224"
+         <topicref class="- map/topicref " sourceId="id-31563--topicref-269-1354-224"
                    xml:lang="en-us"
                    xtrc="topicref:33"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -871,7 +871,7 @@
             <title>Term attribute values</title>
             <title>Type attribute values</title>
             <title>Property attribute values</title>
-            <topicref class="- map/topicref " sourceId="id-31563--topicref-275-1353-54"
+            <topicref class="- map/topicref " sourceId="id-31563--topicref-275-1362-54"
                       xml:lang="en-us"
                       xtrc="topicref:34"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -889,7 +889,7 @@
                <title>Featured business records</title>
                <title>Examples</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-31563--topicref-283-1345-72"
+            <topicref class="- map/topicref " sourceId="id-31563--topicref-283-1354-72"
                       xml:lang="en-us"
                       xtrc="topicref:35"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1007,7 +1007,7 @@
                <title>BRV/BRB/Quick card</title>
             </topicref>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-31563--topicref-292-1338-91"
+         <topicref class="- map/topicref " sourceId="id-31563--topicref-292-1347-91"
                    xml:lang="en-us"
                    xtrc="topicref:36"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1030,7 +1030,7 @@
             </fig>
             <title>Language options</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-31563--topicref-299-1330-71"
+         <topicref class="- map/topicref " sourceId="id-31563--topicref-299-1339-71"
                    xml:lang="en-us"
                    xtrc="topicref:37"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1047,7 +1047,7 @@
             <title>The add a new filter (Manage &lt;business_record_name&gt; Filters)
 							page</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-31563--topicref-307-1322-75"
+         <topicref class="- map/topicref " sourceId="id-31563--topicref-307-1331-75"
                    xml:lang="en-us"
                    xtrc="topicref:38"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1062,7 +1062,7 @@
             </fig>
             <title>Add a business record sort order</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-31563--topicref-315-1315-100"
+         <topicref class="- map/topicref " sourceId="id-31563--topicref-315-1324-100"
                    xml:lang="en-us"
                    xtrc="topicref:39"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1070,7 +1070,7 @@
                    topicID="loio2b4687c4d356492ba97080d5b432bf09">
             <title>Configure access to business records in Jam</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-31820--topicref-322-1308-117"
+         <topicref class="- map/topicref " sourceId="id-31820--topicref-322-1317-117"
                    xml:lang="en-us"
                    xtrc="topicref:40"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1090,7 +1090,7 @@
          </topicref>
       </topicref>
       <topicref xmlns="http://dita4publishers.org/enumerables" class="- map/topicref "
-                sourceId="id-31820--topicref-330-838-11924"
+                sourceId="id-31820--topicref-330-847-11924"
                 xml:lang="en-us"
                 xtrc="topicref:41"
                 docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1099,7 +1099,7 @@
          <title>What is an OpenSocial gadget? </title>
          <title>Develop your SAP Jam OpenSocial gadget</title>
          <title>Deploy your SAP Jam OpenSocial gadget</title>
-         <topicref class="- map/topicref " sourceId="id-31820--topicref-337-1292-183"
+         <topicref class="- map/topicref " sourceId="id-31820--topicref-337-1301-183"
                    xml:lang="en-us"
                    xtrc="topicref:42"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1107,7 +1107,7 @@
                    topicID="loio3c577e7b688d473fada6fc28e7900b86">
             <title>Gadget Contexts</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-31820--topicref-345-1283-172"
+         <topicref class="- map/topicref " sourceId="id-31820--topicref-345-1292-172"
                    xml:lang="en-us"
                    xtrc="topicref:43"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1116,7 +1116,7 @@
             <title>URL Gadget Content Type</title>
             <title>HTML Gadget Content Type</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-31820--topicref-354-1274-188"
+         <topicref class="- map/topicref " sourceId="id-31820--topicref-354-1283-188"
                    xml:lang="en-us"
                    xtrc="topicref:44"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1235,7 +1235,7 @@
             </fig>
             <title>Confirmation to delete an OpenSocial Gadget</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-31820--topicref-363-1266-142"
+         <topicref class="- map/topicref " sourceId="id-31820--topicref-363-1275-142"
                    xml:lang="en-us"
                    xtrc="topicref:45"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1244,13 +1244,13 @@
             <title>References</title>
             <title>Next</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-31820--topicref-371-1090-5363"
+         <topicref class="- map/topicref " sourceId="id-31820--topicref-371-1099-5363"
                    xml:lang="en-us"
                    xtrc="topicref:46"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                    type="concept"
                    topicID="loio4764043666b64dd8ac77b664d4efb057">
-            <topicref class="- map/topicref " sourceId="id-31820--topicref-379-1180-2601"
+            <topicref class="- map/topicref " sourceId="id-31820--topicref-379-1189-2601"
                       xml:lang="en-us"
                       xtrc="topicref:47"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1258,7 +1258,7 @@
                       topicID="loio9d304bf736cd4514bba2b42393a09ec6">
                <title>SAP Jam
 				Beginner Gadget Tutorial</title>
-               <topicref class="- map/topicref " sourceId="id-31820--topicref-387-1239-277"
+               <topicref class="- map/topicref " sourceId="id-31820--topicref-387-1248-277"
                          xml:lang="en-us"
                          xtrc="topicref:48"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1266,7 +1266,7 @@
                          topicID="loio5ebc507b18d043df98780df6636ccc1e">
                   <title>Next</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-31820--topicref-396-1231-280"
+               <topicref class="- map/topicref " sourceId="id-31820--topicref-396-1240-280"
                          xml:lang="en-us"
                          xtrc="topicref:49"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1274,7 +1274,7 @@
                          topicID="loiofd594f84b365452a9063c4f6a00ffb74">
                   <title>Next</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-32077--topicref-404-1223-161"
+               <topicref class="- map/topicref " sourceId="id-32077--topicref-404-1232-161"
                          xml:lang="en-us"
                          xtrc="topicref:50"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1282,7 +1282,7 @@
                          topicID="loio691a655d437140aa8b92e3a9468ce34d">
                   <title>Next</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-32077--topicref-412-1213-525"
+               <topicref class="- map/topicref " sourceId="id-32077--topicref-412-1222-525"
                          xml:lang="en-us"
                          xtrc="topicref:51"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1290,7 +1290,7 @@
                          topicID="loio2ce07dc48d114cee905d9be7dabcdfbb">
                   <title>Next</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-32077--topicref-422-1205-345"
+               <topicref class="- map/topicref " sourceId="id-32077--topicref-422-1214-345"
                          xml:lang="en-us"
                          xtrc="topicref:52"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1298,7 +1298,7 @@
                          topicID="loio022cc4f4674b47478e3088f3185f45a5">
                   <title>Next</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-32077--topicref-430-1197-207"
+               <topicref class="- map/topicref " sourceId="id-32077--topicref-430-1206-207"
                          xml:lang="en-us"
                          xtrc="topicref:53"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1306,7 +1306,7 @@
                          topicID="loio84acb70ef1b24eaaa8f11c201892f899">
                   <title>Next</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-32077--topicref-438-1188-396"
+               <topicref class="- map/topicref " sourceId="id-32077--topicref-438-1197-396"
                          xml:lang="en-us"
                          xtrc="topicref:54"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1314,7 +1314,7 @@
                          topicID="loio8f68f8e2f6d44976899e9367fba32ab5">
                   <title>Next</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-32077--topicref-447-1180-199"
+               <topicref class="- map/topicref " sourceId="id-32077--topicref-447-1189-199"
                          xml:lang="en-us"
                          xtrc="topicref:55"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1323,19 +1323,19 @@
                   <title>Complete Tutorial Code Example</title>
                </topicref>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-32077--topicref-456-1126-1297"
+            <topicref class="- map/topicref " sourceId="id-32077--topicref-456-1135-1297"
                       xml:lang="en-us"
                       xtrc="topicref:56"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loio4a4c2a58faee48fc81a06f974329ceb8">
-               <topicref class="- map/topicref " sourceId="id-32077--topicref-464-1126-1054"
+               <topicref class="- map/topicref " sourceId="id-32077--topicref-464-1135-1054"
                          xml:lang="en-us"
                          xtrc="topicref:57"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio3e4c8c278a8245648ae183a84dc95db2">
-                  <topicref class="- map/topicref " sourceId="id-32077--topicref-472-1153-192"
+                  <topicref class="- map/topicref " sourceId="id-32077--topicref-472-1162-192"
                             xml:lang="en-us"
                             xtrc="topicref:58"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1343,7 +1343,7 @@
                             topicID="loio84d61c6d10324a8d8a0758aeeea1e9ef">
                      <title>Content Instance Context</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-32077--topicref-481-1144-202"
+                  <topicref class="- map/topicref " sourceId="id-32077--topicref-481-1153-202"
                             xml:lang="en-us"
                             xtrc="topicref:59"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1351,7 +1351,7 @@
                             topicID="loiocb207c519bb445b793ef87bb1c4e9524">
                      <title>Group Gadget Instance Context</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-32334--topicref-490-1135-206"
+                  <topicref class="- map/topicref " sourceId="id-32334--topicref-490-1144-206"
                             xml:lang="en-us"
                             xtrc="topicref:60"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1359,7 +1359,7 @@
                             topicID="loio3aa69dc9e7914c05947e571dce8f1c87">
                      <title>Profile Gadget Instance Context</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-32334--topicref-499-1126-210"
+                  <topicref class="- map/topicref " sourceId="id-32334--topicref-499-1135-210"
                             xml:lang="en-us"
                             xtrc="topicref:61"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1369,13 +1369,13 @@
                   </topicref>
                </topicref>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-32334--topicref-510-1090-1295"
+            <topicref class="- map/topicref " sourceId="id-32334--topicref-510-1099-1295"
                       xml:lang="en-us"
                       xtrc="topicref:62"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loio06d7dd1cfa2d40c48fbfda8666417900">
-               <topicref class="- map/topicref " sourceId="id-32334--topicref-518-1108-367"
+               <topicref class="- map/topicref " sourceId="id-32334--topicref-518-1117-367"
                          xml:lang="en-us"
                          xtrc="topicref:63"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1383,7 +1383,7 @@
                          topicID="loio64a114fd3ce24343925763e6e3f6b33b">
                   <title>To Do Gadget</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-32334--topicref-527-1099-497"
+               <topicref class="- map/topicref " sourceId="id-32334--topicref-527-1108-497"
                          xml:lang="en-us"
                          xtrc="topicref:64"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1391,7 +1391,7 @@
                          topicID="loio26f52c3f88f246a2bdd06ee2787af2b1">
                   <title>Simple Multi-User Sync Gadget</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-32334--topicref-536-1090-192"
+               <topicref class="- map/topicref " sourceId="id-32334--topicref-536-1099-192"
                          xml:lang="en-us"
                          xtrc="topicref:65"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1401,13 +1401,13 @@
                </topicref>
             </topicref>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-32334--topicref-547-988-2201"
+         <topicref class="- map/topicref " sourceId="id-32334--topicref-547-997-2201"
                    xml:lang="en-us"
                    xtrc="topicref:66"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                    type="concept"
                    topicID="loioe72259513d8c4d94a5d2caa4d25c02c6">
-            <topicref class="- map/topicref " sourceId="id-32334--topicref-555-1073-66"
+            <topicref class="- map/topicref " sourceId="id-32334--topicref-555-1082-66"
                       xml:lang="en-us"
                       xtrc="topicref:67"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1416,7 +1416,7 @@
                <title>Run the gadget</title>
                <title>Troubleshooting</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-32334--topicref-563-1065-364"
+            <topicref class="- map/topicref " sourceId="id-32334--topicref-563-1074-364"
                       xml:lang="en-us"
                       xtrc="topicref:68"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1425,7 +1425,7 @@
                <title>Run the gadget</title>
                <title>Troubleshooting</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-32334--topicref-571-1057-85"
+            <topicref class="- map/topicref " sourceId="id-32334--topicref-571-1066-85"
                       xml:lang="en-us"
                       xtrc="topicref:69"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1433,7 +1433,7 @@
                       topicID="loiof19ed50491f1400dab4dce76db078284">
                <title>OpenSocial Gadget Responsive Design</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-32591--topicref-579-1047-574"
+            <topicref class="- map/topicref " sourceId="id-32591--topicref-579-1056-574"
                       xml:lang="en-us"
                       xtrc="topicref:70"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1441,20 +1441,20 @@
                       topicID="loiob5feb3d4d19d4f0fa5519d52e33f81ea">
                <title>Using OAuth with Internet Explorer</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-32591--topicref-589-988-882"
+            <topicref class="- map/topicref " sourceId="id-32591--topicref-589-997-882"
                       xml:lang="en-us"
                       xtrc="topicref:71"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loio53a65daf9b3848afa0beae037256f343">
                <title>Example - OpenSocial Gadget Calling the SAP Jam API</title>
-               <topicref class="- map/topicref " sourceId="id-32591--topicref-596-988-650"
+               <topicref class="- map/topicref " sourceId="id-32591--topicref-596-997-650"
                          xml:lang="en-us"
                          xtrc="topicref:72"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio035cd5e4e94c434cbef79119982eb1ca">
-                  <topicref class="- map/topicref " sourceId="id-32591--topicref-603-1023-65"
+                  <topicref class="- map/topicref " sourceId="id-32591--topicref-603-1032-65"
                             xml:lang="en-us"
                             xtrc="topicref:73"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1462,7 +1462,7 @@
                             topicID="loio17843150117d45dca585c8d83dd45870">
                      <title>1. Download SAML Sample Code</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-32591--topicref-611-1016-107"
+                  <topicref class="- map/topicref " sourceId="id-32591--topicref-611-1025-107"
                             xml:lang="en-us"
                             xtrc="topicref:74"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1470,7 +1470,7 @@
                             topicID="loiof8d50f0abb48476a99c28faacf1a3cd3">
                      <title>2. Configure a Jam SAML Trusted IDP</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-32591--topicref-618-1009-89"
+                  <topicref class="- map/topicref " sourceId="id-32591--topicref-618-1018-89"
                             xml:lang="en-us"
                             xtrc="topicref:75"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1478,7 +1478,7 @@
                             topicID="loio9f86d35bb9594635bd505063bbe76830">
                      <title>3. Configure a Jam OAuth Client</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-32591--topicref-625-1002-108"
+                  <topicref class="- map/topicref " sourceId="id-32591--topicref-625-1011-108"
                             xml:lang="en-us"
                             xtrc="topicref:76"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1486,7 +1486,7 @@
                             topicID="loio0845a7aa3a4848a1bbd0e35e25e6d2ef">
                      <title>4. Configure Jam for your Gadget</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-32591--topicref-632-995-72"
+                  <topicref class="- map/topicref " sourceId="id-32591--topicref-632-1004-72"
                             xml:lang="en-us"
                             xtrc="topicref:77"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1494,7 +1494,7 @@
                             topicID="loio0c6c2e9144f340a39a67ec2f01a5111e">
                      <title>5. Configure the OpenSocial Gadget</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-32591--topicref-639-988-56"
+                  <topicref class="- map/topicref " sourceId="id-32591--topicref-639-997-56"
                             xml:lang="en-us"
                             xtrc="topicref:78"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1505,13 +1505,13 @@
                </topicref>
             </topicref>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-32591--topicref-649-838-3604"
+         <topicref class="- map/topicref " sourceId="id-32591--topicref-649-847-3604"
                    xml:lang="en-us"
                    xtrc="topicref:79"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                    type="concept"
                    topicID="loioa1ef8de936304f398ac94496d1446f83">
-            <topicref class="- map/topicref " sourceId="id-32848--topicref-658-969-214"
+            <topicref class="- map/topicref " sourceId="id-32848--topicref-658-978-214"
                       xml:lang="en-us"
                       xtrc="topicref:80"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1536,7 +1536,7 @@
                       xtrc="table:3"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/4fc67a0b56fb4370acc7666988cc8d7a.xml"/>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-32848--topicref-667-961-371"
+            <topicref class="- map/topicref " sourceId="id-32848--topicref-667-970-371"
                       xml:lang="en-us"
                       xtrc="topicref:81"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1545,13 +1545,13 @@
                <title>osapi.Appdata versus wave versus userPrefs</title>
                <title>osapi.People versus wave.Participants</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-32848--topicref-675-881-1493"
+            <topicref class="- map/topicref " sourceId="id-32848--topicref-675-890-1493"
                       xml:lang="en-us"
                       xtrc="topicref:82"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loiod5f42de4f5ab4deeb72b2bb24ca0c766">
-               <topicref class="- map/topicref " sourceId="id-32848--topicref-682-945-97"
+               <topicref class="- map/topicref " sourceId="id-32848--topicref-682-954-97"
                          xml:lang="en-us"
                          xtrc="topicref:83"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1606,7 +1606,7 @@
                          xtrc="table:8"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/fca1266a6b8f46babe52c1bcf891b74b.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-32848--topicref-690-937-110"
+               <topicref class="- map/topicref " sourceId="id-32848--topicref-690-946-110"
                          xml:lang="en-us"
                          xtrc="topicref:84"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1625,7 +1625,7 @@
                          xtrc="table:2"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/56ade6e9b3014c338b8d0293e4ab2c38.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-32848--topicref-698-929-186"
+               <topicref class="- map/topicref " sourceId="id-32848--topicref-698-938-186"
                          xml:lang="en-us"
                          xtrc="topicref:85"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1668,7 +1668,7 @@
                          xtrc="table:6"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/55e619bb995049499cab86203c803e97.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-32848--topicref-706-921-214"
+               <topicref class="- map/topicref " sourceId="id-32848--topicref-706-930-214"
                          xml:lang="en-us"
                          xtrc="topicref:86"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1676,7 +1676,7 @@
                          topicID="loio3156b78f91e7465a9885f0183a15b409">
                   <title>gadgets.views</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-32848--topicref-714-913-168"
+               <topicref class="- map/topicref " sourceId="id-32848--topicref-714-922-168"
                          xml:lang="en-us"
                          xtrc="topicref:87"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1714,7 +1714,7 @@
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/83db2958beeb4c8a930e7d8bebd10aaa.xml"/>
                   <title>Full MiniMessage Code Example</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-32848--topicref-722-905-132"
+               <topicref class="- map/topicref " sourceId="id-32848--topicref-722-914-132"
                          xml:lang="en-us"
                          xtrc="topicref:88"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1782,7 +1782,7 @@
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/20ab704e18104cbca2c766357241cf8e.xml"/>
                   <title>Full TabSet Code Example</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-32848--topicref-730-897-111"
+               <topicref class="- map/topicref " sourceId="id-32848--topicref-730-906-111"
                          xml:lang="en-us"
                          xtrc="topicref:89"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1820,7 +1820,7 @@
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/11b9368ede1b47c78c6ea426d8a283dd.xml"/>
                   <title>Full Tab Code Example</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-33105--topicref-738-889-100"
+               <topicref class="- map/topicref " sourceId="id-33105--topicref-738-898-100"
                          xml:lang="en-us"
                          xtrc="topicref:90"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1845,7 +1845,7 @@
                          xtrc="table:3"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/d0a9f019668c4f41b3c9e7a80a7ba398.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-33105--topicref-746-881-152"
+               <topicref class="- map/topicref " sourceId="id-33105--topicref-746-890-152"
                          xml:lang="en-us"
                          xtrc="topicref:91"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1871,13 +1871,13 @@
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/b177714737e045bbba2eb163e252d66b.xml"/>
                </topicref>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-33105--topicref-755-855-475"
+            <topicref class="- map/topicref " sourceId="id-33105--topicref-755-864-475"
                       xml:lang="en-us"
                       xtrc="topicref:92"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loio603d00cbebaf44e6a2853309627ebf58">
-               <topicref class="- map/topicref " sourceId="id-33105--topicref-763-863-190"
+               <topicref class="- map/topicref " sourceId="id-33105--topicref-763-872-190"
                          xml:lang="en-us"
                          xtrc="topicref:93"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1931,7 +1931,7 @@
                   <title>RUN THE GADGET!</title>
                   <title>References</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-33105--topicref-772-855-129"
+               <topicref class="- map/topicref " sourceId="id-33105--topicref-772-864-129"
                          xml:lang="en-us"
                          xtrc="topicref:94"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -1958,13 +1958,13 @@
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/8efe8e8b3ee84385a041c0d34ff3376d.xml"/>
                </topicref>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-33105--topicref-781-838-515"
+            <topicref class="- map/topicref " sourceId="id-33105--topicref-781-847-515"
                       xml:lang="en-us"
                       xtrc="topicref:95"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loioe9ca07aeab4c4de9916f2da8853ecb6e">
-               <topicref class="- map/topicref " sourceId="id-33105--topicref-789-838-320"
+               <topicref class="- map/topicref " sourceId="id-33105--topicref-789-847-320"
                          xml:lang="en-us"
                          xtrc="topicref:96"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -2013,12 +2013,12 @@
          </topicref>
       </topicref>
       <topicref xmlns="http://dita4publishers.org/enumerables" class="- map/topicref "
-                sourceId="id-33105--topicref-800-801-760"
+                sourceId="id-33105--topicref-800-810-760"
                 xml:lang="en-us"
                 xtrc="topicref:97"
                 docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap">
          <title>Integrate Webhooks</title>
-         <topicref class="- map/topicref " sourceId="id-33105--topicref-800-828-184"
+         <topicref class="- map/topicref " sourceId="id-33105--topicref-800-837-184"
                    xml:lang="en-us"
                    xtrc="topicref:98"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -2091,7 +2091,7 @@
             </fig>
             <title>HCP Java Servlet Dashboard</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-33105--topicref-809-819-206"
+         <topicref class="- map/topicref " sourceId="id-33105--topicref-809-828-206"
                    xml:lang="en-us"
                    xtrc="topicref:99"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -2165,7 +2165,7 @@
             </fig>
             <title>HCP Java Servlet Dashboard</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-62073--topicref-818-810-174"
+         <topicref class="- map/topicref " sourceId="id-62073--topicref-818-819-174"
                    xml:lang="en-us"
                    xtrc="topicref:100"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -2223,7 +2223,7 @@
             </fig>
             <title>HCP Java Servlet Dashboard</title>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-62073--topicref-827-801-196"
+         <topicref class="- map/topicref " sourceId="id-62073--topicref-827-810-196"
                    xml:lang="en-us"
                    xtrc="topicref:101"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -2282,7 +2282,7 @@
          </topicref>
       </topicref>
       <topicref xmlns="http://dita4publishers.org/enumerables" class="- map/topicref "
-                sourceId="id-62073--topicref-837-693-1176"
+                sourceId="id-62073--topicref-837-702-1176"
                 xml:lang="en-us"
                 xtrc="topicref:102"
                 docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -2355,7 +2355,7 @@
             <title>Example Feed Widget</title>
          </fig>
          <title>Example Feed Widget</title>
-         <topicref class="- map/topicref " sourceId="id-62073--topicref-845-738-610"
+         <topicref class="- map/topicref " sourceId="id-62073--topicref-845-747-610"
                    xml:lang="en-us"
                    xtrc="topicref:103"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -2370,7 +2370,7 @@
                <title>Widget Builders form</title>
             </fig>
             <title>Widget Builders form</title>
-            <topicref class="- map/topicref " sourceId="id-62073--topicref-853-774-79"
+            <topicref class="- map/topicref " sourceId="id-62073--topicref-853-783-79"
                       xml:lang="en-us"
                       xtrc="topicref:104"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -2380,7 +2380,7 @@
                <title>Recommended authentication type</title>
                <title>Legacy Authentication Types</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-62073--topicref-862-765-91"
+            <topicref class="- map/topicref " sourceId="id-62073--topicref-862-774-91"
                       xml:lang="en-us"
                       xtrc="topicref:105"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -2428,7 +2428,7 @@
                </fig>
                <title>Content Item Feed Widget additional options</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-62073--topicref-871-756-113"
+            <topicref class="- map/topicref " sourceId="id-62073--topicref-871-765-113"
                       xml:lang="en-us"
                       xtrc="topicref:106"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -2444,7 +2444,7 @@
                </fig>
                <title>The Recommendations Widget Builder</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-62073--topicref-880-747-93"
+            <topicref class="- map/topicref " sourceId="id-62073--topicref-880-756-93"
                       xml:lang="en-us"
                       xtrc="topicref:107"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -2460,7 +2460,7 @@
                </fig>
                <title>The Share Widget Builder</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-62073--topicref-889-738-113"
+            <topicref class="- map/topicref " sourceId="id-62073--topicref-889-747-113"
                       xml:lang="en-us"
                       xtrc="topicref:108"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -2477,14 +2477,14 @@
                <title>The Preview area's Code box</title>
             </topicref>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-62073--topicref-899-693-477"
+         <topicref class="- map/topicref " sourceId="id-62073--topicref-899-702-477"
                    xml:lang="en-us"
                    xtrc="topicref:109"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                    type="concept"
                    topicID="loio9bf61ad93c594ceb9a22f35dd16f5ff4">
             <title>SAP Jam Collaboration UI5 Widgets</title>
-            <topicref class="- map/topicref " sourceId="id-62330--topicref-907-720-89"
+            <topicref class="- map/topicref " sourceId="id-62330--topicref-907-729-89"
                       xml:lang="en-us"
                       xtrc="topicref:110"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -2492,7 +2492,7 @@
                       topicID="loiob33520df32e64958b0a73986384fd41d">
                <title>Embed the UI5 Group Widget</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-62330--topicref-916-711-89"
+            <topicref class="- map/topicref " sourceId="id-62330--topicref-916-720-89"
                       xml:lang="en-us"
                       xtrc="topicref:111"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -2501,7 +2501,7 @@
                <title>Embed the UI5 Forum Widget</title>
                <title>Example Summary</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-62330--topicref-925-702-87"
+            <topicref class="- map/topicref " sourceId="id-62330--topicref-925-711-87"
                       xml:lang="en-us"
                       xtrc="topicref:112"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -2510,7 +2510,7 @@
                <title>Embed the UI5 Feed Widget</title>
                <title>Example Summary</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-62330--topicref-934-693-109"
+            <topicref class="- map/topicref " sourceId="id-62330--topicref-934-702-109"
                       xml:lang="en-us"
                       xtrc="topicref:113"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
@@ -2526,23 +2526,31 @@
          </topicref>
       </topicref>
       <topicref xmlns="http://dita4publishers.org/enumerables" class="- map/topicref "
-                sourceId="id-62330--topicref-945-0-22829"
+                sourceId="id-62330--topicref-945-0-22882"
                 xml:lang="en-us"
                 xtrc="topicref:114"
                 docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                 type="concept"
                 topicID="loio7f32c2d25e9c4848b3e9b7a87ef09592">
-         <title>SAP Jam API Introduction</title>
-         <topicref class="- map/topicref " sourceId="id-62330--topicref-956-329-13825"
+         <title>SAP Jam API</title>
+         <topicref class="- map/topicref " sourceId="id-62330--topicref-956-681-79"
                    xml:lang="en-us"
                    xtrc="topicref:115"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                    type="concept"
+                   topicID="loio2fc65ca3b0e146dda9fe6b6196b5124b">
+            <title>SAP Jam API Reference</title>
+         </topicref>
+         <topicref class="- map/topicref " sourceId="id-62330--topicref-965-329-13825"
+                   xml:lang="en-us"
+                   xtrc="topicref:116"
+                   docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
+                   type="concept"
                    topicID="loiofff6b13f364044b6b558eae4a6221f13">
             <title>SAP Jam OData API Tutorial</title>
-            <topicref class="- map/topicref " sourceId="id-62330--topicref-964-649-873"
+            <topicref class="- map/topicref " sourceId="id-62330--topicref-973-649-873"
                       xml:lang="en-us"
-                      xtrc="topicref:116"
+                      xtrc="topicref:117"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loio7f5fa07e54e743c7b6f899e7fbe19598">
@@ -2561,9 +2569,9 @@
                <title>Information in the Details pane</title>
                <title>How to use the OData API Reference's "Try" feature</title>
                <title>Learning Objectives Review</title>
-               <topicref class="- map/topicref " sourceId="id-62330--topicref-975-649-372"
+               <topicref class="- map/topicref " sourceId="id-62330--topicref-984-649-372"
                          xml:lang="en-us"
-                         xtrc="topicref:117"
+                         xtrc="topicref:118"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loioea995aa6284e4fa89389bf99f5521f4b">
@@ -2605,9 +2613,9 @@
                   <title>Learning Objective Review</title>
                </topicref>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-62330--topicref-987-640-763"
+            <topicref class="- map/topicref " sourceId="id-62330--topicref-996-640-763"
                       xml:lang="en-us"
-                      xtrc="topicref:118"
+                      xtrc="topicref:119"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loio6cb6171b5ba9493e89ed751257486ddd">
@@ -2648,9 +2656,9 @@
                <title>Use of curl commands</title>
                <title>Learning Objectives Review</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-62330--topicref-996-493-6315"
+            <topicref class="- map/topicref " sourceId="id-62587--topicref-1005-493-6315"
                       xml:lang="en-us"
-                      xtrc="topicref:119"
+                      xtrc="topicref:120"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loiocc2bb683ad4a445b95e296be924ea3f0">
@@ -2669,9 +2677,9 @@
 						entities' properties and navigations</title>
                <title>Available Group and related entities' endpoints</title>
                <title>Learning Objectives Review</title>
-               <topicref class="- map/topicref " sourceId="id-62587--topicref-1004-621-360"
+               <topicref class="- map/topicref " sourceId="id-62587--topicref-1013-621-360"
                          xml:lang="en-us"
-                         xtrc="topicref:120"
+                         xtrc="topicref:121"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio3861eb6d5a884f05a5343e4b1f706773">
@@ -2682,9 +2690,9 @@
                   <title>About POST calls</title>
                   <title>Learning Objectives Review</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-62587--topicref-1014-611-329"
+               <topicref class="- map/topicref " sourceId="id-62587--topicref-1023-611-329"
                          xml:lang="en-us"
-                         xtrc="topicref:121"
+                         xtrc="topicref:122"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio9bb1625cab0642eb956d8f18ef581a5e">
@@ -2703,9 +2711,9 @@
                   <title>About POST calls</title>
                   <title>Learning Objectives Review</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-62587--topicref-1024-601-371"
+               <topicref class="- map/topicref " sourceId="id-62587--topicref-1033-601-371"
                          xml:lang="en-us"
-                         xtrc="topicref:122"
+                         xtrc="topicref:123"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loioa7ed4a9637344b82a3ef3103d57359f4">
@@ -2716,9 +2724,9 @@
                   <title>About service operation calls</title>
                   <title>Learning Objectives Review</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-62587--topicref-1034-591-321"
+               <topicref class="- map/topicref " sourceId="id-62587--topicref-1043-591-321"
                          xml:lang="en-us"
-                         xtrc="topicref:123"
+                         xtrc="topicref:124"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio5b62642c765748d6a5a57a25c06e659a">
@@ -2729,16 +2737,16 @@
                   <title>About GET calls</title>
                   <title>Learning Objectives Review</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-62587--topicref-1044-542-2122"
+               <topicref class="- map/topicref " sourceId="id-62587--topicref-1053-542-2122"
                          xml:lang="en-us"
-                         xtrc="topicref:124"
+                         xtrc="topicref:125"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loiof6334f210c10432fad980279a54ce8c8">
                   <title>About group templates</title>
-                  <topicref class="- map/topicref " sourceId="id-62587--topicref-1052-572-394"
+                  <topicref class="- map/topicref " sourceId="id-62587--topicref-1061-572-394"
                             xml:lang="en-us"
-                            xtrc="topicref:125"
+                            xtrc="topicref:126"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                             type="concept"
                             topicID="loio88998817b66c468b8d3b1eb219a19159">
@@ -2749,9 +2757,9 @@
                      <title>About service operation calls</title>
                      <title>Learning Objectives Review</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-62587--topicref-1062-562-308"
+                  <topicref class="- map/topicref " sourceId="id-62587--topicref-1071-562-308"
                             xml:lang="en-us"
-                            xtrc="topicref:126"
+                            xtrc="topicref:127"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                             type="concept"
                             topicID="loio36ede2fc962e4177ab0c98e37351d3de">
@@ -2762,9 +2770,9 @@
                      <title>About PATCH calls</title>
                      <title>Learning Objectives Review</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-62587--topicref-1072-552-369"
+                  <topicref class="- map/topicref " sourceId="id-62587--topicref-1081-552-369"
                             xml:lang="en-us"
-                            xtrc="topicref:127"
+                            xtrc="topicref:128"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                             type="concept"
                             topicID="loioedaa188db2a741d99ccbfe59a9cd13a0">
@@ -2775,9 +2783,9 @@
                      <title>About collection-valued GET calls</title>
                      <title>Learning Objectives Review</title>
                   </topicref>
-                  <topicref class="- map/topicref " sourceId="id-62587--topicref-1082-542-541"
+                  <topicref class="- map/topicref " sourceId="id-62587--topicref-1091-542-541"
                             xml:lang="en-us"
-                            xtrc="topicref:128"
+                            xtrc="topicref:129"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                             type="concept"
                             topicID="loio4c362637977442e38a20ebe0a32cacac">
@@ -2789,9 +2797,9 @@
                      <title>Learning Objectives Review</title>
                   </topicref>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-62587--topicref-1093-532-313"
+               <topicref class="- map/topicref " sourceId="id-62844--topicref-1102-532-313"
                          xml:lang="en-us"
-                         xtrc="topicref:129"
+                         xtrc="topicref:130"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio1e245553f09c4d9f965108c57e46e014">
@@ -2802,9 +2810,9 @@
                   <title>About service operation GET calls</title>
                   <title>Learning Objectives Review</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-62844--topicref-1103-522-272"
+               <topicref class="- map/topicref " sourceId="id-62844--topicref-1112-522-272"
                          xml:lang="en-us"
-                         xtrc="topicref:130"
+                         xtrc="topicref:131"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loioe01f3dcbd8f14d47a28970b129a9083e">
@@ -2815,9 +2823,9 @@
                   <title>About PATCH calls</title>
                   <title>Learning Objectives Review</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-62844--topicref-1113-512-261"
+               <topicref class="- map/topicref " sourceId="id-62844--topicref-1122-512-261"
                          xml:lang="en-us"
-                         xtrc="topicref:131"
+                         xtrc="topicref:132"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loioeb08b31823664f60b390734729f35664">
@@ -2828,9 +2836,9 @@
                   <title>About DELETE calls</title>
                   <title>Learning Objectives Review</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-62844--topicref-1123-502-569"
+               <topicref class="- map/topicref " sourceId="id-62844--topicref-1132-502-569"
                          xml:lang="en-us"
-                         xtrc="topicref:132"
+                         xtrc="topicref:133"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio0aa92a343a074f068759fd5039a57743">
@@ -2841,9 +2849,9 @@
                   <title>About collection-valued GET calls</title>
                   <title>Learning Objectives Review</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-62844--topicref-1133-493-531"
+               <topicref class="- map/topicref " sourceId="id-62844--topicref-1142-493-531"
                          xml:lang="en-us"
-                         xtrc="topicref:133"
+                         xtrc="topicref:134"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio344446133d564bd9b0ad64bab977e5ab">
@@ -2903,9 +2911,9 @@
                   <title>Learning Summary: last chance to review</title>
                </topicref>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-62844--topicref-1143-484-731"
+            <topicref class="- map/topicref " sourceId="id-62844--topicref-1152-484-731"
                       xml:lang="en-us"
-                      xtrc="topicref:134"
+                      xtrc="topicref:135"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loio34e1dd3043c448cfa587f4a94b72eb34">
@@ -2926,9 +2934,9 @@
                 navigation</title>
                <title>Learning Objectives Review</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-62844--topicref-1152-392-2759"
+            <topicref class="- map/topicref " sourceId="id-62844--topicref-1161-392-2759"
                       xml:lang="en-us"
-                      xtrc="topicref:135"
+                      xtrc="topicref:136"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loiod7346316fc604af0a58155fe27cfe5e2">
@@ -2947,9 +2955,9 @@
 						properties and navigations</title>
                <title>Available Endpoints</title>
                <title>Learning Objectives Review</title>
-               <topicref class="- map/topicref " sourceId="id-62844--topicref-1160-465-262"
+               <topicref class="- map/topicref " sourceId="id-62844--topicref-1169-465-262"
                          xml:lang="en-us"
-                         xtrc="topicref:136"
+                         xtrc="topicref:137"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loioe26bb2ef3d574ac9a614c12ca0ecfdff">
@@ -2960,9 +2968,9 @@
                   <title>Develop the ability to handle either the success or the error response</title>
                   <title>Learning Objectives Review</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-62844--topicref-1170-455-248"
+               <topicref class="- map/topicref " sourceId="id-62844--topicref-1179-455-248"
                          xml:lang="en-us"
-                         xtrc="topicref:137"
+                         xtrc="topicref:138"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio723137a64f2e4b7bac274fa0d0c36703">
@@ -2972,9 +2980,9 @@
                   <title>Develop the ability to handle either the success or the error response</title>
                   <title>Learning Objectives Review</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-62844--topicref-1180-445-276"
+               <topicref class="- map/topicref " sourceId="id-62844--topicref-1189-445-276"
                          xml:lang="en-us"
-                         xtrc="topicref:138"
+                         xtrc="topicref:139"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loioe2f47481042a40bc9b755495f16a54cd">
@@ -2985,9 +2993,9 @@
                   <title>Develop the ability to handle either the success or the error response</title>
                   <title>Learning Objectives Review</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-62844--topicref-1190-435-289"
+               <topicref class="- map/topicref " sourceId="id-63101--topicref-1199-435-289"
                          xml:lang="en-us"
-                         xtrc="topicref:139"
+                         xtrc="topicref:140"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio0488a7bb4b49419db6f22188eefe304e">
@@ -2998,9 +3006,9 @@
                   <title>Develop the ability to handle either the success or the error response</title>
                   <title>Learning Objectives Review</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63101--topicref-1200-425-310"
+               <topicref class="- map/topicref " sourceId="id-63101--topicref-1209-425-310"
                          xml:lang="en-us"
-                         xtrc="topicref:140"
+                         xtrc="topicref:141"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio09880de0777a4b17af3d5e404bd3460e">
@@ -3011,9 +3019,9 @@
                   <title>Develop the ability to handle either the success or the error response</title>
                   <title>Learning Objectives Review</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63101--topicref-1210-414-343"
+               <topicref class="- map/topicref " sourceId="id-63101--topicref-1219-414-343"
                          xml:lang="en-us"
-                         xtrc="topicref:141"
+                         xtrc="topicref:142"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loioeb8cc9732b024e6cb00c70ef3e48bc71">
@@ -3024,9 +3032,9 @@
                   <title>Develop the ability to handle either the success or the error response</title>
                   <title>Learning Objectives Review</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63101--topicref-1221-404-284"
+               <topicref class="- map/topicref " sourceId="id-63101--topicref-1230-404-284"
                          xml:lang="en-us"
-                         xtrc="topicref:142"
+                         xtrc="topicref:143"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loioe1ee496d73164228a8395c2127f9335e">
@@ -3037,9 +3045,9 @@
                   <title>Develop the ability to handle either the success or the error response</title>
                   <title>Learning Objectives Review</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63101--topicref-1231-392-398"
+               <topicref class="- map/topicref " sourceId="id-63101--topicref-1240-392-398"
                          xml:lang="en-us"
-                         xtrc="topicref:143"
+                         xtrc="topicref:144"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio2ecd66a4731949abb0e106da239e5f81">
@@ -3051,9 +3059,9 @@
                   <title>Learning Objectives Review</title>
                </topicref>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-63101--topicref-1244-376-622"
+            <topicref class="- map/topicref " sourceId="id-63101--topicref-1253-376-622"
                       xml:lang="en-us"
-                      xtrc="topicref:144"
+                      xtrc="topicref:145"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loioedd952c2f9d3432582ab53675d92dba0">
@@ -3075,9 +3083,9 @@
                <title>Endpoints that upload or download files</title>
                <title>Learning Objectives Review</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-63101--topicref-1260-367-161"
+            <topicref class="- map/topicref " sourceId="id-63101--topicref-1269-367-161"
                       xml:lang="en-us"
-                      xtrc="topicref:145"
+                      xtrc="topicref:146"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loio0adef44f714247fb9439fe9ea9fc8dd9">
@@ -3095,9 +3103,9 @@
                <title>[POST] /Discussions('{key}')/Comments (2)</title>
                <title>Learning Objectives Review</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-63101--topicref-1269-358-237"
+            <topicref class="- map/topicref " sourceId="id-63101--topicref-1278-358-237"
                       xml:lang="en-us"
-                      xtrc="topicref:146"
+                      xtrc="topicref:147"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loio2f9c35bd07ec4116aa989c7ba281fcac">
@@ -3126,9 +3134,9 @@
                <title>Expanding Search results</title>
                <title>Learning Objectives Review</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-63101--topicref-1278-349-386"
+            <topicref class="- map/topicref " sourceId="id-63101--topicref-1287-349-386"
                       xml:lang="en-us"
-                      xtrc="topicref:147"
+                      xtrc="topicref:148"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loiodacad2174f654e62a75754d71fee9da2">
@@ -3141,9 +3149,9 @@
                <title>The FunctionImport (Service Operations) section</title>
                <title>Learning Objectives Review</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-63101--topicref-1287-338-456"
+            <topicref class="- map/topicref " sourceId="id-63101--topicref-1296-338-456"
                       xml:lang="en-us"
-                      xtrc="topicref:148"
+                      xtrc="topicref:149"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loio93a8c6e9486e42e78f82223b22e08ef8">
@@ -3156,9 +3164,9 @@
                <title>Response to a Request with an Error</title>
                <title>Learning Objectives Review</title>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-63101--topicref-1298-329-245"
+            <topicref class="- map/topicref " sourceId="id-63358--topicref-1307-329-245"
                       xml:lang="en-us"
-                      xtrc="topicref:149"
+                      xtrc="topicref:150"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loiob33bb485372345f0a970e366e6eb11c3">
@@ -3191,30 +3199,30 @@
                <title>Learning Objectives Review</title>
             </topicref>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-63358--topicref-1308-96-6633"
+         <topicref class="- map/topicref " sourceId="id-63358--topicref-1317-96-6633"
                    xml:lang="en-us"
-                   xtrc="topicref:150"
+                   xtrc="topicref:151"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                    type="concept"
                    topicID="loioac2b4a50dc6d4324a69c19f645e353ef">
             <title>Authentication and Authorization API</title>
-            <topicref class="- map/topicref " sourceId="id-63358--topicref-1318-222-2619"
+            <topicref class="- map/topicref " sourceId="id-63358--topicref-1327-222-2619"
                       xml:lang="en-us"
-                      xtrc="topicref:151"
+                      xtrc="topicref:152"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loiof44a8e961b8246a1aa6f0a2945fc807e">
                <title>OAuth 1.0a Authorization Tutorial</title>
-               <topicref class="- map/topicref " sourceId="id-63358--topicref-1326-289-457"
+               <topicref class="- map/topicref " sourceId="id-63358--topicref-1335-289-457"
                          xml:lang="en-us"
-                         xtrc="topicref:152"
+                         xtrc="topicref:153"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio72d69c3560a24fdf9ce3ef8c361c2c08">
                   <title>1. Register your Auth Client</title>
-                  <topicref class="- map/topicref " sourceId="id-63358--topicref-1336-289-260"
+                  <topicref class="- map/topicref " sourceId="id-63358--topicref-1345-289-260"
                             xml:lang="en-us"
-                            xtrc="topicref:153"
+                            xtrc="topicref:154"
                             docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                             type="concept"
                             topicID="loioe26807fe82a940b19735f8ed378757b7">
@@ -3226,9 +3234,9 @@
                      <title>Advantages and disadvantages</title>
                   </topicref>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63358--topicref-1346-280-370"
+               <topicref class="- map/topicref " sourceId="id-63358--topicref-1355-280-370"
                          xml:lang="en-us"
-                         xtrc="topicref:154"
+                         xtrc="topicref:155"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loioc2c3ec53a3394b1f8a3d88ab437ff84c">
@@ -3239,17 +3247,17 @@
                          xtrc="table:1"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/c2c3ec53a3394b1f8a3d88ab437ff84c.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63358--topicref-1355-270-207"
+               <topicref class="- map/topicref " sourceId="id-63358--topicref-1364-270-207"
                          xml:lang="en-us"
-                         xtrc="topicref:155"
+                         xtrc="topicref:156"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loiof507413911e84076b36e6c03dc64d532">
                   <title>3. Redirect the User to SAP Jam</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63358--topicref-1365-260-249"
+               <topicref class="- map/topicref " sourceId="id-63358--topicref-1374-260-249"
                          xml:lang="en-us"
-                         xtrc="topicref:156"
+                         xtrc="topicref:157"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio11da477992ab48618fd47548f8bdf4a4">
@@ -3260,9 +3268,9 @@
                          xtrc="table:1"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/11da477992ab48618fd47548f8bdf4a4.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63358--topicref-1375-250-276"
+               <topicref class="- map/topicref " sourceId="id-63358--topicref-1384-250-276"
                          xml:lang="en-us"
-                         xtrc="topicref:157"
+                         xtrc="topicref:158"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio071253f1de384581b7d67069380f7e3a">
@@ -3273,9 +3281,9 @@
                          xtrc="table:1"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/071253f1de384581b7d67069380f7e3a.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63358--topicref-1385-240-224"
+               <topicref class="- map/topicref " sourceId="id-63358--topicref-1394-240-224"
                          xml:lang="en-us"
-                         xtrc="topicref:158"
+                         xtrc="topicref:159"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio3e0afb8ac9494fbfb2f488ceef70ca28">
@@ -3286,33 +3294,33 @@
                          xtrc="table:1"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/3e0afb8ac9494fbfb2f488ceef70ca28.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63358--topicref-1395-231-241"
+               <topicref class="- map/topicref " sourceId="id-63615--topicref-1404-231-241"
                          xml:lang="en-us"
-                         xtrc="topicref:159"
+                         xtrc="topicref:160"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio88f8dd19767642549759187276c9cba7">
                   <title>Validate an Authorized Access Token</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63615--topicref-1404-222-190"
+               <topicref class="- map/topicref " sourceId="id-63615--topicref-1413-222-190"
                          xml:lang="en-us"
-                         xtrc="topicref:160"
+                         xtrc="topicref:161"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio33b32ac98b5b4509aab45c2c67ed1a7a">
                   <title>Revoke an Authorized Access Token</title>
                </topicref>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-63615--topicref-1414-177-809"
+            <topicref class="- map/topicref " sourceId="id-63615--topicref-1423-177-809"
                       xml:lang="en-us"
-                      xtrc="topicref:161"
+                      xtrc="topicref:162"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loio871783c1d86c4d9eafa47971cb7f9b3a">
                <title>OAuth 1.0a Authorization API Reference</title>
-               <topicref class="- map/topicref " sourceId="id-63615--topicref-1422-204-136"
+               <topicref class="- map/topicref " sourceId="id-63615--topicref-1431-204-136"
                          xml:lang="en-us"
-                         xtrc="topicref:162"
+                         xtrc="topicref:163"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="reference"
                          topicID="loiod89d05047eb04755ab29312b65497832">
@@ -3357,9 +3365,9 @@
                          xtrc="table:2"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/d89d05047eb04755ab29312b65497832.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63615--topicref-1431-195-172"
+               <topicref class="- map/topicref " sourceId="id-63615--topicref-1440-195-172"
                          xml:lang="en-us"
-                         xtrc="topicref:163"
+                         xtrc="topicref:164"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="reference"
                          topicID="loio1ef715a906cb494080f53ef9a819458d">
@@ -3404,9 +3412,9 @@
                          xtrc="table:2"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/1ef715a906cb494080f53ef9a819458d.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63615--topicref-1440-186-204"
+               <topicref class="- map/topicref " sourceId="id-63615--topicref-1449-186-204"
                          xml:lang="en-us"
-                         xtrc="topicref:164"
+                         xtrc="topicref:165"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="reference"
                          topicID="loio2e68c02e917041fca942bbc9cea8ce44">
@@ -3451,9 +3459,9 @@
                          xtrc="table:2"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/2e68c02e917041fca942bbc9cea8ce44.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63615--topicref-1449-177-105"
+               <topicref class="- map/topicref " sourceId="id-63615--topicref-1458-177-105"
                          xml:lang="en-us"
-                         xtrc="topicref:165"
+                         xtrc="topicref:166"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="reference"
                          topicID="loio933ad6e3c8d24b8da537d961151a8033">
@@ -3482,16 +3490,16 @@
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/933ad6e3c8d24b8da537d961151a8033.xml"/>
                </topicref>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-63615--topicref-1459-142-1010"
+            <topicref class="- map/topicref " sourceId="id-63615--topicref-1468-142-1010"
                       xml:lang="en-us"
-                      xtrc="topicref:166"
+                      xtrc="topicref:167"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loio6abc18ec667f4531984e3899d4c2fd2c">
                <title>SAML Authorization Tutorial</title>
-               <topicref class="- map/topicref " sourceId="id-63615--topicref-1469-158-271"
+               <topicref class="- map/topicref " sourceId="id-63615--topicref-1478-158-271"
                          xml:lang="en-us"
-                         xtrc="topicref:167"
+                         xtrc="topicref:168"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loio497154966f274cada5e07c869905b5ee">
@@ -3505,33 +3513,33 @@
                   <title>Arguments</title>
                   <title>Program output</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63615--topicref-1477-150-184"
+               <topicref class="- map/topicref " sourceId="id-63615--topicref-1486-150-184"
                          xml:lang="en-us"
-                         xtrc="topicref:168"
+                         xtrc="topicref:169"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loioc6813927839541a19e4703c3a2564f1b">
                   <title>Create an OAuth2 access token from a SAML bearer assertion</title>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63615--topicref-1485-142-204"
+               <topicref class="- map/topicref " sourceId="id-63872--topicref-1494-142-204"
                          xml:lang="en-us"
-                         xtrc="topicref:169"
+                         xtrc="topicref:170"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="concept"
                          topicID="loiofd49d6ed74ab4e54825a843dc20dd63f">
                   <title>SAML Format Requirements</title>
                </topicref>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-63872--topicref-1494-124-328"
+            <topicref class="- map/topicref " sourceId="id-63872--topicref-1503-124-328"
                       xml:lang="en-us"
-                      xtrc="topicref:170"
+                      xtrc="topicref:171"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loioc6f62a72515f4ad1b254507b82f9e318">
                <title>SAML Authorization API Reference</title>
-               <topicref class="- map/topicref " sourceId="id-63872--topicref-1502-124-139"
+               <topicref class="- map/topicref " sourceId="id-63872--topicref-1511-124-139"
                          xml:lang="en-us"
-                         xtrc="topicref:171"
+                         xtrc="topicref:172"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="reference"
                          topicID="loio6b6183a23cb94fbc963f5076c2fd489c">
@@ -3577,15 +3585,15 @@
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/6b6183a23cb94fbc963f5076c2fd489c.xml"/>
                </topicref>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-63872--topicref-1512-96-1081"
+            <topicref class="- map/topicref " sourceId="id-63872--topicref-1521-96-1081"
                       xml:lang="en-us"
-                      xtrc="topicref:172"
+                      xtrc="topicref:173"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loio7a58d9688edd4432ac22b0c9ea001a80">
-               <topicref class="- map/topicref " sourceId="id-63872--topicref-1523-104-364"
+               <topicref class="- map/topicref " sourceId="id-63872--topicref-1532-104-364"
                          xml:lang="en-us"
-                         xtrc="topicref:173"
+                         xtrc="topicref:174"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="reference"
                          topicID="loio17737c73f9244db6bcf983505a99247e">
@@ -3617,9 +3625,9 @@
                          xtrc="table:2"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/17737c73f9244db6bcf983505a99247e.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63872--topicref-1531-96-115"
+               <topicref class="- map/topicref " sourceId="id-63872--topicref-1540-96-115"
                          xml:lang="en-us"
-                         xtrc="topicref:174"
+                         xtrc="topicref:175"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="reference"
                          topicID="loioedebafa4315243af926e6f7945a31ae9">
@@ -3648,23 +3656,23 @@
                </topicref>
             </topicref>
          </topicref>
-         <topicref class="- map/topicref " sourceId="id-63872--topicref-1541-0-2059"
+         <topicref class="- map/topicref " sourceId="id-63872--topicref-1550-0-2059"
                    xml:lang="en-us"
-                   xtrc="topicref:175"
+                   xtrc="topicref:176"
                    docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                    type="concept"
                    topicID="loio2ed946bf745a4cafb848747a8dfe2181">
             <title>SAP Jam REST API</title>
-            <topicref class="- map/topicref " sourceId="id-63872--topicref-1551-56-580"
+            <topicref class="- map/topicref " sourceId="id-63872--topicref-1560-56-580"
                       xml:lang="en-us"
-                      xtrc="topicref:176"
+                      xtrc="topicref:177"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loio2b45e6a2e4124adbbb958f9dd0351958">
                <title>REST Member List Sync API Calls</title>
-               <topicref class="- map/topicref " sourceId="id-63872--topicref-1560-66-114"
+               <topicref class="- map/topicref " sourceId="id-63872--topicref-1569-66-114"
                          xml:lang="en-us"
-                         xtrc="topicref:177"
+                         xtrc="topicref:178"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="reference"
                          topicID="loio1ffb11a287204a0c9c90eac71c6e0d16">
@@ -3707,9 +3715,9 @@
                          xtrc="table:1"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/1ffb11a287204a0c9c90eac71c6e0d16.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-63872--topicref-1569-56-269"
+               <topicref class="- map/topicref " sourceId="id-63872--topicref-1578-56-269"
                          xml:lang="en-us"
-                         xtrc="topicref:178"
+                         xtrc="topicref:179"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="reference"
                          topicID="loio141c0552eea04639880827bcbef6cdbf">
@@ -3736,16 +3744,16 @@
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/141c0552eea04639880827bcbef6cdbf.xml"/>
                </topicref>
             </topicref>
-            <topicref class="- map/topicref " sourceId="id-63872--topicref-1580-0-1017"
+            <topicref class="- map/topicref " sourceId="id-64129--topicref-1589-0-1017"
                       xml:lang="en-us"
-                      xtrc="topicref:179"
+                      xtrc="topicref:180"
                       docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                       type="concept"
                       topicID="loiob3be6971ba3044c8ae2853b1ecbaddc8">
                <title>ReST Social Reports API Calls</title>
-               <topicref class="- map/topicref " sourceId="id-64129--topicref-1590-36-108"
+               <topicref class="- map/topicref " sourceId="id-64129--topicref-1599-36-108"
                          xml:lang="en-us"
-                         xtrc="topicref:180"
+                         xtrc="topicref:181"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="reference"
                          topicID="loio1b02d3f3083443c7adcfcff0fd1cc7e9">
@@ -3788,9 +3796,9 @@
                          xtrc="table:1"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/1b02d3f3083443c7adcfcff0fd1cc7e9.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-64129--topicref-1599-27-123"
+               <topicref class="- map/topicref " sourceId="id-64129--topicref-1608-27-123"
                          xml:lang="en-us"
-                         xtrc="topicref:181"
+                         xtrc="topicref:182"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="reference"
                          topicID="loiofb9f7109e9fb4f48910a1cf42ee0ab11">
@@ -3821,9 +3829,9 @@
                          xtrc="table:1"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/fb9f7109e9fb4f48910a1cf42ee0ab11.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-64129--topicref-1608-18-182"
+               <topicref class="- map/topicref " sourceId="id-64129--topicref-1617-18-182"
                          xml:lang="en-us"
-                         xtrc="topicref:182"
+                         xtrc="topicref:183"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="reference"
                          topicID="loio44c56a6c0093442496e6647d1c720ab4">
@@ -3854,9 +3862,9 @@
                          xtrc="table:1"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/44c56a6c0093442496e6647d1c720ab4.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-64129--topicref-1617-9-189"
+               <topicref class="- map/topicref " sourceId="id-64129--topicref-1626-9-189"
                          xml:lang="en-us"
-                         xtrc="topicref:183"
+                         xtrc="topicref:184"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="reference"
                          topicID="loio6b078a5a7f9f4c2eaac149bdb7825f86">
@@ -3887,9 +3895,9 @@
                          xtrc="table:1"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/6b078a5a7f9f4c2eaac149bdb7825f86.xml"/>
                </topicref>
-               <topicref class="- map/topicref " sourceId="id-64129--topicref-1626-0-169"
+               <topicref class="- map/topicref " sourceId="id-64129--topicref-1635-0-169"
                          xml:lang="en-us"
-                         xtrc="topicref:184"
+                         xtrc="topicref:185"
                          docUri="file:/n:/hlx1462461493710/win64_x64/release/obj/en-US_loioea537ce117094c68acced4dab1fe12e1/html500uacp/en-US/release/temp/33dd380ac10446fab405707648e1f207.ditamap"
                          type="reference"
                          topicID="loio91df110743f1415587a480d67f49a876">
